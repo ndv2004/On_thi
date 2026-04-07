@@ -581,7 +581,7 @@
 
       async function loadQuestions() {
         try {
-          const response = await fetch("./cauhoi.json");
+          const response = await fetch("./questions.json");
           if (response.ok) {
             const data = await response.json();
             if (Array.isArray(data) && data.length) {
