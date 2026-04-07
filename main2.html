@@ -6,13 +6,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <title>Ôn tập - Flashcards Toàn màn hình</title>
+    <title>Ôn tập - Flashcards toàn màn hình với ảnh nền ngẫu nhiên</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        user-select: none; /* Tránh bôi đen khi click nhanh, vẫn giữ copy được nếu cần nhưng không ảnh hưởng */
       }
 
       body {
@@ -24,7 +23,7 @@
           -apple-system,
           "Helvetica Neue",
           sans-serif;
-        background: linear-gradient(145deg, #f0f7ff 0%, #e9f0fa 100%);
+        background: linear-gradient(145deg, #1a2a3a 0%, #0f1a24 100%);
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -35,7 +34,7 @@
 
       /* Container chính */
       .app-container {
-        max-width: 1300px;
+        max-width: 1400px;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -53,47 +52,48 @@
         align-items: baseline;
         flex-wrap: wrap;
         gap: 15px;
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(8px);
-        padding: 12px 24px;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(12px);
+        padding: 12px 28px;
         border-radius: 60px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.2);
       }
 
       .counter {
-        font-weight: 600;
-        background: #2c3e66;
-        color: white;
-        padding: 6px 18px;
+        font-weight: 700;
+        background: #ffd966;
+        color: #1e2f41;
+        padding: 8px 22px;
         border-radius: 40px;
         font-size: 1rem;
         letter-spacing: 0.5px;
-        box-shadow:
-          inset 0 1px 0 rgba(255, 255, 255, 0.2),
-          0 2px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(4px);
       }
 
       .btn-index {
         background: #ff8c42;
         border: none;
-        padding: 8px 24px;
+        padding: 8px 28px;
         border-radius: 40px;
         font-weight: bold;
         font-size: 1rem;
         color: white;
         cursor: pointer;
         transition: all 0.2s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         font-family: inherit;
         display: inline-flex;
         align-items: center;
         gap: 8px;
+        backdrop-filter: blur(4px);
       }
 
       .btn-index:hover {
         background: #e6762e;
         transform: scale(1.02);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       }
 
       /* Vùng thẻ trượt */
@@ -102,93 +102,131 @@
         position: relative;
         overflow: hidden;
         border-radius: 48px;
-        box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 30px 50px -15px rgba(0, 0, 0, 0.5);
         background: transparent;
+        aspect-ratio: 16 / 9;
+        min-height: 520px;
       }
 
       .cards-wrapper {
         display: flex;
-        transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.4, 1.1);
         will-change: transform;
+        height: 100%;
       }
 
-      /* Mỗi thẻ chiếm toàn bộ chiều rộng slider */
+      /* Mỗi thẻ chiếm toàn bộ chiều rộng slider - ảnh nền không bị bóp */
       .card-item {
         flex: 0 0 100%;
-        min-height: 500px;
-        background: #ffffff;
+        position: relative;
         border-radius: 48px;
-        padding: 2rem 2rem;
+        background-size: auto 100%; /* chiều cao full, chiều rộng tự nhiên, KHÔNG BÓP ẢNH */
+        background-repeat: no-repeat;
+        background-position: right center; /* ảnh xuất hiện từ bên phải, neo bên phải */
+        background-color: #1a2a3a; /* fallback màu nền tối */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: linear-gradient(135deg, #fff 0%, #fef9e8 100%);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-        transition: background 0.2s;
+        overflow: hidden;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.55); /* lớp phủ tối giúp chữ nổi */
+        transition: all 0.2s;
       }
 
-      /* Nội dung thẻ: câu hỏi + đáp án cùng lúc */
+      /* Lớp phủ gradient mềm bên trái để chữ đọc dễ hơn, không che ảnh bên phải */
+      .card-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.75) 0%,
+          rgba(0, 0, 0, 0.4) 70%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        pointer-events: none;
+        z-index: 1;
+        border-radius: 48px 0 0 48px;
+      }
+
+      /* Nội dung thẻ nằm trên lớp phủ, căn trái để đọc rõ */
       .card-content {
+        position: relative;
+        z-index: 2;
         width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
+        max-width: 55%;
+        padding: 2rem 2.5rem;
+        margin-left: 2rem;
+        backdrop-filter: blur(2px);
+        border-radius: 32px;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.6rem;
       }
 
       .question-section {
-        background: #f1f6fe;
-        padding: 1.8rem;
-        border-radius: 32px;
-        border-left: 10px solid #2c7da0;
-        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+        background: rgba(255, 248, 225, 0.9);
+        padding: 1.6rem;
+        border-radius: 28px;
+        border-left: 8px solid #ffb347;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
       }
 
       .answer-section {
-        background: #eef6ec;
-        padding: 1.8rem;
-        border-radius: 32px;
-        border-left: 10px solid #61a5c2;
-        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+        background: rgba(220, 240, 210, 0.9);
+        padding: 1.6rem;
+        border-radius: 28px;
+        border-left: 8px solid #6ab04c;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
       }
 
       .label {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-weight: 700;
+        font-weight: 800;
         color: #2c3e66;
         margin-bottom: 12px;
         display: inline-block;
-        background: rgba(0, 0, 0, 0.05);
-        padding: 4px 12px;
+        background: rgba(255, 255, 240, 0.8);
+        padding: 4px 14px;
         border-radius: 30px;
+        backdrop-filter: blur(2px);
       }
 
       .question-text {
-        font-size: 1.7rem;
-        font-weight: 600;
+        font-size: 1.6rem;
+        font-weight: 700;
         line-height: 1.4;
-        color: #1e2f41;
+        color: #1e2f2f;
         word-break: break-word;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
       }
 
       .answer-text {
-        font-size: 1.5rem;
-        font-weight: 500;
+        font-size: 1.4rem;
+        font-weight: 600;
         line-height: 1.4;
-        color: #2c5536;
+        color: #1d4d1d;
         word-break: break-word;
       }
 
-      /* ID nhỏ trang trí */
       .card-id {
-        margin-top: 1rem;
-        text-align: right;
+        margin-top: 0.5rem;
+        text-align: left;
         font-size: 0.8rem;
-        color: #9aaebf;
-        font-weight: 500;
+        color: #ececec;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        padding: 4px 14px;
+        border-radius: 40px;
+        width: fit-content;
+        backdrop-filter: blur(4px);
       }
 
       /* Vùng nút điều hướng dưới thẻ */
@@ -201,45 +239,44 @@
       }
 
       .nav-btn {
-        background: #ffffffdd;
-        backdrop-filter: blur(8px);
-        border: none;
-        font-size: 1.3rem;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        font-size: 1.2rem;
         font-weight: bold;
-        padding: 12px 28px;
+        padding: 12px 32px;
         border-radius: 60px;
         cursor: pointer;
         transition: all 0.2s;
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
         font-family: monospace;
         font-weight: 700;
-        color: #1f4e6e;
+        color: #ffecb3;
         display: inline-flex;
         align-items: center;
         gap: 12px;
       }
 
       .nav-btn:hover {
-        background: white;
+        background: #ff8c42cc;
+        color: white;
         transform: scale(1.02);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        color: #0f2c3f;
+        border-color: #ffb347;
       }
 
       .nav-btn:active {
         transform: scale(0.98);
       }
 
-      /* hint điều hướng chuột + phím */
       .hotkey-hint {
         text-align: center;
         font-size: 0.8rem;
-        color: #5c6f87;
-        background: rgba(255, 255, 240, 0.7);
+        color: #dddddd;
+        background: rgba(0, 0, 0, 0.5);
         padding: 8px 20px;
         border-radius: 40px;
         display: inline-block;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(8px);
       }
 
       .footer-hint {
@@ -250,40 +287,7 @@
         margin-top: 5px;
       }
 
-      /* responsive */
-      @media (max-width: 750px) {
-        .question-text {
-          font-size: 1.3rem;
-        }
-        .answer-text {
-          font-size: 1.2rem;
-        }
-        .card-item {
-          padding: 1.2rem;
-          min-height: 450px;
-        }
-        .nav-btn {
-          padding: 8px 20px;
-          font-size: 1rem;
-        }
-        .btn-index {
-          padding: 6px 18px;
-        }
-      }
-
-      @media (max-width: 550px) {
-        .question-text {
-          font-size: 1.1rem;
-        }
-        .answer-text {
-          font-size: 1rem;
-        }
-        .label {
-          font-size: 0.7rem;
-        }
-      }
-
-      /* Hiệu ứng click vùng trái/phải (overlay trong suốt) */
+      /* Click zones */
       .click-zones {
         position: absolute;
         top: 0;
@@ -291,8 +295,8 @@
         width: 100%;
         height: 100%;
         display: flex;
-        pointer-events: none; /* mặc định ko can thiệp, nhưng sẽ tạo 2 vùng riêng */
-        z-index: 12;
+        pointer-events: none;
+        z-index: 15;
         border-radius: 48px;
         overflow: hidden;
       }
@@ -306,25 +310,76 @@
         background: transparent;
       }
 
-      /* mờ nhẹ khi hover để ngầm hiểu vùng click (optional) */
       .zone-left:hover {
         background: radial-gradient(
           circle at left,
-          rgba(0, 0, 0, 0.02),
+          rgba(255, 255, 200, 0.08),
           transparent
         );
       }
       .zone-right:hover {
         background: radial-gradient(
           circle at right,
-          rgba(0, 0, 0, 0.02),
+          rgba(255, 255, 200, 0.08),
           transparent
         );
       }
 
-      /* tắt pointer events cho card-slider nhưng cho phép overlay */
-      .card-slider {
-        position: relative;
+      /* Responsive: trên màn nhỏ giảm độ rộng vùng chữ */
+      @media (max-width: 1000px) {
+        .card-content {
+          max-width: 65%;
+          padding: 1.5rem;
+          margin-left: 1rem;
+        }
+        .question-text {
+          font-size: 1.3rem;
+        }
+        .answer-text {
+          font-size: 1.1rem;
+        }
+      }
+
+      @media (max-width: 750px) {
+        .card-content {
+          max-width: 80%;
+          margin-left: 0.8rem;
+          padding: 1rem;
+        }
+        .question-text {
+          font-size: 1.1rem;
+        }
+        .answer-text {
+          font-size: 1rem;
+        }
+        .card-item::before {
+          width: 85%;
+          background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.5) 80%,
+            rgba(0, 0, 0, 0) 100%
+          );
+        }
+        .nav-btn {
+          padding: 8px 20px;
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 550px) {
+        .card-content {
+          max-width: 92%;
+          margin-left: 0.5rem;
+          padding: 0.8rem;
+        }
+        .question-section,
+        .answer-section {
+          padding: 1rem;
+        }
+        .label {
+          font-size: 0.7rem;
+        }
       }
     </style>
   </head>
@@ -357,11 +412,14 @@
         <div class="hotkey-hint">
           ⌨️ Bàn phím: Mũi tên TRÁI / PHẢI để chuyển
         </div>
+        <div class="hotkey-hint">
+          🖼️ Ảnh nền ngẫu nhiên 1-20 (img/x.png) từ bên phải, không bóp ảnh
+        </div>
       </div>
     </div>
 
     <script>
-      // Dữ liệu mẫu dựa trên yêu cầu (mở rộng thêm vài câu để trải nghiệm mượt)
+      // Dữ liệu mẫu (câu hỏi từ yêu cầu + mở rộng)
       const defaultQuestions = [
         {
           id: "HCM_001",
@@ -393,13 +451,17 @@
             "Tác phẩm 'Đường Kách mệnh' tập hợp những bài giảng của Nguyễn Ái Quốc tại lớp huấn luyện ở đâu?",
           answer: "Quảng Châu (Trung Quốc)",
         },
+        {
+          id: "HCM_006",
+          question: "Hồ Chí Minh đã tìm ra con đường cứu nước vào năm nào?",
+          answer: "Năm 1911 (từ Bến cảng Nhà Rồng ra đi tìm đường cứu nước)",
+        },
       ];
 
-      // Biến toàn cục
       let questionsData = [];
       let currentIndex = 0;
       let totalCards = 0;
-      let isTransitioning = false; // chống spam click khi đang trượt
+      let isTransitioning = false;
 
       // DOM elements
       const cardsWrapper = document.getElementById("cardsWrapper");
@@ -410,10 +472,28 @@
       const zoneRight = document.getElementById("zoneRight");
       const goToIndexBtn = document.getElementById("goToIndexBtn");
 
-      // Hàm tải dữ liệu (có thể fetch từ file cauhoi.json, nhưng fallback dữ liệu mẫu)
+      // Hàm lấy ảnh ngẫu nhiên từ 1 đến 20 (img/x.png)
+      function getRandomBackgroundImage() {
+        const randomNum = Math.floor(Math.random() * 20) + 1; // 1..20
+        return `url('./img/${randomNum}.png')`;
+      }
+
+      // Gán ảnh nền cho một thẻ cụ thể với random, nhưng đảm bảo mỗi thẻ có ảnh riêng biệt (hoặc ngẫu nhiên độc lập)
+      // Yêu cầu: mỗi thẻ lấy ảnh ngẫu nhiên (có thể trùng) nhưng tuyệt đối không bóp ảnh: dùng background-size: auto 100% + position right center
+      function setRandomBackgroundForCard(cardElement) {
+        if (!cardElement) return;
+        const bgImage = getRandomBackgroundImage();
+        cardElement.style.backgroundImage = bgImage;
+        // ép buộc không bị ảnh hưởng bởi css khác: background-size, repeat, position đã ở global
+        // Nhưng đề phòng inline style ghi đè, đặt lại chắc chắn
+        cardElement.style.backgroundSize = "auto 100%";
+        cardElement.style.backgroundRepeat = "no-repeat";
+        cardElement.style.backgroundPosition = "right center";
+        cardElement.style.backgroundColor = "#1a2a3a"; // fallback
+      }
+
+      // Load dữ liệu (json hoặc mặc định)
       async function loadQuestions() {
-        // Ưu tiên fetch từ file cauhoi.json nếu tồn tại (trong môi trường thực tế)
-        // Để demo offline tránh lỗi CORS nếu mở file, ta thử fetch nhưng nếu lỗi sẽ dùng mẫu
         try {
           const response = await fetch("./cauhoi.json");
           if (response.ok) {
@@ -423,24 +503,33 @@
               return;
             }
           }
-          throw new Error("Dùng dữ liệu mẫu");
+          throw new Error("dùng mặc định");
         } catch (err) {
-          console.warn(
-            "Không tìm thấy file cauhoi.json hoặc lỗi fetch, sử dụng dữ liệu mẫu có sẵn.",
-          );
+          console.warn("⚠️ Không tìm thấy cauhoi.json, dùng dữ liệu mẫu.");
           questionsData = [...defaultQuestions];
         }
       }
 
-      // Render tất cả thẻ (slide layout)
+      // Escape html
+      function escapeHtml(str) {
+        if (!str) return "";
+        return str.replace(/[&<>]/g, function (m) {
+          if (m === "&") return "&amp;";
+          if (m === "<") return "&lt;";
+          if (m === ">") return "&gt;";
+          return m;
+        });
+      }
+
+      // Render toàn bộ thẻ (mỗi thẻ có nội dung và ảnh nền ngẫu nhiên riêng)
       function renderCards() {
         if (!cardsWrapper) return;
         cardsWrapper.innerHTML = "";
         if (!questionsData.length) {
-          // trường hợp không có câu hỏi
           const emptyDiv = document.createElement("div");
           emptyDiv.className = "card-item";
-          emptyDiv.innerHTML = `<div class="card-content"><div class="question-section"><div class="label">⚠️</div><div class="question-text">Chưa có dữ liệu câu hỏi. Vui lòng kiểm tra lại file cauhoi.json</div></div></div>`;
+          emptyDiv.innerHTML = `<div class="card-content"><div class="question-section"><div class="label">⚠️</div><div class="question-text">Chưa có dữ liệu câu hỏi. Vui lòng kiểm tra file cauhoi.json</div></div></div>`;
+          setRandomBackgroundForCard(emptyDiv);
           cardsWrapper.appendChild(emptyDiv);
           totalCards = 1;
           currentIndex = 0;
@@ -449,11 +538,10 @@
           return;
         }
         totalCards = questionsData.length;
-        // tạo các thẻ theo thứ tự
         questionsData.forEach((item, idx) => {
           const cardDiv = document.createElement("div");
           cardDiv.className = "card-item";
-          // hiển thị luôn câu hỏi + đáp án cùng lúc
+          // Nội dung hiển thị câu hỏi + đáp án cùng lúc
           cardDiv.innerHTML = `
                 <div class="card-content">
                     <div class="question-section">
@@ -461,42 +549,27 @@
                         <div class="question-text">${escapeHtml(item.question)}</div>
                     </div>
                     <div class="answer-section">
-                        <div class="label">💡 ĐÁP ÁN / GỢI Ý</div>
+                        <div class="label">💡 ĐÁP ÁN</div>
                         <div class="answer-text">${escapeHtml(item.answer)}</div>
                     </div>
                     <div class="card-id">🆔 ${escapeHtml(item.id)}</div>
                 </div>
             `;
+          // Gán ảnh nền ngẫu nhiên cho mỗi thẻ (từ img/x.png, x=1-20)
+          setRandomBackgroundForCard(cardDiv);
           cardsWrapper.appendChild(cardDiv);
         });
-        // cập nhật vị trí sau khi render
         updateTransform();
         updateCounter();
       }
 
-      // Helper bảo mật XSS
-      function escapeHtml(str) {
-        if (!str) return "";
-        return str
-          .replace(/[&<>]/g, function (m) {
-            if (m === "&") return "&amp;";
-            if (m === "<") return "&lt;";
-            if (m === ">") return "&gt;";
-            return m;
-          })
-          .replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function (c) {
-            return c;
-          });
-      }
-
-      // Cập nhật vị trí trượt (transform)
+      // Cập nhật vị trí trượt
       function updateTransform() {
         if (!cardsWrapper) return;
         const offset = -currentIndex * 100;
         cardsWrapper.style.transform = `translateX(${offset}%)`;
       }
 
-      // Cập nhật số thứ tự
       function updateCounter() {
         if (!counterDisplay) return;
         if (!questionsData.length || totalCards === 0) {
@@ -506,7 +579,7 @@
         counterDisplay.innerText = `${currentIndex + 1} / ${totalCards}`;
       }
 
-      // Chuyển sang câu tiếp theo (kèm hiệu ứng, chống trùng)
+      // Điều hướng có chống spam + hiệu ứng trượt
       function nextCard() {
         if (isTransitioning) return;
         if (!questionsData.length) return;
@@ -515,16 +588,13 @@
           currentIndex++;
           updateTransform();
           updateCounter();
-          // sau thời gian animation thì mở khóa
           setTimeout(() => {
             isTransitioning = false;
-          }, 400);
+          }, 460);
         } else {
-          // Nếu đã là cuối, có thể tạo hiệu ứng nhẹ như rung hoặc chỉ không làm gì
-          if (navigator.vibrate) navigator.vibrate(50);
-          // thêm hiệu ứng phản hồi cho người dùng (optional)
+          // hiệu ứng nhẹ cuối danh sách
           const btn = nextBtn;
-          btn.style.transform = "scale(0.97)";
+          btn.style.transform = "scale(0.96)";
           setTimeout(() => {
             btn.style.transform = "";
           }, 150);
@@ -541,18 +611,17 @@
           updateCounter();
           setTimeout(() => {
             isTransitioning = false;
-          }, 400);
+          }, 460);
         } else {
-          if (navigator.vibrate) navigator.vibrate(50);
           const btn = prevBtn;
-          btn.style.transform = "scale(0.97)";
+          btn.style.transform = "scale(0.96)";
           setTimeout(() => {
             btn.style.transform = "";
           }, 150);
         }
       }
 
-      // Xử lý sự kiện từ bàn phím (mũi tên trái/phải)
+      // Bàn phím
       function handleKeyDown(e) {
         if (e.key === "ArrowLeft") {
           e.preventDefault();
@@ -563,14 +632,15 @@
         }
       }
 
-      // Khởi tạo và load dữ liệu
-      async function init() {
-        await loadQuestions();
-        renderCards();
-        // Gắn sự kiện nút
+      // Hàm refresh nền cho tất cả các thẻ hiện có (nếu muốn random lại, nhưng không bắt buộc)
+      // Tuy nhiên vì mỗi thẻ đã random lúc render, giữ nguyên ổn định
+      // Nhưng để đáp ứng tinh thần "mỗi thẻ lấy ảnh ngẫu nhiên", việc render đã thực hiện.
+      // Bonus: khi load lại trang hoặc thêm dữ liệu vẫn đảm bảo random.
+
+      // Xử lý nút về index
+      function setupNavigation() {
         if (prevBtn) prevBtn.addEventListener("click", () => prevCard());
         if (nextBtn) nextBtn.addEventListener("click", () => nextCard());
-        // Sự kiện click vùng chuột trái/phải
         if (zoneLeft)
           zoneLeft.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -581,9 +651,7 @@
             e.stopPropagation();
             nextCard();
           });
-        // Sự kiện bàn phím
         window.addEventListener("keydown", handleKeyDown);
-        // Nút chuyển sang index.html
         if (goToIndexBtn) {
           goToIndexBtn.addEventListener("click", () => {
             window.location.href = "index.html";
@@ -591,16 +659,18 @@
         }
       }
 
-      // Nếu dữ liệu cập nhật động (có thể tương lai) nhưng hiện tại dùng tốt
-      // Chú ý khi resize không làm ảnh hưởng đến transform
+      // Khởi tạo toàn bộ
+      async function init() {
+        await loadQuestions();
+        renderCards();
+        setupNavigation();
+      }
+
+      // Nếu resize vẫn giữ transform chuẩn
       window.addEventListener("resize", () => {
-        // Giữ nguyên vị trí hiện tại, chỉ cập nhật lại transform chính xác theo % (không đổi)
-        if (cardsWrapper) {
-          updateTransform();
-        }
+        if (cardsWrapper) updateTransform();
       });
 
-      // Bắt đầu
       init();
     </script>
   </body>
