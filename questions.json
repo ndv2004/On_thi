@@ -1440,554 +1440,471 @@
     "answer": "Sở hữu xã hội về tư liệu sản xuất"
   },
   {
-    "number": 151,
-    "question": "Theo Hồ Chí Minh, ưu điểm lớn nhất của chủ nghĩa tam dân của Tôn Trung Sơn đối với nước ta là:",
-    "options": [
-      "a. Chống phong kiến",
-      "b. Đấu tranh vì tự do, dân chủ",
-      "c. Phù hợp với điều kiện thực tế nước ta",
-      "d. Đem lại độc lập, tự do"
-    ],
-    "answer": "c"
+    "id": 1201,
+    "question": "Theo Hồ Chí Minh, nền kinh tế mà chúng ta xây dựng phải được tạo lập trên cơ sở:",
+    "options": ["Nền nông nghiệp hiện đại", "Nền công nghiệp hiện đại", "Nền khoa học kỹ thuật phát triển", "Chế độ công hữu về tư liệu sản xuất"],
+    "answer": "Chế độ công hữu về tư liệu sản xuất"
   },
   {
-    "number": 152,
-    "question": "Tư tưởng Hồ Chí Minh được hình thành từ những tiền đề tư tưởng – lý luận nào?",
-    "options": [
-      "a. Chủ nghĩa Mác – Lênin",
-      "b. Những giá trị truyền thống tốt đẹp của dân tộc",
-      "c. Tinh hoa văn hóa nhân loại",
-      "d. Tất cả a, b, c"
-    ],
-    "answer": "d"
+    "id": 151,
+    "question": "Theo Hồ Chí Minh, kẻ thù hung ác của chủ nghĩa xã hội là gì:",
+    "options": ["Tham ô, lãng phí", "Chủ nghĩa cá nhân", "Các lực lượng phản động", "Thói hư, tật xấu"],
+    "answer": "Chủ nghĩa cá nhân"
   },
   {
-    "number": 153,
-    "question": "Tư tưởng Hồ Chí Minh được hình thành từ những nguồn gốc nào?",
-    "options": [
-      "a. Những điều kiện lịch sử - xã hội trong nước và thế giới",
-      "b. Những tiền đề tư tưởng – lý luận",
-      "c. Những phẩm chất chủ quan Hồ Chí Minh",
-      "d. Tất cả a, b, c"
-    ],
-    "answer": "d"
+    "id": 152,
+    "question": "Theo Hồ Chí Minh, đặc trưng nổi bật của chủ nghĩa xã hội là gì?",
+    "options": ["Khoa học – kỹ thuật phát triển", "Cơ cấu công – nông nghiệp hợp lý", "Sở hữu xã hội về tư liệu sản xuất", "Sở hữu tư nhân về tư liệu sản xuất"],
+    "answer": "Sở hữu xã hội về tư liệu sản xuất"
   },
   {
-    "number": 154,
-    "question": "Cơ quan ngôn luận của Tổ chức Việt Nam Thanh niên cách mạng đồng chí hội là tờ báo nào?",
-    "options": [
-      "a. Người cùng khổ",
-      "b. Thanh niên",
-      "c. Nhân đạo",
-      "d. Lao động"
-    ],
-    "answer": "b"
+    "id": 153,
+    "question": "Bàn về tổ chức hợp tác xã, Hồ Chí Minh nhấn mạnh nguyên tắc:",
+    "options": ["Làm đồng loạt", "Làm dần dần, từ thấp đến cao, tự nguyện, cùng có lợi, chống chủ quan, gò ép, hình thức", "Khẩn trương xây dựng cho được các hợp tác xã", "Làm nhanh chóng"],
+    "answer": "Làm dần dần, từ thấp đến cao, tự nguyện, cùng có lợi, chống chủ quan, gò ép, hình thức"
   },
   {
-    "number": 155,
-    "question": "Sau hành trình tìm đường cứu nước, Bác Hồ về nước trực tiếp lãnh đạo cách mạng Việt Nam vào ngày tháng năm nào?",
-    "options": [
-      "a. 28/01/1941",
-      "b. 28/01/1942",
-      "c. 12/8/1942",
-      "d. 19/12/1941"
-    ],
-    "answer": "a"
+    "id": 154,
+    "question": "Chọn cụm từ điền vào chỗ trống đúng với tư tưởng Hồ Chí Minh: “Việt Nam đi lên chủ nghĩa xã hội từ một nước thuộc địa, nửa phong kiến…”",
+    "options": ["Bỏ qua giai đoạn phát triển tư bản chủ nghĩa", "Bỏ qua chế độ tư bản chủ nghĩa", "Không kinh qua giai đoạn phát triển TBCN", "Xuyên qua CNTB"],
+    "answer": "Không kinh qua giai đoạn phát triển TBCN"
   },
   {
-    "number": 156,
-    "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc ở thuộc địa có mối quan hệ như thế nào với cách mạng vô sản ở chính quốc?",
-    "options": [
-      "a. Phụ thuộc vào cách mạng vô sản ở chính quốc",
-      "b. Có khả năng nổ ra và giành thắng lợi trước cách mạng vô sản ở chính quốc",
-      "c. Giành thắng lợi đồng thời",
-      "d. Không có mối liên hệ nào"
-    ],
-    "answer": "b"
+    "id": 155,
+    "question": "Chọn cụm từ điền vào chỗ trống đúng với tư tưởng Hồ Chí Minh: “Nông dân giàu thì nước ta giàu, … thịnh thì nước ta thịnh”",
+    "options": ["Công nghiệp", "Nông nghiệp", "Thương nghiệp", "Nông dân"],
+    "answer": "Nông nghiệp"
   },
   {
-    "number": 157,
-    "question": "Theo Hồ Chí Minh, vấn đề dân tộc và vấn đề giai cấp có mối quan hệ như thế nào?",
-    "options": [
-      "a. Giải phóng dân tộc và giai cấp cần tiến hành song song",
-      "b. Giải phóng dân tộc không liên quan tới giai cấp",
-      "c. Giải phóng dân tộc là tiền đề để giải phóng giai cấp",
-      "d. Giải phóng giai cấp là tiền đề để giải phóng dân tộc"
-    ],
-    "answer": "c"
+    "id": 156,
+    "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội, Hồ Chí Minh chủ trương đối xử với giai cấp tư sản dân tộc như thế nào?",
+    "options": ["Không xóa bỏ quyền sở hữu về tư liệu sản xuất của họ", "Xóa bỏ quyền sở hữu về tư liệu sản xuất của họ", "Đưa họ vào kinh tế tập thể", "Đánh đổ họ với tư cách là một giai cấp bóc lột"],
+    "answer": "Không xóa bỏ quyền sở hữu về tư liệu sản xuất của họ"
   },
   {
-    "number": 158,
-    "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc là sự nghiệp đoàn kết của:",
-    "options": [
-      "a. Giai cấp công nhân",
-      "b. Công nhân, nông dân, trí thức",
-      "c. Giai cấp công nhân và nông dân",
-      "d. Toàn dân, trên cơ sở liên minh công - nông"
-    ],
-    "answer": "d"
+    "id": 157,
+    "question": "Theo Hồ Chí Minh, cách làm của chủ nghĩa xã hội là:",
+    "options": ["Phải dựa vào sự giúp đỡ của xã hội chủ nghĩa", "Nhà nước phải ban phát từ trên xuống", "Đem tài dân, sức dân, của dân để làm lợi cho dân", "Dựa vào nhà nước và sự giúp đỡ của các nước khác"],
+    "answer": "Đem tài dân, sức dân, của dân để làm lợi cho dân"
   },
   {
-    "number": 159,
-    "question": "Sức mạnh dân tộc Việt Nam bao gồm những yếu tố nào?",
-    "options": [
-      "a. Chủ nghĩa yêu nước",
-      "b. Tinh thần đoàn kết",
-      "c. Ý thức tự lực, tự cường",
-      "d. Cả a, b, c đều đúng"
-    ],
-    "answer": "d"
+    "id": 158,
+    "question": "Theo Hồ Chí Minh, con đường đi lên chủ nghĩa xã hội trong nông nghiệp bao gồm những bước:",
+    "options": ["Cải cách ruộng đất", "Xây dựng hợp tác xã cấp thấp và cấp cao", "Xã hội hóa nông thôn", "Cả a, b, c đều đúng"],
+    "answer": "Cả a, b, c đều đúng"
   },
   {
-    "number": 160,
-    "question": "Trước khi Đảng Cộng sản Việt Nam ra đời, tình cảnh cách mạng Việt Nam như thế nào?",
-    "options": [
-      "a. Khủng hoảng về đường lối cứu nước",
-      "b. Cách mạng Việt Nam vô cùng thuận lợi",
-      "c. Mọi phong trào cách mạng đều thắng lợi",
-      "d. Cả a, b, c đều sai"
-    ],
-    "answer": "a"
+    "id": 160,
+    "question": "Để đảm bảo thực hiện thắng lợi chủ nghĩa xã hội ở Việt Nam trong thời kỳ quá độ, theo Hồ Chí Minh phải:",
+    "options": ["Tăng cường sự lãnh đạo của Đảng, vai trò quản lý của nhà nước", "Phát huy tính tích cực, chủ động của các tổ chức chính trị – xã hội", "Xây dựng đội ngũ cán bộ đủ đức, đủ tài", "Tất cả các phương án trên đều đúng"],
+    "answer": "Tất cả các phương án trên đều đúng"
   },
   {
-    "number": 161,
-    "question": "Phong trào Đông Du (1906 – 1908) do ai lãnh đạo?",
-    "options": [
-      "a. Hồ Chí Minh",
-      "b. Phan Chu Trinh",
-      "c. Phan Bội Châu",
-      "d. Nguyễn Thái Học"
-    ],
-    "answer": "c"
+    "id": 161,
+    "question": "Theo Hồ Chí Minh, muốn xây dựng chủ nghĩa xã hội, trước hết cần có cái gì?",
+    "options": ["Con người năng động, sáng tạo", "Con người xã hội chủ nghĩa", "Có cơ sở vật chất", "Có đảng lãnh đạo"],
+    "answer": "Con người xã hội chủ nghĩa"
   },
   {
-    "number": 162,
-    "question": "Theo tư tưởng Hồ Chí Minh, các loại kẻ thù cần phải đánh đổ trong quá trình giải phóng dân tộc, giai cấp, con người là:",
-    "options": [
-      "a. Nghèo nàn, dốt nát, lạc hậu và chủ nghĩa cá nhân",
-      "b. Đế quốc, thực dân và tay sai của chúng",
-      "c. Đế quốc và phong kiến",
-      "d. Đế quốc, thực dân, tay sai cùng với nghèo nàn, lạc hậu và chủ nghĩa cá nhân"
-    ],
-    "answer": "d"
+    "id": 163,
+    "question": "Theo Hồ Chí Minh, nguyên tắc phân phối chủ yếu trong chủ nghĩa xã hội là gì?",
+    "options": ["Làm theo năng lực, hưởng theo nhu cầu", "Làm theo năng lực, hưởng theo lao động", "Làm theo nhu cầu, hưởng theo lợi ích", "Phân phối bình quân cho tất cả mọi người"],
+    "answer": "Làm theo năng lực, hưởng theo lao động"
   },
   {
-    "number": 163,
-    "question": "Nội dung cơ bản trong con đường cứu nước của Hồ Chí Minh là:",
-    "options": [
-      "a. Độc lập dân tộc gắn liền với chủ nghĩa xã hội",
-      "b. Giành chính quyền về tay nhân dân",
-      "c. Giải phóng con người",
-      "d. Thành lập Đảng Cộng sản Việt Nam"
-    ],
-    "answer": "a"
+    "id": 164,
+    "question": "Chọn phương án sai: Theo Hồ Chí Minh, để xác định bước đi và tìm cách làm cho chủ nghĩa xã hội phù hợp với Việt Nam cần phải:",
+    "options": ["Có thể tham khảo, học tập kinh nghiệm các nước anh em", "Có người lãnh đạo xuất chúng", "Xuất phát từ điều kiện thực tế, đặc điểm dân tộc, nhu cầu và khả năng thực tế của nhân dân", "Quán triệt các nguyên lý cơ bản của chủ nghĩa Mác – Lênin"],
+    "answer": "Có người lãnh đạo xuất chúng"
   },
   {
-    "number": 164,
-    "question": "Hồ Chí Minh nói: “Tôi chỉ có một sự ham muốn, ham muốn tột bậc là làm sao cho nước ta được hoàn toàn độc lập...”. Câu nói này vào thời gian nào?",
-    "options": [
-      "a. 21/11/1946",
-      "b. 19/5/1960",
-      "c. 19/5/1954",
-      "d. 19/5/1969"
-    ],
-    "answer": "a"
+    "id": 1651,
+    "question": "Theo Hồ Chí Minh, đặc trưng nổi bật về chính trị của chủ nghĩa xã hội là gì?",
+    "options": ["Đảng Cộng sản lãnh đạo", "Mọi người được hưởng các quyền tự do dân chủ", "Thực hiện một nền dân chủ triệt để", "Mọi lợi ích đều thuộc về nhân dân"],
+    "answer": "Thực hiện một nền dân chủ triệt để"
   },
   {
-    "number": 165,
-    "question": "Khi nghiên cứu về cách mạng Mỹ (1776) và Pháp (1789), Hồ Chí Minh xác định đó là những cuộc cách mạng như thế nào?",
-    "options": [
-      "a. Chưa trọn vẹn",
-      "b. Không thành công",
-      "c. Thắng lợi",
-      "d. Không đến nơi"
-    ],
-    "answer": "d"
+    "id": 1661,
+    "question": "Theo Hồ Chí Minh, nội dung nào được coi là nhiệm vụ trung tâm của thời kỳ quá độ lên chủ nghĩa xã hội:",
+    "options": ["Công nghiệp hóa", "Phát triển kinh tế", "Phát triển kinh tế và văn hóa", "Xây dựng thành công chủ nghĩa xã hội"],
+    "answer": "Công nghiệp hóa"
   },
   {
-    "number": 166,
-    "question": "“Dù phải đốt cháy cả dãy Trường Sơn cũng phải giành cho được độc lập lúc này”. Câu nói đó của Hồ Chí Minh vào thời gian nào?",
-    "options": [
-      "a. Tháng 5/1941",
-      "b. Tháng 9/1945",
-      "c. Tháng 8/1945",
-      "d. Tháng 12/1946"
-    ],
-    "answer": "c"
+    "id": 1917,
+    "question": "Chọn phương án sai theo tư tưởng Hồ Chí Minh về nguyên tắc xây dựng Đảng Cộng sản Việt Nam:",
+    "options": ["Tập trung dân chủ", "Thiểu số phục tùng đa số", "Tự phê bình và phê bình", "Đoàn kết thống nhất trong Đảng"],
+    "answer": "Thiểu số phục tùng đa số"
   },
   {
-    "number": 167,
-    "question": "Chủ tịch Hồ Chí Minh ra lời kêu gọi toàn quốc kháng chiến vào thời điểm nào?",
-    "options": [
-      "a. Đêm ngày 18/9/1946",
-      "b. Ngày 20/12/1946",
-      "c. Đêm ngày 19/12/1946",
-      "d. Ngày 25/11/1946"
-    ],
-    "answer": "c"
+    "id": 1981,
+    "question": "Theo tư tưởng Hồ Chí Minh, Đảng Cộng sản Việt Nam phải được xây dựng theo:",
+    "options": ["3 nguyên tắc", "4 nguyên tắc", "5 nguyên tắc", "6 nguyên tắc"],
+    "answer": "5 nguyên tắc"
   },
   {
-    "number": 168,
-    "question": "Hồ Chí Minh khẳng định chủ nghĩa dân tộc chân chính là một động lực lớn ở các nước đang đấu tranh giành độc lập dân tộc. Đó là:",
-    "options": [
-      "a. Chủ nghĩa dân tộc chân chính",
-      "b. Chủ nghĩa dân tộc trong sáng",
-      "c. Chủ nghĩa Sô-vanh",
-      "d. Chủ nghĩa hẹp hòi"
-    ],
-    "answer": "a"
+    "id": 1991,
+    "question": "Đảng phải chăm lo mối quan hệ giữa Đảng với nhân dân là nhằm:",
+    "options": ["Xác định vị thế cầm quyền của Đảng", "Xác định năng lực cầm quyền của Đảng", "Xác định phương thức cầm quyền của Đảng", "Tất cả các phương án trên đều đúng"],
+    "answer": "Tất cả các phương án trên đều đúng"
   },
   {
-    "number": 169,
-    "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn thắng lợi phải có:",
-    "options": [
-      "a. Tiềm lực mạnh",
-      "b. Tổ chức đoàn thể lãnh đạo",
-      "c. Một cá nhân xuất sắc lãnh đạo",
-      "d. Đảng của giai cấp công nhân lãnh đạo"
-    ],
-    "answer": "d"
+    "id": 2001,
+    "question": "Nguyên tắc xây dựng Đảng kiểu mới theo tư tưởng Hồ Chí Minh là:",
+    "options": ["Tập trung dân chủ; tập thể lãnh đạo cá nhân phụ trách", "Tự phê bình và phê bình", "Đoàn kết thống nhất trong Đảng", "Tất cả các nguyên tắc đều đúng"],
+    "answer": "Tất cả các nguyên tắc đều đúng"
   },
   {
-    "number": 170,
-    "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn giành được thắng lợi cần phải tiến hành:",
-    "options": [
-      "a. Chủ động và sáng tạo",
-      "b. Dựa vào cách mạng vô sản chính quốc",
-      "c. Dựa vào các nước thuộc địa khác",
-      "d. Dựa vào sự giúp đỡ quốc tế là chính"
-    ],
-    "answer": "a"
+    "id": 167,
+    "question": "Theo Hồ Chí Minh, quá độ lên chủ nghĩa xã hội ở Việt Nam là kiểu quá độ:",
+    "options": ["Trực tiếp", "Gián tiếp", "Vừa trực tiếp, vừa gián tiếp", "Đặc biệt"],
+    "answer": "Gián tiếp"
   },
   {
-    "number": 171,
-    "question": "Luận điểm: “Công cuộc giải phóng anh em chỉ có thể thực hiện bằng sự nỗ lực của bản thân anh em” là của ai?",
-    "options": [
-      "a. C. Mác",
-      "b. Ph. Ăngghen",
-      "c. V.I. Lênin",
-      "d. Hồ Chí Minh"
-    ],
-    "answer": "d"
+    "id": 168,
+    "question": "Theo Hồ Chí Minh, trong mối quan hệ giữa hai nhiệm vụ cải tạo xã hội cũ và xây dựng xã hội mới thì:",
+    "options": ["Cải tạo xã hội cũ là nhiệm vụ trung tâm, chủ chốt", "Cải tạo xã hội cũ trước, xây dựng xã hội mới sau", "Xây dựng xã hội mới là trọng tâm, cốt yếu, chủ chốt, lâu dài", "Cải tạo xã hội cũ và xây dựng xã hội mới đều là nhiệm vụ trọng tâm"],
+    "answer": "Xây dựng xã hội mới là trọng tâm, cốt yếu, chủ chốt, lâu dài"
   },
   {
-    "number": 172,
-    "question": "“Công nông là gốc cách mạng, còn học trò, nhà buôn nhỏ, điền chủ nhỏ là bầu bạn cách mệnh công nông”. Câu này đề cập đến:",
-    "options": [
-      "a. Phương pháp cách mạng",
-      "b. Lực lượng cách mạng",
-      "c. Nhiệm vụ cách mạng",
-      "d. Mục tiêu cách mạng"
-    ],
-    "answer": "b"
+    "id": 169,
+    "question": "Theo Hồ Chí Minh, yếu tố nào là hạt nhân trong động lực của chủ nghĩa xã hội?",
+    "options": ["Sự quản lý nhà nước", "Sự lãnh đạo đúng đắn của Đảng", "Kinh tế", "Con người"],
+    "answer": "Sự lãnh đạo đúng đắn của Đảng"
   },
   {
-    "number": 173,
-    "question": "Theo Hồ chí Minh, độc lập, tự do là:",
-    "options": [
-      "a. Quyền thiêng liêng",
-      "b. Quyền bất khả xâm phạm",
-      "c. Quyền tự quyết",
-      "d. Quyền thiêng liêng và bất khả xâm phạm"
-    ],
-    "answer": "d"
+    "id": 170,
+    "question": "Đường lối công nghiệp hóa xã hội chủ nghĩa, hiện đại hóa nước ta được đề ra ở Đại hội nào của Đảng?",
+    "options": ["Đại hội III (1960)", "Đại hội IV (1976)", "Đại hội V (1982)", "Đại hội VI (1986)"],
+    "answer": "Đại hội III (1960)"
   },
   {
-    "number": 174,
-    "question": "Theo Hồ Chí Minh, vận dụng chủ nghĩa Mác – Lênin cần phải:",
-    "options": [
-      "a. Phù hợp với từng hoàn cảnh, từng đối tượng",
-      "b. Trung thành tuyệt đối",
-      "c. Đảm bảo tính chính xác",
-      "d. Kế thừa nguyên văn"
-    ],
-    "answer": "a"
+    "id": 171,
+    "question": "Theo Hồ Chí Minh, tại sao cần thực hiện chế độ làm khoán dưới chủ nghĩa xã hội?",
+    "options": ["Khuyến khích được lợi ích của người lao động", "Có lợi cho nhà nước", "Kết hợp được lợi ích của người lao động, lợi ích tập thể và lợi ích nhà nước", "Khuyến khích được lợi ích tập thể và xã hội"],
+    "answer": "Kết hợp được lợi ích của người lao động, lợi ích tập thể và lợi ích nhà nước"
   },
   {
-    "number": 175,
-    "question": "Cách mạng giải phóng dân tộc trong thời đại mới phải do Đảng Cộng sản lãnh đạo để:",
-    "options": [
-      "a. Giác ngộ, tổ chức, tập hợp dân chúng",
-      "b. Đoàn kết với vô sản thế giới",
-      "c. Cả a và b đều đúng",
-      "d. Thay giai cấp công nhân nắm chính quyền"
-    ],
-    "answer": "c"
+    "id": 172,
+    "question": "Theo Hồ Chí Minh, trong thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta còn tồn tại mấy hình thức sở hữu?",
+    "options": ["2 hình thức", "3 hình thức", "4 hình thức", "5 hình thức"],
+    "answer": "4 hình thức"
   },
   {
-    "number": 176,
-    "question": "Tìm luận điểm không đúng với tư tưởng Hồ Chí Minh:",
-    "options": [
-      "a. Công nghiệp hóa là con đường tất yếu",
-      "b. Công nghiệp hóa phải bắt đầu từ công nghiệp nặng",
-      "c. Công nghiệp hóa dựa trên nông nghiệp toàn diện",
-      "d. Công nghiệp hóa trên cơ sở phát triển công nghiệp nhẹ"
-    ],
-    "answer": "b"
+    "id": 173,
+    "question": "Theo Hồ Chí Minh, trong thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta còn tồn tại mấy thành phần kinh tế?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5"
   },
   {
-    "number": 177,
-    "question": "Theo Hồ Chí Minh, biện pháp nào quan trọng nhất trong xây dựng chủ nghĩa xã hội?",
-    "options": [
-      "a. Tranh thủ sự viện trợ quốc tế",
-      "b. Quản lý nhà nước tập trung",
-      "c. Động viên lòng dân và sức dân",
-      "d. Phát triển khoa học kỹ thuật"
-    ],
-    "answer": "c"
+    "id": 174,
+    "question": "Muốn phát huy động lực của chủ nghĩa xã hội, theo Hồ Chí Minh cần phải chống?",
+    "options": ["Chia rẽ, bè phái, mất đoàn kết, vô kỷ luật", "Chủ nghĩa cá nhân", "Tham ô, lãng phí, quan liêu; chia rẽ, bè phái, vô kỷ luật", "Tham ô, lãng phí, quan liêu"],
+    "answer": "Tham ô, lãng phí, quan liêu; chia rẽ, bè phái, vô kỷ luật"
   },
   {
-    "number": 178,
-    "question": "Hồ Chí Minh cho rằng đặc trưng nổi bật của chủ nghĩa xã hội về mặt sở hữu là:",
-    "options": [
-      "a. Sở hữu tư nhân",
-      "b. Sở hữu hỗn hợp",
-      "c. Sở hữu xã hội về tư liệu sản xuất",
-      "d. Sở hữu nhà nước tuyệt đối"
-    ],
-    "answer": "c"
+    "id": 175,
+    "question": "Hồ Chí Minh nói: “Chủ nghĩa xã hội cộng với khoa học sẽ đưa loài người đến …. ”. Hãy điền vào chỗ trống để hoàn thiện câu trên:",
+    "options": ["Hạnh phúc vô tận", "Tương lai xán lạn", "Tự do", "Sự phát triển toàn diện"],
+    "answer": "Hạnh phúc vô tận"
   },
   {
-    "number": 179,
-    "question": "Theo Hồ Chí Minh, động lực quyết định nhất của chủ nghĩa xã hội là gì?",
-    "options": [
-      "a. Kinh tế",
-      "b. Khoa học - kỹ thuật",
-      "c. Con người",
-      "d. Sự giúp đỡ của các nước bạn"
-    ],
-    "answer": "c"
+    "id": 176,
+    "question": "Theo Hồ Chí Minh, mục tiêu cao nhất của chủ nghĩa xã hội là gì?",
+    "options": ["Giải phóng dân tộc", "Phát triển kinh tế", "Nâng cao đời sống nhân dân", "Xây dựng nền văn hóa mới"],
+    "answer": "Nâng cao đời sống nhân dân"
   },
   {
-    "number": 180,
-    "question": "Mục tiêu tổng quát của chủ nghĩa xã hội theo Hồ Chí Minh là:",
-    "options": [
-      "a. Xây dựng nền kinh tế hiện đại",
-      "b. Nâng cao đời sống nhân dân",
-      "c. Xóa bỏ bóc lột",
-      "d. Cả a, b, c"
-    ],
-    "answer": "d"
+    "id": 177,
+    "question": "Hồ Chí Minh nói: “Kinh tế quốc doanh là hình thức sở hữu của …”. Hãy điền vào chỗ trống:",
+    "options": ["Tập thể nhân dân", "Toàn dân", "Nhà nước", "Giai cấp công nhân"],
+    "answer": "Toàn dân"
   },
   {
-    "number": 181,
-    "question": "Theo Hồ Chí Minh, nội dung giáo dục mới phải bao quát:",
-    "options": [
-      "a. Chỉ kiến thức văn hóa",
-      "b. Chỉ đạo đức cách mạng",
-      "c. Toàn diện đức, trí, thể, mỹ",
-      "d. Chỉ kỹ năng nghề nghiệp"
-    ],
-    "answer": "c"
+    "id": 178,
+    "question": "Theo Hồ Chí Minh, biện pháp quan trọng nhất để xây dựng chủ nghĩa xã hội là gì?",
+    "options": ["Tranh thủ sự giúp đỡ quốc tế", "Sử dụng các chuyên gia giỏi", "Kết hợp cải tạo với xây dựng, trong đó xây dựng là chính", "Cải tạo triệt để xã hội cũ"],
+    "answer": "Kết hợp cải tạo với xây dựng, trong đó xây dựng là chính"
   },
   {
-    "number": 182,
-    "question": "Trong quan hệ với quần chúng, Hồ Chí Minh yêu cầu Đảng phải:",
-    "options": [
-      "a. Luôn nghe theo quần chúng",
-      "b. Không được theo đuôi quần chúng",
-      "c. Ra lệnh cho quần chúng",
-      "d. Phục tùng mọi ý muốn của quần chúng"
-    ],
-    "answer": "b"
+    "id": 179,
+    "question": "Trong các động lực của chủ nghĩa xã hội, theo Hồ Chí Minh động lực nào là quan trọng nhất, quyết định nhất?",
+    "options": ["Động lực kinh tế", "Động lực chính trị", "Động lực con người", "Động lực văn hóa"],
+    "answer": "Động lực con người"
   },
   {
-    "number": 183,
-    "question": "Nguy cơ lớn nhất của một Đảng cầm quyền theo Hồ Chí Minh là:",
-    "options": [
-      "a. Diễn biến hòa bình",
-      "b. Sai lầm về đường lối và suy thoái đạo đức",
-      "c. Tụt hậu kinh tế",
-      "d. Thiếu cán bộ trẻ"
-    ],
-    "answer": "b"
+    "id": 180,
+    "question": "Theo Hồ Chí Minh, đặc điểm lớn nhất của thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta là gì?",
+    "options": ["Từ một nước nông nghiệp lạc hậu tiến thẳng lên CNXH", "Bị các đế quốc bao vây", "Từ một nước nông nghiệp lạc hậu tiến lên CNXH không kinh qua giai đoạn phát triển TBCN", "Kinh tế còn nghèo nàn"],
+    "answer": "Từ một nước nông nghiệp lạc hậu tiến lên CNXH không kinh qua giai đoạn phát triển TBCN"
   },
   {
-    "number": 184,
-    "question": "Hồ Chí Minh khẳng định: “Đảng ta là một Đảng cầm quyền. Mỗi đảng viên phải thật sự thấm nhuần...”:",
-    "options": [
-      "a. Mục tiêu của Đảng",
-      "b. Nền tảng tư tưởng",
-      "c. Đạo đức cách mạng",
-      "d. Đường lối đối ngoại"
-    ],
-    "answer": "c"
+    "id": 181,
+    "question": "“Chủ nghĩa xã hội là lấy nhà máy, xe lửa, ruộng đất … làm của chung”. Đây là định nghĩa của Hồ Chí Minh về chủ nghĩa xã hội dưới góc độ nào?",
+    "options": ["Chính trị", "Kinh tế", "Xã hội", "Văn hóa"],
+    "answer": "Kinh tế"
   },
   {
-    "number": 185,
-    "question": "Đảng Cộng sản Việt Nam là sản phẩm của sự kết hợp:",
-    "options": [
-      "a. Chủ nghĩa Mác - Lênin với phong trào yêu nước",
-      "b. Chủ nghĩa Mác - Lênin với phong trào công nhân",
-      "c. Chủ nghĩa Mác - Lênin với phong trào công nhân và phong trào yêu nước",
-      "d. Phong trào công nhân và phong trào yêu nước"
-    ],
-    "answer": "c"
+    "id": 182,
+    "question": "Hồ Chí Minh quan niệm về mục tiêu của chủ nghĩa xã hội ở nước ta là:",
+    "options": ["Độc lập, tự do", "Đời sống vật chất và văn hóa của nhân dân không ngừng được nâng cao", "Nước ta được độc lập, dân ta được tự do", "Nước giàu, dân mạnh"],
+    "answer": "Đời sống vật chất và văn hóa của nhân dân không ngừng được nâng cao"
   },
   {
-    "number": 186,
-    "question": "Theo Hồ Chí Minh, nền tảng tư tưởng của Đảng phải dựa trên:",
-    "options": [
-      "a. Chủ nghĩa Mác – Lênin",
-      "b. Kinh nghiệm quốc tế",
-      "c. Truyền thống dân tộc",
-      "d. Ý chí của lãnh đạo"
-    ],
-    "answer": "a"
+    "id": 183,
+    "question": "Theo Hồ Chí Minh, con đường đi lên chủ nghĩa xã hội trong công nghiệp là:",
+    "options": ["Ưu tiên phát triển công nghiệp nặng", "Ưu tiên phát triển công nghiệp nhẹ", "Công nghiệp hóa xã hội chủ nghĩa", "Phát triển tiểu thủ công nghiệp"],
+    "answer": "Công nghiệp hóa xã hội chủ nghĩa"
   },
   {
-    "number": 187,
-    "question": "Tư tưởng đại đoàn kết dân tộc của Hồ Chí Minh hình thành từ:",
-    "options": [
-      "a. Truyền thống đoàn kết dân tộc Việt Nam",
-      "b. Quan điểm chủ nghĩa Mác – Lênin về vai trò quần chúng",
-      "c. Thực tiễn cách mạng Việt Nam và thế giới",
-      "d. Tất cả các phương án trên"
-    ],
-    "answer": "d"
+    "id": 184,
+    "question": "Theo Hồ Chí Minh, mâu thuẫn cơ bản trong thời kỳ quá độ là gì?",
+    "options": ["Mâu thuẫn giữa nhân dân và các thế lực thù địch", "Mâu thuẫn giữa nhu cầu phát triển cao với thực trạng kinh tế - xã hội thấp kém", "Mâu thuẫn giữa giai cấp công nhân và giai cấp tư sản", "Mâu thuẫn giữa nông thôn và thành thị"],
+    "answer": "Mâu thuẫn giữa nhu cầu phát triển cao với thực trạng kinh tế - xã hội thấp kém"
   },
   {
-    "number": 188,
-    "question": "Trong tư tưởng Hồ Chí Minh, nền tảng của khối đại đoàn kết dân tộc là:",
-    "options": [
-      "a. Liên minh công – nông",
-      "b. Liên minh công – nông – trí thức",
-      "c. Sự đoàn kết giữa các dân tộc",
-      "d. Mặt trận dân tộc thống nhất"
-    ],
-    "answer": "b"
+    "id": 185,
+    "question": "Đảng Cộng sản Việt Nam do Hồ Chí Minh sáng lập và rèn luyện là Đảng của:",
+    "options": ["Giai cấp công nhân", "Giai cấp nông dân", "Nhân dân lao động", "Giai cấp công nhân, của nhân dân lao động và của cả dân tộc Việt Nam"],
+    "answer": "Giai cấp công nhân, của nhân dân lao động và của cả dân tộc Việt Nam"
   },
   {
-    "number": 189,
-    "question": "Mặt trận Việt Minh được thành lập vào năm nào?",
-    "options": [
-      "a. 1941",
-      "b. 1945",
-      "c. 1951",
-      "d. 1960"
-    ],
-    "answer": "a"
+    "id": 186,
+    "question": "Bản chất của Đảng Cộng sản Việt Nam được thể hiện ở:",
+    "options": ["Số lượng đảng viên", "Năng lực lãnh đạo", "Nền tảng tư tưởng, mục tiêu, lý tưởng và nguyên tắc tổ chức của Đảng", "Thành phần xuất thân của đảng viên"],
+    "answer": "Nền tảng tư tưởng, mục tiêu, lý tưởng và nguyên tắc tổ chức của Đảng"
   },
   {
-    "number": 190,
-    "question": "Mặt trận Tổ quốc Việt Nam được thành lập vào năm nào?",
-    "options": [
-      "a. 1941",
-      "b. 1945",
-      "c. 1951",
-      "d. 1955"
-    ],
-    "answer": "d"
+    "id": 187,
+    "question": "Nền tảng tư tưởng của Đảng Cộng sản Việt Nam là:",
+    "options": ["Chủ nghĩa Mác - Lênin", "Tư tưởng Hồ Chí Minh", "Chủ nghĩa Mác - Lênin và tư tưởng Hồ Chí Minh", "Truyền thống dân tộc"],
+    "answer": "Chủ nghĩa Mác - Lênin và tư tưởng Hồ Chí Minh"
   },
   {
-    "number": 191,
-    "question": "Hồ Chí Minh soạn thảo bản Hiến pháp đầu tiên của nước ta vào năm nào?",
-    "options": [
-      "a. 1945",
-      "b. 1946",
-      "c. 1950",
-      "d. 1954"
-    ],
-    "answer": "b"
+    "id": 188,
+    "question": "Đảng Cộng sản Việt Nam trở thành Đảng cầm quyền từ khi nào?",
+    "options": ["Năm 1930", "Năm 1945", "Năm 1954", "Năm 1975"],
+    "answer": "Năm 1945"
   },
   {
-    "number": 192,
-    "question": "Nhà nước do dân theo tư tưởng Hồ Chí Minh là:",
-    "options": [
-      "a. Dân lựa chọn đại biểu",
-      "b. Dân ủng hộ, đóng thuế nuôi bộ máy",
-      "c. Dân có quyền kiểm soát, bãi miễn đại biểu",
-      "d. Cả a, b, c đều đúng"
-    ],
-    "answer": "d"
+    "id": 189,
+    "question": "Theo Hồ Chí Minh, Đảng lãnh đạo nhân dân bằng:",
+    "options": ["Mệnh lệnh", "Cưỡng bức", "Đường lối, phương châm, chính sách", "Áp đặt"],
+    "answer": "Đường lối, phương châm, chính sách"
   },
   {
-    "number": 193,
-    "question": "Điểm đặc sắc trong tư tưởng Hồ Chí Minh về nhà nước pháp quyền là:",
-    "options": [
-      "a. Chỉ dùng luật pháp",
-      "b. Chỉ dùng đạo đức",
-      "c. Kết hợp nhuần nhuyễn pháp luật và đạo đức",
-      "d. Đề cao quyền lực cá nhân"
-    ],
-    "answer": "c"
+    "id": 190,
+    "question": "Đảng Cộng sản Việt Nam lãnh đạo chính quyền nhà nước bằng:",
+    "options": ["Trực tiếp làm thay nhà nước", "Thông qua các tổ chức Đảng và đảng viên trong các cơ quan nhà nước", "Quyết định mọi công việc của nhà nước", "Thông qua hệ thống công an"],
+    "answer": "Thông qua các tổ chức Đảng và đảng viên trong các cơ quan nhà nước"
   },
   {
-    "number": 194,
-    "question": "Theo Hồ Chí Minh, “giặc nội xâm” nguy hiểm nhất là:",
-    "options": [
-      "a. Tham ô, lãng phí, quan liêu",
-      "b. Sự thiếu hiểu biết",
-      "c. Tệ nạn xã hội",
-      "d. Sự lười biếng"
-    ],
-    "answer": "a"
+    "id": 191,
+    "question": "Sức mạnh của Đảng nằm ở:",
+    "options": ["Số lượng đảng viên đông", "Sự đoàn kết thống nhất trong Đảng", "Vũ khí hiện đại", "Sự giúp đỡ quốc tế"],
+    "answer": "Sự đoàn kết thống nhất trong Đảng"
   },
   {
-    "number": 195,
-    "question": "Trong Di chúc, Hồ Chí Minh căn dặn việc đầu tiên cần làm sau khi kháng chiến thắng lợi là:",
-    "options": [
-      "a. Chỉnh đốn Đảng",
-      "b. Phát triển kinh tế",
-      "c. Củng cố quốc phòng",
-      "d. Mở rộng quan hệ quốc tế"
-    ],
-    "answer": "a"
+    "id": 192,
+    "question": "Nguyên tắc tổ chức cơ bản của Đảng Cộng sản Việt Nam là:",
+    "options": ["Tự phê bình và phê bình", "Đoàn kết thống nhất", "Tập trung dân chủ", "Kỷ luật nghiêm minh"],
+    "answer": "Tập trung dân chủ"
   },
   {
-    "number": 196,
-    "question": "Hồ Chí Minh coi văn hóa có mối quan hệ như thế nào với chính trị?",
-    "options": [
-      "a. Văn hóa phục vụ chính trị",
-      "b. Văn hóa nằm trong chính trị",
-      "c. Văn hóa độc lập với chính trị",
-      "d. Cả a và b"
-    ],
-    "answer": "d"
+    "id": 193,
+    "question": "“Đảng có vững cách mệnh mới thành công, cũng như người cầm lái có vững thuyền mới chạy”. Câu nói này trích từ tác phẩm nào của Hồ Chí Minh?",
+    "options": ["Bản án chế độ thực dân Pháp", "Đường Cách mệnh", "Chính cương vắn tắt", "Sửa đổi lối làm việc"],
+    "answer": "Đường Cách mệnh"
   },
   {
-    "number": 197,
-    "question": "Chủ thể của các nền văn hóa theo Hồ Chí Minh là ai?",
-    "options": [
-      "a. Thượng đế",
-      "b. Vĩ nhân",
-      "c. Con người",
-      "d. Tôn giáo"
-    ],
-    "answer": "c"
+    "id": 194,
+    "question": "Theo Hồ Chí Minh, Đảng cầm quyền vừa là người lãnh đạo, vừa là người gì của nhân dân?",
+    "options": ["Chủ nhân", "Đầy tớ thật trung thành", "Cấp trên", "Người quản lý"],
+    "answer": "Đầy tớ thật trung thành"
   },
   {
-    "number": 198,
-    "question": "Theo tư tưởng Hồ Chí Minh, “chữ Người” nghĩa là:",
-    "options": [
-      "a. Gia đình, bầu bạn",
-      "b. Đồng bào cả nước",
-      "c. Loài người",
-      "d. Cả a, b, c đều đúng"
-    ],
-    "answer": "d"
+    "id": 195,
+    "question": "Yếu tố nào sau đây không thuộc về quy luật hình thành Đảng Cộng sản Việt Nam?",
+    "options": ["Chủ nghĩa Mác - Lênin", "Phong trào yêu nước", "Phong trào công nhân", "Sự giúp đỡ của Quốc tế Cộng sản"],
+    "answer": "Sự giúp đỡ của Quốc tế Cộng sản"
   },
   {
-    "number": 199,
-    "question": "Hồ Chí Minh ví thanh niên như mùa nào trong năm?",
-    "options": [
-      "a. Mùa xuân",
-      "b. Mùa hạ",
-      "c. Mùa thu",
-      "d. Mùa đông"
-    ],
-    "answer": "a"
+    "id": 196,
+    "question": "Trong xây dựng Đảng về chính trị, vấn đề nào là quan trọng nhất?",
+    "options": ["Xây dựng đội ngũ cán bộ", "Xây dựng đường lối chính trị", "Xây dựng tổ chức", "Xây dựng kỷ luật"],
+    "answer": "Xây dựng đường lối chính trị"
   },
   {
-    "number": 200,
-    "question": "Để xây dựng đạo đức mới, Hồ Chí Minh nêu ra nguyên tắc nào?",
-    "options": [
-      "a. Nói đi đôi với làm",
-      "b. Xây đi đôi với chống",
-      "c. Tu dưỡng đạo đức suốt đời",
-      "d. Tất cả các phương án trên"
-    ],
-    "answer": "d"
+    "id": 197,
+    "question": "Chọn phương án sai theo tư tưởng Hồ Chí Minh về nguyên tắc xây dựng Đảng Cộng sản Việt Nam:",
+    "options": ["Tập trung dân chủ", "Thiểu số phục tùng đa số", "Tự phê bình và phê bình", "Đoàn kết thống nhất trong Đảng"],
+    "answer": "Thiểu số phục tùng đa số"
+  },
+  {
+    "id": 198,
+    "question": "Theo tư tưởng Hồ Chí Minh, Đảng Cộng sản Việt Nam phải được xây dựng theo:",
+    "options": ["3 nguyên tắc", "4 nguyên tắc", "5 nguyên tắc", "6 nguyên tắc"],
+    "answer": "5 nguyên tắc"
+  },
+  {
+    "id": 199,
+    "question": "Đảng phải chăm lo mối quan hệ giữa Đảng với nhân dân là nhằm:",
+    "options": ["Xác định vị thế cầm quyền của Đảng", "Xác định năng lực cầm quyền của Đảng", "Xác định phương thức cầm quyền của Đảng", "Tất cả các phương án trên đều đúng"],
+    "answer": "Tất cả các phương án trên đều đúng"
+  },
+  {
+    "id": 200,
+    "question": "Nguyên tắc xây dựng Đảng kiểu mới theo tư tưởng Hồ Chí Minh là:",
+    "options": ["Tập trung dân chủ; tập thể lãnh đạo cá nhân phụ trách", "Tự phê bình và phê bình", "Đoàn kết thống nhất trong Đảng", "Tất cả các nguyên tắc đều đúng"],
+    "answer": "Tất cả các nguyên tắc đều đúng"
+  },
+  {
+    "id": 201,
+    "question": "Theo Hồ Chí Minh, Nhà nước Việt Nam mang bản chất giai cấp nào?",
+    "options": ["Giai cấp công nhân", "Giai cấp nông dân", "Tầng lớp trí thức", "Đại diện cho toàn dân tộc"],
+    "answer": "Giai cấp công nhân"
+  },
+  {
+    "id": 202,
+    "question": "Bản chất giai cấp công nhân của Nhà nước Việt Nam thể hiện ở chỗ:",
+    "options": ["Do Đảng Cộng sản lãnh đạo", "Tính định hướng xã hội chủ nghĩa của sự phát triển đất nước", "Nguyên tắc tổ chức và hoạt động là tập trung dân chủ", "Tất cả các phương án trên đều đúng"],
+    "answer": "Tất cả các phương án trên đều đúng"
+  },
+  {
+    "id": 203,
+    "question": "Nhà nước của dân theo tư tưởng Hồ Chí Minh nghĩa là:",
+    "options": ["Dân là chủ", "Dân làm chủ", "Mọi quyền lực trong nhà nước và xã hội đều thuộc về nhân dân", "Nhân dân bầu ra nhà nước"],
+    "answer": "Mọi quyền lực trong nhà nước và xã hội đều thuộc về nhân dân"
+  },
+  {
+    "id": 204,
+    "question": "Nhà nước do dân theo tư tưởng Hồ Chí Minh là nhà nước:",
+    "options": ["Do nhân dân tổ chức nên", "Do nhân dân xây dựng và ủng hộ", "Do nhân dân kiểm soát", "Tất cả các phương án trên đều đúng"],
+    "answer": "Tất cả các phương án trên đều đúng"
+  },
+  {
+    "id": 205,
+    "question": "Nhà nước vì dân theo tư tưởng Hồ Chí Minh là nhà nước:",
+    "options": ["Phục vụ lợi ích của nhân dân", "Mọi công việc của nhà nước đều vì lợi ích của dân", "Không có đặc quyền đặc lợi", "Tất cả các phương án trên đều đúng"],
+    "answer": "Tất cả các phương án trên đều đúng"
+  },
+  {
+    "id": 206,
+    "question": "Theo Hồ Chí Minh, quyền lực nhà nước là:",
+    "options": ["Quyền lực của các cơ quan nhà nước", "Quyền lực của đảng cầm quyền", "Thừa ủy quyền của nhân dân", "Quyền của người đứng đầu nhà nước"],
+    "answer": "Thừa ủy quyền của nhân dân"
+  },
+  {
+    "id": 207,
+    "question": "Nhà nước Việt Nam dân chủ cộng hòa được thành lập vào ngày tháng năm nào?",
+    "options": ["19/8/1945", "2/9/1945", "1/5/1945", "22/12/1944"],
+    "answer": "2/9/1945"
+  },
+  {
+    "id": 208,
+    "question": "Bản Hiến pháp đầu tiên của nước ta được thông qua vào năm nào?",
+    "options": ["1945", "1946", "1959", "1980"],
+    "answer": "1946"
+  },
+  {
+    "id": 209,
+    "question": "Ai là người chủ trì soạn thảo Hiến pháp năm 1946?",
+    "options": ["Trường Chinh", "Phạm Văn Đồng", "Hồ Chí Minh", "Võ Nguyên Giáp"],
+    "answer": "Hồ Chí Minh"
+  },
+  {
+    "id": 210,
+    "question": "Điểm đặc biệt nhất của bộ máy Nhà nước theo tư tưởng Hồ Chí Minh là gì?",
+    "options": ["Tính pháp quyền", "Tính nhân dân", "Tính dân chủ", "Tính thống nhất"],
+    "answer": "Tính pháp quyền"
+  },
+  {
+    "id": 211,
+    "question": "Theo Hồ Chí Minh, muốn xây dựng một nhà nước pháp quyền có hiệu lực pháp lý mạnh mẽ thì việc đầu tiên cần làm là:",
+    "options": ["Xây dựng quân đội mạnh", "Xây dựng hệ thống pháp luật", "Tổ chức tổng tuyển cử để bầu ra Quốc hội", "Thiết lập quan hệ ngoại giao"],
+    "answer": "Tổ chức tổng tuyển cử để bầu ra Quốc hội"
+  },
+  {
+    "id": 212,
+    "question": "Theo Hồ Chí Minh, pháp luật trong nhà nước pháp quyền có vai trò:",
+    "options": ["Là công cụ để quản lý xã hội", "Đảm bảo quyền làm chủ của nhân dân", "Để trừng trị kẻ thù", "Cả a và b đều đúng"],
+    "answer": "Cả a và b đều đúng"
+  },
+  {
+    "id": 213,
+    "question": "Hồ Chí Minh đặc biệt coi trọng công tác nào trong xây dựng nhà nước?",
+    "options": ["Công tác cán bộ", "Công tác tuyên truyền", "Công tác kiểm tra", "Công tác thi đua"],
+    "answer": "Công tác cán bộ"
+  },
+  {
+    "id": 214,
+    "question": "Theo Hồ Chí Minh, tiêu chuẩn hàng đầu của người cán bộ là:",
+    "options": ["Trung thành với lý tưởng cách mạng", "Có trình độ chuyên môn cao", "Biết ngoại ngữ", "Gia đình có công với cách mạng"],
+    "answer": "Trung thành với lý tưởng cách mạng"
+  },
+  {
+    "id": 215,
+    "question": "Căn bệnh nào Hồ Chí Minh gọi là “giặc nội xâm”?",
+    "options": ["Lười biếng", "Tham ô, lãng phí, quan liêu", "Kiêu ngạo", "Chủ nghĩa cá nhân"],
+    "answer": "Tham ô, lãng phí, quan liêu"
+  },
+  {
+    "id": 216,
+    "question": "“Việc gì có lợi cho dân, ta phải hết sức làm. Việc gì có hại cho dân, ta phải hết sức tránh”. Câu nói này thể hiện tư tưởng nào của Hồ Chí Minh?",
+    "options": ["Nhà nước của dân", "Nhà nước do dân", "Nhà nước vì dân", "Nhà nước pháp quyền"],
+    "answer": "Nhà nước vì dân"
+  },
+  {
+    "id": 217,
+    "question": "Theo Hồ Chí Minh, dân chủ là:",
+    "options": ["Dân là chủ và dân làm chủ", "Quyền tự do ngôn luận", "Quyền bầu cử và ứng cử", "Quyền đi học"],
+    "answer": "Dân là chủ và dân làm chủ"
+  },
+  {
+    "id": 218,
+    "question": "Để có một nhà nước trong sạch, vững mạnh, Hồ Chí Minh chủ trương:",
+    "options": ["Kiên quyết chống ba thứ giặc nội xâm", "Tăng cường giáo dục đạo đức cách mạng", "Sử dụng pháp luật để trừng trị tham nhũng", "Tất cả các phương án trên"],
+    "answer": "Tất cả các phương án trên"
+  },
+  {
+    "id": 219,
+    "question": "Theo Hồ Chí Minh, Đại đoàn kết dân tộc là:",
+    "options": ["Mục tiêu của cách mạng", "Nhiệm vụ hàng đầu của cách mạng", "Lực lượng của cách mạng", "Tất cả các phương án trên"],
+    "answer": "Tất cả các phương án trên"
+  },
+  {
+    "id": 220,
+    "question": "Lực lượng nòng cốt của khối Đại đoàn kết dân tộc theo Hồ Chí Minh là:",
+    "options": ["Công nhân và trí thức", "Công nhân và nông dân", "Liên minh công - nông và lao động trí thức", "Toàn thể dân tộc Việt Nam"],
+    "answer": "Liên minh công - nông và lao động trí thức"
+  },
+  {
+    "id": 221,
+    "question": "Hình thức tổ chức của khối đại đoàn kết dân tộc là gì?",
+    "options": ["Đảng Cộng sản", "Mặt trận dân tộc thống nhất", "Chính phủ", "Các hội quần chúng"],
+    "answer": "Mặt trận dân tộc thống nhất"
+  },
+  {
+    "id": 222,
+    "question": "Nguyên tắc quan trọng nhất trong hoạt động của Mặt trận dân tộc thống nhất là gì?",
+    "options": ["Thương lượng dân chủ", "Thống nhất hành động", "Đoàn kết lâu dài", "Hiệp thương dân chủ"],
+    "answer": "Hiệp thương dân chủ"
+  },
+  {
+    "id": 223,
+    "question": "“Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công”. Câu nói này của Hồ Chí Minh nhấn mạnh vai trò gì?",
+    "options": ["Sức mạnh của sự đoàn kết", "Ý nghĩa của chiến thắng", "Phương pháp cách mạng", "Mục đích của cuộc đấu tranh"],
+    "answer": "Sức mạnh của sự đoàn kết"
+  },
+  {
+    "id": 224,
+    "question": "Theo Hồ Chí Minh, muốn đoàn kết được các dân tộc khác trên thế giới thì trước hết phải:",
+    "options": ["Có tiền", "Có vũ khí", "Đoàn kết trong nước", "Có quan hệ ngoại giao"],
+    "answer": "Đoàn kết trong nước"
+  },
+  {
+    "id": 225,
+    "question": "Hồ Chí Minh là người đặt nền móng cho quan hệ ngoại giao giữa Việt Nam và quốc gia nào đầu tiên?",
+    "options": ["Liên Xô", "Trung Quốc", "Pháp", "Các nước láng giềng"],
+    "answer": "Liên Xô"
   }
 ]
-

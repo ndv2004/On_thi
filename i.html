@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Ôn tập trắc nghiệm - Từng thẻ một</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        min-height: 100vh;
+        padding: 30px 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Header */
+      .quiz-header {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 30px;
+        padding: 20px 28px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+      }
+
+      .title h1 {
+        font-size: 1.5rem;
+        color: #2d3748;
+      }
+
+      .title p {
+        font-size: 0.8rem;
+        color: #718096;
+      }
+
+      .stats {
+        display: flex;
+        gap: 20px;
+        background: #f7fafc;
+        padding: 8px 20px;
+        border-radius: 50px;
+      }
+
+      .stat {
+        text-align: center;
+      }
+
+      .stat-label {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #4a5568;
+      }
+
+      .stat-value {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #2c5282;
+        line-height: 1;
+      }
+
+      /* Thẻ câu hỏi chính */
+      .question-card {
+        background: white;
+        border-radius: 40px;
+        box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.35);
+        padding: 35px 30px 40px;
+        margin-bottom: 25px;
+        transition: all 0.3s ease;
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .question-number {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 6px 18px;
+        border-radius: 40px;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .skip-btn {
+        background: #fff3e0;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 40px;
+        font-weight: 600;
+        color: #e67e22;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 0.9rem;
+      }
+
+      .skip-btn:hover {
+        background: #ffe0b3;
+        transform: scale(0.97);
+      }
+
+      .question-text {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #1a202c;
+        margin: 25px 0 30px;
+      }
+
+      .options-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 30px;
+      }
+
+      .option {
+        background: #f7fafc;
+        border: 2px solid #e2e8f0;
+        border-radius: 60px;
+        padding: 14px 22px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .option:hover {
+        background: #edf2f7;
+        border-color: #cbd5e0;
+      }
+
+      .option.selected {
+        background: #c6f6d5;
+        border-color: #38a169;
+      }
+
+      .option.disabled {
+        pointer-events: none;
+        opacity: 0.7;
+      }
+
+      .option-radio {
+        width: 22px;
+        height: 22px;
+        accent-color: #38a169;
+        cursor: pointer;
+      }
+
+      .option-text {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #2d3748;
+        flex: 1;
+      }
+
+      /* Phản hồi đúng/sai */
+      .feedback {
+        background: #ebf8ff;
+        border-radius: 20px;
+        padding: 18px 22px;
+        margin: 20px 0;
+        border-left: 6px solid #3182ce;
+      }
+
+      .feedback.correct {
+        background: #f0fff4;
+        border-left-color: #38a169;
+      }
+
+      .feedback.wrong {
+        background: #fff5f5;
+        border-left-color: #e53e3e;
+      }
+
+      .feedback-title {
+        font-weight: 800;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+      }
+
+      .feedback.correct .feedback-title {
+        color: #276749;
+      }
+
+      .feedback.wrong .feedback-title {
+        color: #c53030;
+      }
+
+      .correct-answer-show {
+        margin-top: 6px;
+        color: #2c5282;
+        font-weight: 500;
+      }
+
+      /* Nút điều khiển */
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .nav-btn {
+        flex: 1;
+        background: white;
+        border: 2px solid #cbd5e0;
+        padding: 14px;
+        border-radius: 60px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: #4a5568;
+      }
+
+      .nav-btn.primary {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border: none;
+        color: white;
+      }
+
+      .nav-btn.primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      .nav-btn:hover:not(.primary) {
+        background: #edf2f7;
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      /* Nút nộp bài */
+      .submit-area {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .submit-btn {
+        background: #e53e3e;
+        color: white;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 60px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+      }
+
+      .submit-btn:hover {
+        background: #c53030;
+        transform: scale(1.02);
+      }
+
+      /* Modal kết quả */
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s;
+      }
+
+      .modal.show {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .modal-content {
+        background: white;
+        max-width: 550px;
+        width: 90%;
+        border-radius: 48px;
+        padding: 35px;
+        text-align: center;
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+
+      .modal-content h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .score-big {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #38a169;
+        margin: 15px 0;
+      }
+
+      .result-list {
+        text-align: left;
+        margin: 20px 0;
+        max-height: 350px;
+        overflow-y: auto;
+      }
+
+      .result-item {
+        padding: 12px;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .result-item.correct {
+        color: #276749;
+      }
+
+      .result-item.wrong {
+        color: #c53030;
+      }
+
+      .close-modal {
+        background: #4a5568;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+
+      @media (max-width: 600px) {
+        .question-text {
+          font-size: 1.2rem;
+        }
+        .quiz-header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-header">
+        <div class="title">
+          <h1>📚 Ôn tập trắc nghiệm</h1>
+          <p>Mỗi thẻ một câu • Chọn xem đúng/sai ngay</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">Đã làm</div>
+            <div class="stat-value" id="answeredCount">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Đúng</div>
+            <div class="stat-value" id="correctCount">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Tổng</div>
+            <div class="stat-value" id="totalCount">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thẻ câu hỏi hiện tại -->
+      <div id="currentCard"></div>
+
+      <div class="submit-area">
+        <button class="submit-btn" id="submitBtn">
+          📊 Nộp bài & Xem tổng kết
+        </button>
+      </div>
+    </div>
+
+    <div id="resultModal" class="modal">
+      <div class="modal-content">
+        <h2>🎯 Kết quả ôn tập</h2>
+        <div class="score-big" id="finalScore">0/0</div>
+        <div id="resultList" class="result-list"></div>
+        <button class="close-modal" id="closeModalBtn">Tiếp tục ôn tập</button>
+      </div>
+    </div>
+
+    <script>
+      // Dữ liệu câu hỏi mẫu (tương tự cauhoi.json)
+      // Bạn có thể thay bằng fetch('./cauhoi.json') ở dưới
+      //   const SAMPLE_DATA = [
+      //     {
+      //       id: 1,
+      //       question:
+      //         "Nguyễn Ái Quốc gởi bản “Yêu sách của nhân dân An Nam” tới Hội nghị Vecxay vào ngày tháng năm nào?",
+      //       options: ["18/6/1917", "18/6/1919", "18/6/1918", "18/6/1920"],
+      //       answer: "18/6/1919",
+      //     },
+      //     {
+      //       id: 2,
+      //       question:
+      //         "Nguyễn Ái Quốc đọc “Sơ thảo lần thứ nhất Luận cương về vấn đề dân tộc và vấn đề thuộc địa” của V.I.Lênin vào thời gian nào?",
+      //       options: ["7/1917", "7/1920", "7/1918", "7/1922"],
+      //       answer: "7/1920",
+      //     },
+      //     {
+      //       id: 3,
+      //       question:
+      //         "Trong thời gian ở nước ngoài, Nguyễn Tất Thành đã làm những công việc gì?",
+      //       options: [
+      //         "Phụ bếp, cào tuyết",
+      //         "Thợ ảnh, làm bánh",
+      //         "Đốt lò, bán báo",
+      //         "Tất cả các công việc trên",
+      //       ],
+      //       answer: "Tất cả các công việc trên",
+      //     },
+      //     {
+      //       number: 151,
+      //       question:
+      //         "Theo Hồ Chí Minh, ưu điểm lớn nhất của chủ nghĩa tam dân của Tôn Trung Sơn đối với nước ta là:",
+      //       options: [
+      //         "a. Chống phong kiến",
+      //         "b. Đấu tranh vì tự do, dân chủ",
+      //         "c. Phù hợp với điều kiện thực tế nước ta",
+      //         "d. Đem lại độc lập, tự do",
+      //       ],
+      //       answer: "c",
+      //     },
+      //     {
+      //       number: 152,
+      //       question:
+      //         "Tư tưởng Hồ Chí Minh được hình thành từ những tiền đề tư tưởng – lý luận nào?",
+      //       options: [
+      //         "a. Chủ nghĩa Mác – Lênin",
+      //         "b. Những giá trị truyền thống tốt đẹp của dân tộc",
+      //         "c. Tinh hoa văn hóa nhân loại",
+      //         "d. Tất cả a, b, c",
+      //       ],
+      //       answer: "d",
+      //     },
+      //   ];
+
+      let questions = []; // Mảng câu hỏi đã chuẩn hóa
+      let userAnswers = []; // Đáp án người dùng chọn (lưu string)
+      let answerStatus = []; // true: đúng, false: sai, null: chưa chọn hoặc bỏ qua
+      let skipped = []; // true nếu bỏ qua câu này
+      let currentIndex = 0; // Chỉ số câu hiện tại (0-based)
+      let quizLocked = false; // Sau khi chọn đáp án, có feedback rồi thì khóa để không chọn lại câu đó nữa
+
+      // Hàm chuẩn hóa dữ liệu (xử lý id/number)
+      function normalizeQuestions(raw) {
+        return raw.map((item, idx) => ({
+          id:
+            item.id !== undefined
+              ? item.id
+              : item.number !== undefined
+                ? item.number
+                : idx + 1,
+          question: item.question,
+          options: [...item.options],
+          answer: String(item.answer).trim(),
+        }));
+      }
+
+      // Tải dữ liệu (fetch json nếu có, fallback mẫu)
+      async function loadQuestions() {
+        try {
+          const response = await fetch("./questions.json");
+          if (response.ok) {
+            const data = await response.json();
+            if (Array.isArray(data) && data.length) {
+              questions = normalizeQuestions(data);
+              return;
+            }
+          }
+        } catch (e) {
+          console.log("Không tìm thấy file cauhoi.json, dùng dữ liệu mẫu");
+        }
+        questions = normalizeQuestions(SAMPLE_DATA);
+      }
+
+      // Khởi tạo trạng thái
+      function initState() {
+        userAnswers = new Array(questions.length).fill(null);
+        answerStatus = new Array(questions.length).fill(null);
+        skipped = new Array(questions.length).fill(false);
+        currentIndex = 0;
+        quizLocked = false;
+        updateStats();
+      }
+
+      // Cập nhật thống kê header
+      function updateStats() {
+        const answered = userAnswers.filter(
+          (a) => a !== null && a !== "",
+        ).length;
+        const correct = answerStatus.filter((s) => s === true).length;
+        document.getElementById("answeredCount").innerText = answered;
+        document.getElementById("correctCount").innerText = correct;
+        document.getElementById("totalCount").innerText = questions.length;
+      }
+
+      // Kiểm tra đáp án đúng/sai
+      function checkAnswer(selected, correctAnswer) {
+        return selected.trim() === correctAnswer;
+      }
+
+      // Xử lý khi người dùng chọn một đáp án
+      function selectAnswer(selectedValue) {
+        if (quizLocked) return; // Đã chọn rồi, không cho chọn lại câu này
+
+        const currentQ = questions[currentIndex];
+        const isCorrect = checkAnswer(selectedValue, currentQ.answer);
+
+        // Lưu kết quả
+        userAnswers[currentIndex] = selectedValue;
+        answerStatus[currentIndex] = isCorrect;
+        skipped[currentIndex] = false; // Hủy bỏ qua nếu có
+
+        // Cập nhật UI với feedback
+        renderCurrentCardWithFeedback(
+          selectedValue,
+          isCorrect,
+          currentQ.answer,
+        );
+        quizLocked = true; // Khóa câu này, không chọn lại được nữa
+
+        updateStats();
+      }
+
+      // Bỏ qua câu hỏi
+      function skipQuestion() {
+        if (quizLocked) {
+          // Nếu đã chọn đáp án rồi, không cho bỏ qua nữa (có thể cho nhưng không hợp lý)
+          return;
+        }
+        skipped[currentIndex] = true;
+        userAnswers[currentIndex] = null;
+        answerStatus[currentIndex] = null;
+        updateStats();
+        // Chuyển sang câu tiếp theo luôn
+        goToNextQuestion();
+      }
+
+      // Hiển thị thẻ hiện tại kèm feedback (sau khi chọn)
+      function renderCurrentCardWithFeedback(
+        selectedValue,
+        isCorrect,
+        correctAnswer,
+      ) {
+        const container = document.getElementById("currentCard");
+        const q = questions[currentIndex];
+
+        let optionsHtml = "";
+        q.options.forEach((opt) => {
+          const isSelected = opt === selectedValue;
+          optionsHtml += `
+                <div class="option ${isSelected ? "selected" : ""} disabled">
+                    <div class="option-text">${escapeHtml(opt)}</div>
+                </div>
+            `;
+        });
+
+        const feedbackClass = isCorrect ? "correct" : "wrong";
+        const feedbackTitle = isCorrect ? "🎉 Chính xác!" : "😞 Sai rồi!";
+        const extraHtml = !isCorrect
+          ? `<div class="correct-answer-show">📖 Đáp án đúng: ${escapeHtml(correctAnswer)}</div>`
+          : "";
+
+        const html = `
+            <div class="question-card">
+                <div class="card-header">
+                    <span class="question-number">Câu ${q.id}</span>
+                    <button class="skip-btn" id="skipBtn" style="opacity:0.5; pointer-events:none;" disabled>⏭️ Đã chọn</button>
+                </div>
+                <div class="question-text">${escapeHtml(q.question)}</div>
+                <div class="options-list">
+                    ${optionsHtml}
+                </div>
+                <div class="feedback ${feedbackClass}">
+                    <div class="feedback-title">${feedbackTitle}</div>
+                    ${extraHtml}
+                </div>
+                <div class="nav-buttons">
+                    <button class="nav-btn" id="prevBtn" ${currentIndex === 0 ? "disabled" : ""}>◀ Câu trước</button>
+                    <button class="nav-btn primary" id="nextBtn">Câu tiếp theo ▶</button>
+                </div>
+            </div>
+        `;
+        container.innerHTML = html;
+        attachNavEvents();
+      }
+
+      // Hiển thị thẻ bình thường (chưa chọn đáp án)
+      function renderCurrentCard() {
+        const container = document.getElementById("currentCard");
+        if (!questions.length) {
+          container.innerHTML =
+            '<div class="question-card">Đang tải câu hỏi...</div>';
+          return;
+        }
+
+        const q = questions[currentIndex];
+
+        let optionsHtml = "";
+        q.options.forEach((opt, idx) => {
+          optionsHtml += `
+                <div class="option" data-value="${escapeHtml(opt)}">
+                    <input type="radio" name="question" id="opt_${idx}" value="${escapeHtml(opt)}" class="option-radio">
+                    <label for="opt_${idx}" class="option-text">${escapeHtml(opt)}</label>
+                </div>
+            `;
+        });
+
+        const html = `
+            <div class="question-card">
+                <div class="card-header">
+                    <span class="question-number">Câu ${q.id}</span>
+                    <button class="skip-btn" id="skipBtn"></button>
+                </div>
+                <div class="question-text">${escapeHtml(q.question)}</div>
+                <div class="options-list" id="optionsList">
+                    ${optionsHtml}
+                </div>
+                <div class="nav-buttons">
+                    <button class="nav-btn" id="prevBtn" ${currentIndex === 0 ? "disabled" : ""}>◀ Câu trước</button>
+                    <button class="nav-btn primary" id="nextBtn">Câu tiếp theo ▶</button>
+                </div>
+            </div>
+        `;
+        container.innerHTML = html;
+
+        // Gắn sự kiện cho các option
+        const optionDivs = document.querySelectorAll(".option");
+        optionDivs.forEach((div) => {
+          div.addEventListener("click", (e) => {
+            // Tìm radio bên trong
+            const radio = div.querySelector(".option-radio");
+            if (radio && !quizLocked) {
+              radio.checked = true;
+              selectAnswer(radio.value);
+            }
+          });
+        });
+
+        // Gắn sự kiện cho radio
+        const radios = document.querySelectorAll(".option-radio");
+        radios.forEach((radio) => {
+          radio.addEventListener("change", (e) => {
+            if (!quizLocked) {
+              selectAnswer(e.target.value);
+            }
+          });
+        });
+
+        // Nút bỏ qua
+        const skipBtn = document.getElementById("skipBtn");
+        if (skipBtn) {
+          skipBtn.addEventListener("click", () => skipQuestion());
+        }
+
+        attachNavEvents();
+      }
+
+      // Gắn sự kiện điều hướng
+      function attachNavEvents() {
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        if (prevBtn) {
+          prevBtn.addEventListener("click", () => goToPrevQuestion());
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener("click", () => goToNextQuestion());
+        }
+      }
+
+      // Chuyển câu trước
+      function goToPrevQuestion() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          quizLocked = false; // Mở khóa cho câu mới
+          // Kiểm tra xem câu này đã được trả lời hay bỏ qua chưa
+          if (
+            userAnswers[currentIndex] !== null ||
+            skipped[currentIndex] === true
+          ) {
+            // Nếu câu đã được trả lời hoặc bỏ qua, hiển thị dạng đã lock
+            if (skipped[currentIndex]) {
+              renderSkippedCard();
+            } else if (
+              userAnswers[currentIndex] !== null &&
+              answerStatus[currentIndex] !== null
+            ) {
+              // Hiển thị lại feedback
+              const q = questions[currentIndex];
+              renderCurrentCardWithFeedback(
+                userAnswers[currentIndex],
+                answerStatus[currentIndex],
+                q.answer,
+              );
+              quizLocked = true;
+            }
+          } else {
+            renderCurrentCard();
+          }
+        }
+      }
+
+      // Chuyển câu tiếp theo
+      function goToNextQuestion() {
+        if (currentIndex < questions.length - 1) {
+          currentIndex++;
+          quizLocked = false;
+          if (
+            userAnswers[currentIndex] !== null ||
+            skipped[currentIndex] === true
+          ) {
+            if (skipped[currentIndex]) {
+              renderSkippedCard();
+            } else if (
+              userAnswers[currentIndex] !== null &&
+              answerStatus[currentIndex] !== null
+            ) {
+              const q = questions[currentIndex];
+              renderCurrentCardWithFeedback(
+                userAnswers[currentIndex],
+                answerStatus[currentIndex],
+                q.answer,
+              );
+              quizLocked = true;
+            }
+          } else {
+            renderCurrentCard();
+          }
+        } else {
+          // Hết câu, thông báo có thể nộp bài
+          alert("📌 Bạn đã xem hết các câu! Nhấn 'Nộp bài' để xem tổng kết.");
+        }
+      }
+
+      // Hiển thị thẻ đã bỏ qua
+      function renderSkippedCard() {
+        const container = document.getElementById("currentCard");
+        const q = questions[currentIndex];
+        const html = `
+            <div class="question-card">
+                <div class="card-header">
+                    <span class="question-number">Câu ${q.id}</span>
+                    <button class="skip-btn" id="unskipBtn" style="background:#e53e3e; color:white;">↺ Hủy bỏ qua</button>
+                </div>
+                <div class="question-text">${escapeHtml(q.question)}</div>
+                <div class="feedback wrong">
+                    <div class="feedback-title">⏩ Bạn đã bỏ qua câu này</div>
+                    <div class="correct-answer-show">Nhấn "Hủy bỏ qua" để trả lời lại</div>
+                </div>
+                <div class="nav-buttons">
+                    <button class="nav-btn" id="prevBtn" ${currentIndex === 0 ? "disabled" : ""}>◀ Câu trước</button>
+                    <button class="nav-btn primary" id="nextBtn">Câu tiếp theo ▶</button>
+                </div>
+            </div>
+        `;
+        container.innerHTML = html;
+
+        const unskipBtn = document.getElementById("unskipBtn");
+        if (unskipBtn) {
+          unskipBtn.addEventListener("click", () => {
+            skipped[currentIndex] = false;
+            userAnswers[currentIndex] = null;
+            answerStatus[currentIndex] = null;
+            quizLocked = false;
+            renderCurrentCard();
+            updateStats();
+          });
+        }
+        attachNavEvents();
+      }
+
+      // Xem kết quả tổng thể
+      function showFinalResult() {
+        let correctCount = 0;
+        let resultHtml = "";
+        for (let i = 0; i < questions.length; i++) {
+          const q = questions[i];
+          const isSkipped = skipped[i];
+          const userAns = userAnswers[i];
+          const isCorrect = answerStatus[i];
+
+          let statusText = "";
+          let statusClass = "";
+          if (isSkipped) {
+            statusText = "⏩ Bỏ qua";
+            statusClass = "wrong";
+          } else if (userAns === null) {
+            statusText = "❌ Chưa trả lời";
+            statusClass = "wrong";
+          } else if (isCorrect === true) {
+            statusText = "✅ Đúng";
+            statusClass = "correct";
+            correctCount++;
+          } else {
+            statusText = `❌ Sai (Đáp án: ${escapeHtml(q.answer)})`;
+            statusClass = "wrong";
+          }
+
+          resultHtml += `
+                <div class="result-item ${statusClass}">
+                    <strong>Câu ${q.id}</strong>: ${statusText}<br>
+                    <span style="font-size:0.8rem;">${escapeHtml(q.question.substring(0, 80))}...</span>
+                </div>
+            `;
+        }
+
+        document.getElementById("finalScore").innerHTML =
+          `${correctCount} / ${questions.length}`;
+        document.getElementById("resultList").innerHTML = resultHtml;
+        document.getElementById("resultModal").classList.add("show");
+      }
+
+      // Khởi chạy
+      async function init() {
+        await loadQuestions();
+        initState();
+        renderCurrentCard();
+
+        document
+          .getElementById("submitBtn")
+          .addEventListener("click", showFinalResult);
+        document
+          .getElementById("closeModalBtn")
+          .addEventListener("click", () => {
+            document.getElementById("resultModal").classList.remove("show");
+          });
+        // Đóng modal khi click ra ngoài
+        const modal = document.getElementById("resultModal");
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) modal.classList.remove("show");
+        });
+      }
+
+      function escapeHtml(str) {
+        if (!str) return "";
+        return str.replace(/[&<>]/g, function (m) {
+          if (m === "&") return "&amp;";
+          if (m === "<") return "&lt;";
+          if (m === ">") return "&gt;";
+          return m;
+        });
+      }
+
+      init();
+    </script>
+  </body>
+</html>

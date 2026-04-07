@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
-    <title>Ôn tập trắc nghiệm - Từng thẻ một</title>
+    <title>Ôn tập trắc nghiệm - Random câu hỏi</title>
     <style>
       * {
         margin: 0;
@@ -19,14 +19,28 @@
         font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
         min-height: 100vh;
         padding: 30px 20px;
+        position: relative;
+        transition: all 0.3s ease;
       }
 
+      /* Hiệu ứng flash */
+      body.flash-correct {
+        background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+        transition: 0.1s;
+      }
+
+      body.flash-wrong {
+        background: linear-gradient(135deg, #fc8181 0%, #e53e3e 100%);
+        transition: 0.1s;
+      }
+
+      /* Container chính */
       .container {
         max-width: 800px;
         margin: 0 auto;
       }
 
-      /* Header */
+      /* Header với nút chuyển trang */
       .quiz-header {
         background: rgba(255, 255, 255, 0.95);
         border-radius: 30px;
@@ -38,7 +52,7 @@
         flex-wrap: wrap;
         gap: 15px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
+        position: relative;
       }
 
       .title h1 {
@@ -49,6 +63,28 @@
       .title p {
         font-size: 0.8rem;
         color: #718096;
+      }
+
+      /* Nút chuyển trang */
+      .nav-page-btn {
+        background: linear-gradient(135deg, #4299e1, #3182ce);
+        color: white;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+      }
+
+      .nav-page-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(66, 153, 225, 0.4);
       }
 
       .stats {
@@ -76,7 +112,25 @@
         line-height: 1;
       }
 
-      /* Thẻ câu hỏi chính */
+      /* Nút random mới */
+      .random-btn {
+        background: linear-gradient(135deg, #ed8936, #dd6b20);
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 0.85rem;
+      }
+
+      .random-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(221, 107, 32, 0.4);
+      }
+
+      /* Thẻ câu hỏi */
       .question-card {
         background: white;
         border-radius: 40px;
@@ -84,6 +138,42 @@
         padding: 35px 30px 40px;
         margin-bottom: 25px;
         transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Hiệu ứng rung */
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-8px);
+        }
+        75% {
+          transform: translateX(8px);
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.02);
+        }
+      }
+
+      .question-card.correct-animation {
+        animation: bounce 0.4s ease;
+        background: linear-gradient(white, #f0fff4);
+      }
+
+      .question-card.wrong-animation {
+        animation: shake 0.4s ease;
+        background: linear-gradient(white, #fff5f5);
       }
 
       .card-header {
@@ -151,6 +241,7 @@
       .option:hover {
         background: #edf2f7;
         border-color: #cbd5e0;
+        transform: scale(1.01);
       }
 
       .option.selected {
@@ -177,13 +268,24 @@
         flex: 1;
       }
 
-      /* Phản hồi đúng/sai */
+      /* Phản hồi */
       .feedback {
-        background: #ebf8ff;
         border-radius: 20px;
         padding: 18px 22px;
         margin: 20px 0;
         border-left: 6px solid #3182ce;
+        animation: slideIn 0.3s ease;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .feedback.correct {
@@ -252,17 +354,6 @@
         background: #edf2f7;
       }
 
-      .nav-btn:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-      }
-
-      /* Nút nộp bài */
-      .submit-area {
-        text-align: center;
-        margin-top: 20px;
-      }
-
       .submit-btn {
         background: #e53e3e;
         color: white;
@@ -273,7 +364,7 @@
         font-size: 1rem;
         cursor: pointer;
         transition: all 0.2s;
-        box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+        margin-top: 10px;
       }
 
       .submit-btn:hover {
@@ -281,7 +372,7 @@
         transform: scale(1.02);
       }
 
-      /* Modal kết quả */
+      /* Modal */
       .modal {
         position: fixed;
         top: 0;
@@ -315,11 +406,6 @@
         overflow-y: auto;
       }
 
-      .modal-content h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-      }
-
       .score-big {
         font-size: 3.5rem;
         font-weight: 800;
@@ -347,23 +433,9 @@
         color: #c53030;
       }
 
-      .close-modal {
-        background: #4a5568;
-        color: white;
-        border: none;
-        padding: 12px 28px;
-        border-radius: 40px;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 15px;
-      }
-
       @media (max-width: 600px) {
         .question-text {
           font-size: 1.2rem;
-        }
-        .quiz-header {
-          flex-direction: column;
         }
       }
     </style>
@@ -372,8 +444,14 @@
     <div class="container">
       <div class="quiz-header">
         <div class="title">
-          <h1>📚 Ôn tập trắc nghiệm</h1>
-          <p>Mỗi thẻ một câu • Chọn xem đúng/sai ngay</p>
+          <h1>🎲 Ôn tập trắc nghiệm</h1>
+          <p>Random câu hỏi • Hiệu ứng sinh động</p>
+        </div>
+        <div style="display: flex; gap: 12px">
+          <button class="random-btn" id="randomBtn">🎲 Random câu</button>
+          <button class="nav-page-btn" id="switchPageBtn">
+            📄 Trang chính →
+          </button>
         </div>
         <div class="stats">
           <div class="stat">
@@ -391,10 +469,9 @@
         </div>
       </div>
 
-      <!-- Thẻ câu hỏi hiện tại -->
       <div id="currentCard"></div>
 
-      <div class="submit-area">
+      <div style="text-align: center">
         <button class="submit-btn" id="submitBtn">
           📊 Nộp bài & Xem tổng kết
         </button>
@@ -406,74 +483,87 @@
         <h2>🎯 Kết quả ôn tập</h2>
         <div class="score-big" id="finalScore">0/0</div>
         <div id="resultList" class="result-list"></div>
-        <button class="close-modal" id="closeModalBtn">Tiếp tục ôn tập</button>
+        <button
+          class="close-modal"
+          id="closeModalBtn"
+          style="
+            background: #4a5568;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 40px;
+            cursor: pointer;
+          "
+        >
+          Đóng
+        </button>
       </div>
     </div>
 
     <script>
-      // Dữ liệu câu hỏi mẫu (tương tự cauhoi.json)
-      // Bạn có thể thay bằng fetch('./cauhoi.json') ở dưới
-      //   const SAMPLE_DATA = [
-      //     {
-      //       id: 1,
-      //       question:
-      //         "Nguyễn Ái Quốc gởi bản “Yêu sách của nhân dân An Nam” tới Hội nghị Vecxay vào ngày tháng năm nào?",
-      //       options: ["18/6/1917", "18/6/1919", "18/6/1918", "18/6/1920"],
-      //       answer: "18/6/1919",
-      //     },
-      //     {
-      //       id: 2,
-      //       question:
-      //         "Nguyễn Ái Quốc đọc “Sơ thảo lần thứ nhất Luận cương về vấn đề dân tộc và vấn đề thuộc địa” của V.I.Lênin vào thời gian nào?",
-      //       options: ["7/1917", "7/1920", "7/1918", "7/1922"],
-      //       answer: "7/1920",
-      //     },
-      //     {
-      //       id: 3,
-      //       question:
-      //         "Trong thời gian ở nước ngoài, Nguyễn Tất Thành đã làm những công việc gì?",
-      //       options: [
-      //         "Phụ bếp, cào tuyết",
-      //         "Thợ ảnh, làm bánh",
-      //         "Đốt lò, bán báo",
-      //         "Tất cả các công việc trên",
-      //       ],
-      //       answer: "Tất cả các công việc trên",
-      //     },
-      //     {
-      //       number: 151,
-      //       question:
-      //         "Theo Hồ Chí Minh, ưu điểm lớn nhất của chủ nghĩa tam dân của Tôn Trung Sơn đối với nước ta là:",
-      //       options: [
-      //         "a. Chống phong kiến",
-      //         "b. Đấu tranh vì tự do, dân chủ",
-      //         "c. Phù hợp với điều kiện thực tế nước ta",
-      //         "d. Đem lại độc lập, tự do",
-      //       ],
-      //       answer: "c",
-      //     },
-      //     {
-      //       number: 152,
-      //       question:
-      //         "Tư tưởng Hồ Chí Minh được hình thành từ những tiền đề tư tưởng – lý luận nào?",
-      //       options: [
-      //         "a. Chủ nghĩa Mác – Lênin",
-      //         "b. Những giá trị truyền thống tốt đẹp của dân tộc",
-      //         "c. Tinh hoa văn hóa nhân loại",
-      //         "d. Tất cả a, b, c",
-      //       ],
-      //       answer: "d",
-      //     },
-      //   ];
+      // Dữ liệu mẫu
+      // const SAMPLE_DATA = [
+      //   {
+      //     id: 1,
+      //     question:
+      //       "Nguyễn Ái Quốc gởi bản “Yêu sách của nhân dân An Nam” tới Hội nghị Vecxay vào ngày tháng năm nào?",
+      //     options: ["18/6/1917", "18/6/1919", "18/6/1918", "18/6/1920"],
+      //     answer: "18/6/1919",
+      //   },
+      //   {
+      //     id: 2,
+      //     question:
+      //       "Nguyễn Ái Quốc đọc “Sơ thảo lần thứ nhất Luận cương về vấn đề dân tộc và vấn đề thuộc địa” của V.I.Lênin vào thời gian nào?",
+      //     options: ["7/1917", "7/1920", "7/1918", "7/1922"],
+      //     answer: "7/1920",
+      //   },
+      //   {
+      //     id: 3,
+      //     question:
+      //       "Trong thời gian ở nước ngoài, Nguyễn Tất Thành đã làm những công việc gì?",
+      //     options: [
+      //       "Phụ bếp, cào tuyết",
+      //       "Thợ ảnh, làm bánh",
+      //       "Đốt lò, bán báo",
+      //       "Tất cả các công việc trên",
+      //     ],
+      //     answer: "Tất cả các công việc trên",
+      //   },
+      //   {
+      //     number: 151,
+      //     question:
+      //       "Theo Hồ Chí Minh, ưu điểm lớn nhất của chủ nghĩa tam dân của Tôn Trung Sơn đối với nước ta là:",
+      //     options: [
+      //       "a. Chống phong kiến",
+      //       "b. Đấu tranh vì tự do, dân chủ",
+      //       "c. Phù hợp với điều kiện thực tế nước ta",
+      //       "d. Đem lại độc lập, tự do",
+      //     ],
+      //     answer: "c",
+      //   },
+      //   {
+      //     number: 152,
+      //     question:
+      //       "Tư tưởng Hồ Chí Minh được hình thành từ những tiền đề tư tưởng – lý luận nào?",
+      //     options: [
+      //       "a. Chủ nghĩa Mác – Lênin",
+      //       "b. Những giá trị truyền thống tốt đẹp của dân tộc",
+      //       "c. Tinh hoa văn hóa nhân loại",
+      //       "d. Tất cả a, b, c",
+      //     ],
+      //     answer: "d",
+      //   },
+      // ];
 
-      let questions = []; // Mảng câu hỏi đã chuẩn hóa
-      let userAnswers = []; // Đáp án người dùng chọn (lưu string)
-      let answerStatus = []; // true: đúng, false: sai, null: chưa chọn hoặc bỏ qua
-      let skipped = []; // true nếu bỏ qua câu này
-      let currentIndex = 0; // Chỉ số câu hiện tại (0-based)
-      let quizLocked = false; // Sau khi chọn đáp án, có feedback rồi thì khóa để không chọn lại câu đó nữa
+      let questions = [];
+      let userAnswers = [];
+      let answerStatus = [];
+      let skipped = [];
+      let currentQuestionId = null; // Lưu ID câu hiện tại (dạng số thứ tự hiển thị)
+      let currentIndexInList = 0;
+      let quizLocked = false;
+      let questionOrder = []; // Mảng lưu thứ tự các câu hỏi đã random
 
-      // Hàm chuẩn hóa dữ liệu (xử lý id/number)
       function normalizeQuestions(raw) {
         return raw.map((item, idx) => ({
           id:
@@ -485,13 +575,13 @@
           question: item.question,
           options: [...item.options],
           answer: String(item.answer).trim(),
+          originalIndex: idx,
         }));
       }
 
-      // Tải dữ liệu (fetch json nếu có, fallback mẫu)
       async function loadQuestions() {
         try {
-          const response = await fetch("./questions.json");
+          const response = await fetch("./cauhoi.json");
           if (response.ok) {
             const data = await response.json();
             if (Array.isArray(data) && data.length) {
@@ -500,22 +590,45 @@
             }
           }
         } catch (e) {
-          console.log("Không tìm thấy file cauhoi.json, dùng dữ liệu mẫu");
+          console.log("Dùng dữ liệu mẫu");
         }
         questions = normalizeQuestions(SAMPLE_DATA);
       }
 
-      // Khởi tạo trạng thái
+      // Random thứ tự câu hỏi
+      function randomizeOrder() {
+        questionOrder = [...Array(questions.length).keys()];
+        for (let i = questionOrder.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [questionOrder[i], questionOrder[j]] = [
+            questionOrder[j],
+            questionOrder[i],
+          ];
+        }
+      }
+
       function initState() {
+        randomizeOrder();
         userAnswers = new Array(questions.length).fill(null);
         answerStatus = new Array(questions.length).fill(null);
         skipped = new Array(questions.length).fill(false);
-        currentIndex = 0;
+        currentIndexInList = 0;
+        updateCurrentQuestionId();
         quizLocked = false;
         updateStats();
       }
 
-      // Cập nhật thống kê header
+      function updateCurrentQuestionId() {
+        if (currentIndexInList < questionOrder.length) {
+          const originalIdx = questionOrder[currentIndexInList];
+          currentQuestionId = questions[originalIdx].id;
+        }
+      }
+
+      function getCurrentOriginalIndex() {
+        return questionOrder[currentIndexInList];
+      }
+
       function updateStats() {
         const answered = userAnswers.filter(
           (a) => a !== null && a !== "",
@@ -526,69 +639,115 @@
         document.getElementById("totalCount").innerText = questions.length;
       }
 
-      // Kiểm tra đáp án đúng/sai
-      function checkAnswer(selected, correctAnswer) {
-        return selected.trim() === correctAnswer;
+      // Hiệu ứng đặc biệt
+      function playEffect(isCorrect) {
+        const card = document.querySelector(".question-card");
+        const body = document.body;
+
+        if (isCorrect) {
+          // Hiệu ứng đúng: bounce + flash xanh
+          if (card) card.classList.add("correct-animation");
+          body.classList.add("flash-correct");
+          setTimeout(() => {
+            if (card) card.classList.remove("correct-animation");
+            body.classList.remove("flash-correct");
+          }, 400);
+
+          // Tạo confetti nhẹ
+          for (let i = 0; i < 30; i++) {
+            createFloatingElement("🎉", i);
+          }
+        } else {
+          // Hiệu ứng sai: rung + flash đỏ
+          if (card) card.classList.add("wrong-animation");
+          body.classList.add("flash-wrong");
+          setTimeout(() => {
+            if (card) card.classList.remove("wrong-animation");
+            body.classList.remove("flash-wrong");
+          }, 400);
+
+          // Tạo vài biểu tượng buồn
+          for (let i = 0; i < 15; i++) {
+            createFloatingElement("😢", i);
+          }
+        }
       }
 
-      // Xử lý khi người dùng chọn một đáp án
+      function createFloatingElement(emoji, index) {
+        const el = document.createElement("div");
+        el.innerText = emoji;
+        el.style.position = "fixed";
+        el.style.left = Math.random() * window.innerWidth + "px";
+        el.style.top = window.innerHeight - 100 + "px";
+        el.style.fontSize = 20 + Math.random() * 20 + "px";
+        el.style.pointerEvents = "none";
+        el.style.zIndex = "9999";
+        el.style.opacity = "1";
+        el.style.transition = "all 1s ease";
+        document.body.appendChild(el);
+
+        setTimeout(() => {
+          el.style.transform = `translateY(-${200 + Math.random() * 200}px)`;
+          el.style.opacity = "0";
+        }, 10);
+
+        setTimeout(() => {
+          el.remove();
+        }, 1000);
+      }
+
       function selectAnswer(selectedValue) {
-        if (quizLocked) return; // Đã chọn rồi, không cho chọn lại câu này
+        if (quizLocked) return;
 
-        const currentQ = questions[currentIndex];
-        const isCorrect = checkAnswer(selectedValue, currentQ.answer);
+        const originalIdx = getCurrentOriginalIndex();
+        const currentQ = questions[originalIdx];
+        const isCorrect = selectedValue.trim() === currentQ.answer;
 
-        // Lưu kết quả
-        userAnswers[currentIndex] = selectedValue;
-        answerStatus[currentIndex] = isCorrect;
-        skipped[currentIndex] = false; // Hủy bỏ qua nếu có
+        userAnswers[originalIdx] = selectedValue;
+        answerStatus[originalIdx] = isCorrect;
+        skipped[originalIdx] = false;
 
-        // Cập nhật UI với feedback
+        // Phát hiệu ứng
+        playEffect(isCorrect);
+
         renderCurrentCardWithFeedback(
           selectedValue,
           isCorrect,
           currentQ.answer,
         );
-        quizLocked = true; // Khóa câu này, không chọn lại được nữa
-
+        quizLocked = true;
         updateStats();
       }
 
-      // Bỏ qua câu hỏi
       function skipQuestion() {
-        if (quizLocked) {
-          // Nếu đã chọn đáp án rồi, không cho bỏ qua nữa (có thể cho nhưng không hợp lý)
-          return;
-        }
-        skipped[currentIndex] = true;
-        userAnswers[currentIndex] = null;
-        answerStatus[currentIndex] = null;
+        if (quizLocked) return;
+        const originalIdx = getCurrentOriginalIndex();
+        skipped[originalIdx] = true;
+        userAnswers[originalIdx] = null;
+        answerStatus[originalIdx] = null;
         updateStats();
-        // Chuyển sang câu tiếp theo luôn
         goToNextQuestion();
       }
 
-      // Hiển thị thẻ hiện tại kèm feedback (sau khi chọn)
       function renderCurrentCardWithFeedback(
         selectedValue,
         isCorrect,
         correctAnswer,
       ) {
+        const originalIdx = getCurrentOriginalIndex();
+        const q = questions[originalIdx];
         const container = document.getElementById("currentCard");
-        const q = questions[currentIndex];
 
         let optionsHtml = "";
         q.options.forEach((opt) => {
           const isSelected = opt === selectedValue;
-          optionsHtml += `
-                <div class="option ${isSelected ? "selected" : ""} disabled">
-                    <div class="option-text">${escapeHtml(opt)}</div>
-                </div>
-            `;
+          optionsHtml += `<div class="option ${isSelected ? "selected" : ""} disabled"><div class="option-text">${escapeHtml(opt)}</div></div>`;
         });
 
         const feedbackClass = isCorrect ? "correct" : "wrong";
-        const feedbackTitle = isCorrect ? "🎉 Chính xác!" : "😞 Sai rồi!";
+        const feedbackTitle = isCorrect
+          ? "🎉 Chính xác! Tuyệt vời!"
+          : "😞 Tiếc quá! Sai rồi!";
         const extraHtml = !isCorrect
           ? `<div class="correct-answer-show">📖 Đáp án đúng: ${escapeHtml(correctAnswer)}</div>`
           : "";
@@ -597,18 +756,16 @@
             <div class="question-card">
                 <div class="card-header">
                     <span class="question-number">Câu ${q.id}</span>
-                    <button class="skip-btn" id="skipBtn" style="opacity:0.5; pointer-events:none;" disabled>⏭️ Đã chọn</button>
+                    <button class="skip-btn" disabled style="opacity:0.5;">⏭️ Đã chọn</button>
                 </div>
                 <div class="question-text">${escapeHtml(q.question)}</div>
-                <div class="options-list">
-                    ${optionsHtml}
-                </div>
+                <div class="options-list">${optionsHtml}</div>
                 <div class="feedback ${feedbackClass}">
                     <div class="feedback-title">${feedbackTitle}</div>
                     ${extraHtml}
                 </div>
                 <div class="nav-buttons">
-                    <button class="nav-btn" id="prevBtn" ${currentIndex === 0 ? "disabled" : ""}>◀ Câu trước</button>
+                    <button class="nav-btn" id="prevBtn">◀ Câu trước</button>
                     <button class="nav-btn primary" id="nextBtn">Câu tiếp theo ▶</button>
                 </div>
             </div>
@@ -617,16 +774,10 @@
         attachNavEvents();
       }
 
-      // Hiển thị thẻ bình thường (chưa chọn đáp án)
       function renderCurrentCard() {
+        const originalIdx = getCurrentOriginalIndex();
+        const q = questions[originalIdx];
         const container = document.getElementById("currentCard");
-        if (!questions.length) {
-          container.innerHTML =
-            '<div class="question-card">Đang tải câu hỏi...</div>';
-          return;
-        }
-
-        const q = questions[currentIndex];
 
         let optionsHtml = "";
         q.options.forEach((opt, idx) => {
@@ -642,25 +793,21 @@
             <div class="question-card">
                 <div class="card-header">
                     <span class="question-number">Câu ${q.id}</span>
-                    <button class="skip-btn" id="skipBtn"></button>
+                    <button class="skip-btn" id="skipBtn">⏭️ Bỏ qua câu này</button>
                 </div>
                 <div class="question-text">${escapeHtml(q.question)}</div>
-                <div class="options-list" id="optionsList">
-                    ${optionsHtml}
-                </div>
+                <div class="options-list" id="optionsList">${optionsHtml}</div>
                 <div class="nav-buttons">
-                    <button class="nav-btn" id="prevBtn" ${currentIndex === 0 ? "disabled" : ""}>◀ Câu trước</button>
+                    <button class="nav-btn" id="prevBtn">◀ Câu trước</button>
                     <button class="nav-btn primary" id="nextBtn">Câu tiếp theo ▶</button>
                 </div>
             </div>
         `;
         container.innerHTML = html;
 
-        // Gắn sự kiện cho các option
         const optionDivs = document.querySelectorAll(".option");
         optionDivs.forEach((div) => {
           div.addEventListener("click", (e) => {
-            // Tìm radio bên trong
             const radio = div.querySelector(".option-radio");
             if (radio && !quizLocked) {
               radio.checked = true;
@@ -669,106 +816,23 @@
           });
         });
 
-        // Gắn sự kiện cho radio
         const radios = document.querySelectorAll(".option-radio");
         radios.forEach((radio) => {
           radio.addEventListener("change", (e) => {
-            if (!quizLocked) {
-              selectAnswer(e.target.value);
-            }
+            if (!quizLocked) selectAnswer(e.target.value);
           });
         });
 
-        // Nút bỏ qua
         const skipBtn = document.getElementById("skipBtn");
-        if (skipBtn) {
-          skipBtn.addEventListener("click", () => skipQuestion());
-        }
+        if (skipBtn) skipBtn.addEventListener("click", () => skipQuestion());
 
         attachNavEvents();
       }
 
-      // Gắn sự kiện điều hướng
-      function attachNavEvents() {
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
-
-        if (prevBtn) {
-          prevBtn.addEventListener("click", () => goToPrevQuestion());
-        }
-        if (nextBtn) {
-          nextBtn.addEventListener("click", () => goToNextQuestion());
-        }
-      }
-
-      // Chuyển câu trước
-      function goToPrevQuestion() {
-        if (currentIndex > 0) {
-          currentIndex--;
-          quizLocked = false; // Mở khóa cho câu mới
-          // Kiểm tra xem câu này đã được trả lời hay bỏ qua chưa
-          if (
-            userAnswers[currentIndex] !== null ||
-            skipped[currentIndex] === true
-          ) {
-            // Nếu câu đã được trả lời hoặc bỏ qua, hiển thị dạng đã lock
-            if (skipped[currentIndex]) {
-              renderSkippedCard();
-            } else if (
-              userAnswers[currentIndex] !== null &&
-              answerStatus[currentIndex] !== null
-            ) {
-              // Hiển thị lại feedback
-              const q = questions[currentIndex];
-              renderCurrentCardWithFeedback(
-                userAnswers[currentIndex],
-                answerStatus[currentIndex],
-                q.answer,
-              );
-              quizLocked = true;
-            }
-          } else {
-            renderCurrentCard();
-          }
-        }
-      }
-
-      // Chuyển câu tiếp theo
-      function goToNextQuestion() {
-        if (currentIndex < questions.length - 1) {
-          currentIndex++;
-          quizLocked = false;
-          if (
-            userAnswers[currentIndex] !== null ||
-            skipped[currentIndex] === true
-          ) {
-            if (skipped[currentIndex]) {
-              renderSkippedCard();
-            } else if (
-              userAnswers[currentIndex] !== null &&
-              answerStatus[currentIndex] !== null
-            ) {
-              const q = questions[currentIndex];
-              renderCurrentCardWithFeedback(
-                userAnswers[currentIndex],
-                answerStatus[currentIndex],
-                q.answer,
-              );
-              quizLocked = true;
-            }
-          } else {
-            renderCurrentCard();
-          }
-        } else {
-          // Hết câu, thông báo có thể nộp bài
-          alert("📌 Bạn đã xem hết các câu! Nhấn 'Nộp bài' để xem tổng kết.");
-        }
-      }
-
-      // Hiển thị thẻ đã bỏ qua
       function renderSkippedCard() {
+        const originalIdx = getCurrentOriginalIndex();
+        const q = questions[originalIdx];
         const container = document.getElementById("currentCard");
-        const q = questions[currentIndex];
         const html = `
             <div class="question-card">
                 <div class="card-header">
@@ -781,7 +845,7 @@
                     <div class="correct-answer-show">Nhấn "Hủy bỏ qua" để trả lời lại</div>
                 </div>
                 <div class="nav-buttons">
-                    <button class="nav-btn" id="prevBtn" ${currentIndex === 0 ? "disabled" : ""}>◀ Câu trước</button>
+                    <button class="nav-btn" id="prevBtn">◀ Câu trước</button>
                     <button class="nav-btn primary" id="nextBtn">Câu tiếp theo ▶</button>
                 </div>
             </div>
@@ -791,9 +855,10 @@
         const unskipBtn = document.getElementById("unskipBtn");
         if (unskipBtn) {
           unskipBtn.addEventListener("click", () => {
-            skipped[currentIndex] = false;
-            userAnswers[currentIndex] = null;
-            answerStatus[currentIndex] = null;
+            const origIdx = getCurrentOriginalIndex();
+            skipped[origIdx] = false;
+            userAnswers[origIdx] = null;
+            answerStatus[origIdx] = null;
             quizLocked = false;
             renderCurrentCard();
             updateStats();
@@ -802,7 +867,93 @@
         attachNavEvents();
       }
 
-      // Xem kết quả tổng thể
+      function goToPrevQuestion() {
+        if (currentIndexInList > 0) {
+          currentIndexInList--;
+          updateCurrentQuestionId();
+          quizLocked = false;
+          const origIdx = getCurrentOriginalIndex();
+          if (userAnswers[origIdx] !== null || skipped[origIdx]) {
+            if (skipped[origIdx]) renderSkippedCard();
+            else if (
+              userAnswers[origIdx] !== null &&
+              answerStatus[origIdx] !== null
+            ) {
+              const q = questions[origIdx];
+              renderCurrentCardWithFeedback(
+                userAnswers[origIdx],
+                answerStatus[origIdx],
+                q.answer,
+              );
+              quizLocked = true;
+            }
+          } else {
+            renderCurrentCard();
+          }
+        }
+      }
+
+      function goToNextQuestion() {
+        if (currentIndexInList < questionOrder.length - 1) {
+          currentIndexInList++;
+          updateCurrentQuestionId();
+          quizLocked = false;
+          const origIdx = getCurrentOriginalIndex();
+          if (userAnswers[origIdx] !== null || skipped[origIdx]) {
+            if (skipped[origIdx]) renderSkippedCard();
+            else if (
+              userAnswers[origIdx] !== null &&
+              answerStatus[origIdx] !== null
+            ) {
+              const q = questions[origIdx];
+              renderCurrentCardWithFeedback(
+                userAnswers[origIdx],
+                answerStatus[origIdx],
+                q.answer,
+              );
+              quizLocked = true;
+            }
+          } else {
+            renderCurrentCard();
+          }
+        } else {
+          alert("📌 Bạn đã xem hết các câu! Nhấn 'Nộp bài' để xem tổng kết.");
+        }
+      }
+
+      function randomQuestion() {
+        if (questions.length === 0) return;
+        const newIndex = Math.floor(Math.random() * questionOrder.length);
+        currentIndexInList = newIndex;
+        updateCurrentQuestionId();
+        quizLocked = false;
+        const origIdx = getCurrentOriginalIndex();
+        if (userAnswers[origIdx] !== null || skipped[origIdx]) {
+          if (skipped[origIdx]) renderSkippedCard();
+          else if (
+            userAnswers[origIdx] !== null &&
+            answerStatus[origIdx] !== null
+          ) {
+            const q = questions[origIdx];
+            renderCurrentCardWithFeedback(
+              userAnswers[origIdx],
+              answerStatus[origIdx],
+              q.answer,
+            );
+            quizLocked = true;
+          }
+        } else {
+          renderCurrentCard();
+        }
+      }
+
+      function attachNavEvents() {
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        if (prevBtn) prevBtn.addEventListener("click", goToPrevQuestion);
+        if (nextBtn) nextBtn.addEventListener("click", goToNextQuestion);
+      }
+
       function showFinalResult() {
         let correctCount = 0;
         let resultHtml = "";
@@ -811,9 +962,8 @@
           const isSkipped = skipped[i];
           const userAns = userAnswers[i];
           const isCorrect = answerStatus[i];
-
-          let statusText = "";
-          let statusClass = "";
+          let statusText = "",
+            statusClass = "";
           if (isSkipped) {
             statusText = "⏩ Bỏ qua";
             statusClass = "wrong";
@@ -828,40 +978,12 @@
             statusText = `❌ Sai (Đáp án: ${escapeHtml(q.answer)})`;
             statusClass = "wrong";
           }
-
-          resultHtml += `
-                <div class="result-item ${statusClass}">
-                    <strong>Câu ${q.id}</strong>: ${statusText}<br>
-                    <span style="font-size:0.8rem;">${escapeHtml(q.question.substring(0, 80))}...</span>
-                </div>
-            `;
+          resultHtml += `<div class="result-item ${statusClass}"><strong>Câu ${q.id}</strong>: ${statusText}<br><span style="font-size:0.8rem;">${escapeHtml(q.question.substring(0, 80))}...</span></div>`;
         }
-
         document.getElementById("finalScore").innerHTML =
           `${correctCount} / ${questions.length}`;
         document.getElementById("resultList").innerHTML = resultHtml;
         document.getElementById("resultModal").classList.add("show");
-      }
-
-      // Khởi chạy
-      async function init() {
-        await loadQuestions();
-        initState();
-        renderCurrentCard();
-
-        document
-          .getElementById("submitBtn")
-          .addEventListener("click", showFinalResult);
-        document
-          .getElementById("closeModalBtn")
-          .addEventListener("click", () => {
-            document.getElementById("resultModal").classList.remove("show");
-          });
-        // Đóng modal khi click ra ngoài
-        const modal = document.getElementById("resultModal");
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) modal.classList.remove("show");
-        });
       }
 
       function escapeHtml(str) {
@@ -871,6 +993,32 @@
           if (m === "<") return "&lt;";
           if (m === ">") return "&gt;";
           return m;
+        });
+      }
+
+      async function init() {
+        await loadQuestions();
+        initState();
+        renderCurrentCard();
+        document
+          .getElementById("randomBtn")
+          .addEventListener("click", randomQuestion);
+        document
+          .getElementById("switchPageBtn")
+          .addEventListener("click", () => {
+            window.location.href = "./main.html";
+          });
+        document
+          .getElementById("submitBtn")
+          .addEventListener("click", showFinalResult);
+        document
+          .getElementById("closeModalBtn")
+          .addEventListener("click", () => {
+            document.getElementById("resultModal").classList.remove("show");
+          });
+        const modal = document.getElementById("resultModal");
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) modal.classList.remove("show");
         });
       }
 
