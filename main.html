@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Ôn tập - Thẻ nhớ toàn màn hình</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Segoe UI",
+          "Roboto",
+          "Poppins",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        position: relative;
+      }
+
+      /* Container chính */
+      .study-container {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      /* Thanh trên cùng - chỉ có nút về trang chủ và bộ đếm */
+      .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        padding: 12px 28px;
+        border-radius: 60px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-index {
+        background: #ff9a3c;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 10px 24px;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: inherit;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-index:hover {
+        background: #ff7b00;
+        transform: scale(1.02);
+      }
+
+      .counter {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 8px 24px;
+        border-radius: 40px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #f1f3f5;
+        backdrop-filter: blur(4px);
+      }
+
+      .counter span {
+        font-weight: 800;
+        color: #ffd966;
+        font-size: 1.3rem;
+        margin: 0 2px;
+      }
+
+      /* Khu vực thẻ chính - có hiệu ứng chuyển tiếp */
+      .card-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 48px;
+        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+        min-height: 60vh;
+      }
+
+      .flashcard-container {
+        position: relative;
+        width: 100%;
+        min-height: 60vh;
+      }
+
+      .flashcard {
+        background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+        border-radius: 48px;
+        width: 100%;
+        padding: 3rem 3rem;
+        transition:
+          transform 0.35s ease,
+          opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Hiệu ứng trượt */
+      .slide-left {
+        animation: slideOutLeft 0.3s ease forwards;
+      }
+      .slide-right {
+        animation: slideOutRight 0.3s ease forwards;
+      }
+      .slide-in-left {
+        animation: slideInLeft 0.35s ease forwards;
+      }
+      .slide-in-right {
+        animation: slideInRight 0.35s ease forwards;
+      }
+
+      @keyframes slideOutLeft {
+        0% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+      }
+      @keyframes slideOutRight {
+        0% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+      }
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slideInRight {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      /* Nội dung bên trong thẻ */
+      .card-content {
+        width: 100%;
+      }
+
+      .section {
+        margin-bottom: 2rem;
+      }
+
+      .section-label {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 5px 16px;
+        border-radius: 30px;
+        margin-bottom: 16px;
+      }
+
+      .question-label {
+        background: #e0e7ff;
+        color: #4f46e5;
+      }
+
+      .answer-label {
+        background: #dcfce7;
+        color: #15803d;
+      }
+
+      .question-text {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #1e293b;
+        word-break: break-word;
+        padding-right: 20px;
+      }
+
+      .answer-text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.45;
+        color: #166534;
+        background: #f0fdf4;
+        padding: 24px 28px;
+        border-radius: 28px;
+        border-left: 8px solid #22c55e;
+        word-break: break-word;
+        margin-top: 8px;
+      }
+
+      .card-id {
+        position: absolute;
+        bottom: 20px;
+        right: 28px;
+        font-family: monospace;
+        background: rgba(100, 100, 140, 0.1);
+        padding: 4px 12px;
+        border-radius: 30px;
+        font-size: 0.7rem;
+        color: #64748b;
+        font-weight: 500;
+      }
+
+      /* Hướng dẫn vùng nhấn */
+      .click-zones {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 2;
+      }
+      .zone-left,
+      .zone-right {
+        pointer-events: auto;
+        width: 50%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 48px;
+        transition: background 0.2s;
+      }
+      .zone-left:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(79, 70, 229, 0.08) 0%,
+          rgba(79, 70, 229, 0) 90%
+        );
+      }
+      .zone-right:hover {
+        background: linear-gradient(
+          270deg,
+          rgba(34, 197, 94, 0.08) 0%,
+          rgba(34, 197, 94, 0) 90%
+        );
+      }
+      .zone-left:active,
+      .zone-right:active {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      /* Thanh điều hướng phía dưới */
+      .bottom-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        padding: 16px 28px;
+        border-radius: 80px;
+        margin-top: 10px;
+      }
+
+      .nav-btn {
+        background: white;
+        border: none;
+        color: #4f46e5;
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 12px 32px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-family: inherit;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        background: #f8fafc;
+      }
+
+      .nav-btn:active {
+        transform: translateY(2px);
+      }
+
+      .footer-hint {
+        text-align: center;
+        color: rgba(255, 255, 240, 0.8);
+        font-size: 0.85rem;
+        margin-top: 8px;
+        font-weight: 500;
+      }
+
+      /* Loading & error */
+      .loading-state,
+      .error-state {
+        background: white;
+        border-radius: 48px;
+        padding: 3rem;
+        text-align: center;
+        font-size: 1.3rem;
+      }
+      .error-state {
+        background: #fff0f0;
+        color: #b91c1c;
+      }
+
+      @media (max-width: 700px) {
+        .flashcard {
+          padding: 2rem 1.5rem;
+        }
+        .question-text {
+          font-size: 1.3rem;
+        }
+        .answer-text {
+          font-size: 1.1rem;
+          padding: 18px;
+        }
+        .nav-btn {
+          padding: 8px 24px;
+          font-size: 1rem;
+        }
+        .top-bar {
+          padding: 8px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="study-container">
+      <!-- Thanh trên cùng: nút index + bộ đếm -->
+      <div class="top-bar">
+        <button class="btn-index" id="indexBtn">
+          🏠 Trang chủ (index.html)
+        </button>
+        <div class="counter" id="counterDisplay">
+          📖 <span id="currentNum">—</span> / <span id="totalNum">—</span>
+        </div>
+      </div>
+
+      <!-- Vùng thẻ có hiệu ứng -->
+      <div class="card-wrapper">
+        <div class="flashcard-container" id="cardContainer">
+          <div class="flashcard" id="flashcard">
+            <div class="card-content">
+              <div class="section">
+                <div class="section-label question-label">📌 CÂU HỎI</div>
+                <div class="question-text" id="questionText">Đang tải...</div>
+              </div>
+              <div class="section">
+                <div class="section-label answer-label">✨ ĐÁP ÁN</div>
+                <div class="answer-text" id="answerText"></div>
+              </div>
+            </div>
+            <div class="card-id" id="cardIdBadge"></div>
+            <!-- Vùng nhấn trái/phải để chuyển thẻ -->
+            <div class="click-zones">
+              <div
+                class="zone-left"
+                id="leftZone"
+                title="Nhấn để sang câu trước ◀"
+              ></div>
+              <div
+                class="zone-right"
+                id="rightZone"
+                title="Nhấn để sang câu tiếp theo ▶"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thanh điều hướng dưới cùng -->
+      <div class="bottom-nav">
+        <button class="nav-btn" id="prevBtn">◀ Câu trước</button>
+        <button class="nav-btn" id="nextBtn">Câu sau ▶</button>
+      </div>
+      <div class="footer-hint">
+        💡 Mẹo: Nhấn vào nửa trái thẻ để lùi lại | Nhấn nửa phải thẻ để tiến tới
+        | Dùng phím mũi tên ◀ ▶
+      </div>
+    </div>
+
+    <script>
+      // ------------------------------
+      // Biến toàn cục
+      // ------------------------------
+      let questionsData = []; // [{ id, question, answer }]
+      let currentIndex = 0;
+      let isLoading = true;
+      let isAnimating = false; // chống spam khi đang chạy animation
+
+      // DOM elements
+      const flashcardEl = document.getElementById("flashcard");
+      const questionTextEl = document.getElementById("questionText");
+      const answerTextEl = document.getElementById("answerText");
+      const cardIdBadge = document.getElementById("cardIdBadge");
+      const currentNumSpan = document.getElementById("currentNum");
+      const totalNumSpan = document.getElementById("totalNum");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const indexBtn = document.getElementById("indexBtn");
+      const leftZone = document.getElementById("leftZone");
+      const rightZone = document.getElementById("rightZone");
+      const cardContainer = document.getElementById("cardContainer");
+
+      // ------------------------------
+      // Cập nhật nội dung thẻ (không animation)
+      // ------------------------------
+      function renderCardContent() {
+        if (!questionsData.length) {
+          questionTextEl.innerText = "📭 Không có dữ liệu ôn tập";
+          answerTextEl.innerText = "Hãy kiểm tra file cauhoi.json";
+          cardIdBadge.innerText = "Lỗi";
+          currentNumSpan.innerText = "0";
+          totalNumSpan.innerText = "0";
+          return;
+        }
+        const item = questionsData[currentIndex];
+        questionTextEl.innerText = item.question || "(Không có câu hỏi)";
+        answerTextEl.innerText = item.answer || "(Chưa có đáp án)";
+        cardIdBadge.innerText = item.id || "???";
+        currentNumSpan.innerText = currentIndex + 1;
+        totalNumSpan.innerText = questionsData.length;
+      }
+
+      // ------------------------------
+      // Chuyển câu kèm hiệu ứng (direction: 'next' hoặc 'prev')
+      // ------------------------------
+      function changeCardWithAnimation(direction) {
+        if (isAnimating) return;
+        if (!questionsData.length) return;
+
+        // Xác định index mới
+        let newIndex = currentIndex;
+        if (direction === "next") {
+          newIndex = (currentIndex + 1) % questionsData.length;
+        } else if (direction === "prev") {
+          newIndex =
+            (currentIndex - 1 + questionsData.length) % questionsData.length;
+        }
+        if (newIndex === currentIndex) return;
+
+        isAnimating = true;
+
+        // Lấy thẻ hiện tại
+        const currentCard = flashcardEl;
+        // Tạo thẻ mới (clone sâu và thay nội dung)
+        const newCard = currentCard.cloneNode(true);
+        // Cập nhật nội dung cho thẻ mới dựa trên newIndex
+        const newItem = questionsData[newIndex];
+        newCard.querySelector("#questionText").innerText =
+          newItem.question || "(Không có câu hỏi)";
+        newCard.querySelector("#answerText").innerText =
+          newItem.answer || "(Chưa có đáp án)";
+        newCard.querySelector("#cardIdBadge").innerText = newItem.id || "???";
+
+        // Gán class và style để thẻ mới sẵn sàng animation
+        newCard.style.position = "absolute";
+        newCard.style.top = "0";
+        newCard.style.left = "0";
+        newCard.style.width = "100%";
+        newCard.style.margin = "0";
+        newCard.style.background =
+          "linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%)";
+
+        // Xác định hướng animation cho thẻ cũ và thẻ mới
+        let oldAnimClass = "";
+        let newAnimClass = "";
+        if (direction === "next") {
+          oldAnimClass = "slide-left";
+          newAnimClass = "slide-in-right";
+        } else {
+          oldAnimClass = "slide-right";
+          newAnimClass = "slide-in-left";
+        }
+
+        // Thêm thẻ mới vào container
+        cardContainer.style.position = "relative";
+        cardContainer.appendChild(newCard);
+
+        // Thêm class animation cho thẻ cũ
+        currentCard.classList.add(oldAnimClass);
+        newCard.classList.add(newAnimClass);
+
+        // Lắng nghe sự kiện kết thúc animation của thẻ cũ để xóa và cập nhật
+        const onOldAnimationEnd = () => {
+          currentCard.classList.remove(oldAnimClass);
+          currentCard.remove(); // xóa thẻ cũ khỏi DOM
+          // Cập nhật lại currentIndex và nội dung chính thức
+          currentIndex = newIndex;
+          // Gán lại flashcardEl mới (chính là newCard)
+          newCard.classList.remove(newAnimClass);
+          newCard.style.position = "relative";
+          newCard.style.top = "";
+          newCard.style.left = "";
+          // Đảm bảo ID và sự kiện vẫn hoạt động (vì clone giữ id nhưng cần đồng bộ lại biến)
+          // Cập nhật các tham chiếu DOM
+          window.flashcardEl = newCard;
+          // Cập nhật lại các zone bấm cho thẻ mới (vì clone sẽ giữ sự kiện nhưng cần gán lại listeners an toàn)
+          rebindClickZonesForNewCard(newCard);
+          // Cập nhật các biến toàn cục và hiển thị bộ đếm
+          renderCardContent(); // cập nhật số thứ tự và nội dung (phòng trường hợp)
+          // Dọn dẹp event listener
+          newCard.removeEventListener("animationend", onNewAnimationEnd);
+          currentCard.removeEventListener("animationend", onOldAnimationEnd);
+          isAnimating = false;
+        };
+
+        const onNewAnimationEnd = () => {
+          // không cần xử lý thêm, chỉ đảm bảo không bị lỗi
+        };
+
+        currentCard.addEventListener("animationend", onOldAnimationEnd, {
+          once: true,
+        });
+        newCard.addEventListener("animationend", onNewAnimationEnd, {
+          once: true,
+        });
+      }
+
+      // Hàm gắn lại sự kiện cho các zone bấm trên thẻ mới (vì clone nếu ko sẽ mất listener)
+      function rebindClickZonesForNewCard(cardElement) {
+        // Xóa các listener cũ (tránh trùng) - thực tế clone không clone event listener, nhưng đảm bảo lấy mới
+        const newLeft = cardElement.querySelector("#leftZone");
+        const newRight = cardElement.querySelector("#rightZone");
+        if (newLeft) {
+          const newLeftClone = newLeft.cloneNode(true);
+          newLeft.parentNode.replaceChild(newLeftClone, newLeft);
+          newLeftClone.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (!isAnimating) changeCardWithAnimation("prev");
+          });
+        }
+        if (newRight) {
+          const newRightClone = newRight.cloneNode(true);
+          newRight.parentNode.replaceChild(newRightClone, newRight);
+          newRightClone.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (!isAnimating) changeCardWithAnimation("next");
+          });
+        }
+        // Cập nhật lại biến toàn cục flashcardEl
+        if (cardElement.id === "flashcard") {
+          window.currentFlashcard = cardElement;
+        }
+      }
+
+      // Hàm chuyển không animation dùng khi load lần đầu hoặc fallback
+      function safeChangeCard(direction) {
+        if (!questionsData.length) return;
+        if (direction === "next") {
+          currentIndex = (currentIndex + 1) % questionsData.length;
+        } else if (direction === "prev") {
+          currentIndex =
+            (currentIndex - 1 + questionsData.length) % questionsData.length;
+        }
+        renderCardContent();
+      }
+
+      // Wrapper có animation hoặc fallback
+      function goNext() {
+        if (isAnimating) return;
+        if (questionsData.length) changeCardWithAnimation("next");
+        else safeChangeCard("next");
+      }
+
+      function goPrev() {
+        if (isAnimating) return;
+        if (questionsData.length) changeCardWithAnimation("prev");
+        else safeChangeCard("prev");
+      }
+
+      // ------------------------------
+      // Chuyển về index.html
+      // ------------------------------
+      function goToIndex() {
+        window.location.href = "index.html";
+      }
+
+      // ------------------------------
+      // Load dữ liệu JSON
+      // ------------------------------
+      async function loadQuestions() {
+        try {
+          // Hiển thị loading tạm
+          questionTextEl.innerText = "⏳ Đang tải kho câu hỏi...";
+          answerTextEl.innerText = "Vui lòng chờ giây lát";
+          cardIdBadge.innerText = "";
+          const response = await fetch("./cauhoi.json");
+          if (!response.ok)
+            throw new Error(
+              `HTTP ${response.status}: Không tìm thấy cauhoi.json`,
+            );
+          const data = await response.json();
+          if (!Array.isArray(data))
+            throw new Error("JSON phải là mảng các câu hỏi");
+
+          questionsData = data
+            .filter((item) => item.question || item.answer)
+            .map((item) => ({
+              id: item.id || `auto_${Math.random()}`,
+              question: item.question || "(Câu hỏi chưa cập nhật)",
+              answer: item.answer || "(Chưa có đáp án)",
+            }));
+
+          if (questionsData.length === 0)
+            throw new Error("File không chứa câu hỏi hợp lệ");
+          currentIndex = 0;
+          renderCardContent();
+        } catch (err) {
+          console.error(err);
+          questionTextEl.innerText = "⚠️ Lỗi tải dữ liệu";
+          answerTextEl.innerText =
+            err.message || "Kiểm tra file cauhoi.json cùng thư mục";
+          cardIdBadge.innerText = "Lỗi";
+          currentNumSpan.innerText = "0";
+          totalNumSpan.innerText = "0";
+          questionsData = [];
+        }
+      }
+
+      // ------------------------------
+      // Gắn sự kiện ban đầu (các zone mặc định)
+      // ------------------------------
+      function bindInitialEvents() {
+        prevBtn.addEventListener("click", () => goPrev());
+        nextBtn.addEventListener("click", () => goNext());
+        indexBtn.addEventListener("click", goToIndex);
+
+        // Sự kiện nhấn nửa trái / phải của thẻ (dùng zone hiện có)
+        const leftZoneEl = document.getElementById("leftZone");
+        const rightZoneEl = document.getElementById("rightZone");
+        if (leftZoneEl) {
+          leftZoneEl.addEventListener("click", (e) => {
+            e.stopPropagation();
+            goPrev();
+          });
+        }
+        if (rightZoneEl) {
+          rightZoneEl.addEventListener("click", (e) => {
+            e.stopPropagation();
+            goNext();
+          });
+        }
+
+        // Bàn phím mũi tên
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") {
+            e.preventDefault();
+            goPrev();
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault();
+            goNext();
+          } else if (e.key === "Home") {
+            e.preventDefault();
+            goToIndex();
+          }
+        });
+      }
+
+      // ------------------------------
+      // Khởi tạo
+      // ------------------------------
+      function init() {
+        bindInitialEvents();
+        loadQuestions();
+      }
+
+      init();
+    </script>
+  </body>
+</html>
