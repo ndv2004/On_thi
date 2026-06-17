@@ -1,0 +1,3062 @@
+[
+  {
+    "id": 1,
+    "question": "Đặc điểm cơ bản của tình hình thế giới cuối thế kỉ XIX đầu thế kỉ XX?",
+    "options": [
+      "CNTB chuyển sang giai đoạn CNĐQ trên phạm vi toàn thế giới",
+      "Các nước tư bản phát triển ổn định, không có khủng hoảng",
+      "Chủ nghĩa tư bản độc quyền nhà nước chiếm ưu thế",
+      "Phong trào công nhân quốc tế giành thắng lợi ở nhiều nước"
+    ],
+     
+    "answer": "CNTB chuyển sang giai đoạn CNĐQ trên phạm vi toàn thế giới"
+  },
+  {
+    "id": 2,
+    "question": "Thực dân Pháp chính thức nổ súng xâm lược Việt Nam vào thời gian nào?",
+    "options": [
+      "1856",
+      "1858",
+      "1860",
+      "1862"
+    ],
+    "answerIndex": 1,
+    "answer": "1858"
+  },
+  {
+    "id": 3,
+    "question": "Nguyên nhân nào dẫn đến việc thực dân Pháp nổ súng xâm lược Việt Nam?",
+    "options": [
+      "Bành trướng, xâm chiếm thị trường",
+      "Giải phóng dân tộc Việt Nam",
+      "Bảo vệ các giáo sĩ Thiên chúa",
+      "Trả thù cho các cuộc nổi dậy của nhân dân"
+    ],
+     
+    "answer": "Bành trướng, xâm chiếm thị trường"
+  },
+  {
+    "id": 4,
+    "question": "Tổng đốc thành HN lãnh đạo nhân dân kháng chiến chống Pháp xâm lược Bắc Kì lần thứ nhất là ai?",
+    "options": [
+      "Hoàng Diệu",
+      "Nguyễn Tri Phương",
+      "Trương Định",
+      "Phan Đình Phùng"
+    ],
+    "answerIndex": 1,
+    "answer": "Nguyễn Tri Phương"
+  },
+  {
+    "id": 5,
+    "question": "Tổng đốc thành HN lãnh đạo nhân dân kháng chiến chống Pháp xâm lược Bắc Kì lần thứ hai là ai?",
+    "options": [
+      "Nguyễn Tri Phương",
+      "Phan Thanh Giản",
+      "Hoàng Diệu",
+      "Tôn Thất Thuyết"
+    ],
+    "answerIndex": 2,
+    "answer": "Hoàng Diệu"
+  },
+  {
+    "id": 6,
+    "question": "Thực dân pháp đã tiến hành mấy cuộc khai thác thuộc địa ở Việt Nam?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 1,
+    "answer": "2"
+  },
+  {
+    "id": 7,
+    "question": "Chính sách \"chia để trị\" và \"dùng người Việt trị người Việt\" của đế quốc nào ở Việt Nam?",
+    "options": [
+      "Anh",
+      "Pháp",
+      "Mỹ",
+      "Nhật"
+    ],
+    "answerIndex": 1,
+    "answer": "Pháp"
+  },
+  {
+    "id": 8,
+    "question": "Trong các chính sách thống trị khai thác thuộc địa của thực dân Pháp chúng đã sử dụng các phương thức bóc lột kinh tế nào là cơ bản?",
+    "options": [
+      "Kết hợp hai phương thức sản xuất tư bản và phong kiến",
+      "Sản xuất tư bản chủ nghĩa thuần túy",
+      "Bóc lột phong kiến là chủ yếu",
+      "Kinh tế thị trường tư bản hoàn toàn"
+    ],
+     
+    "answer": "Kết hợp hai phương thức sản xuất tư bản và phong kiến"
+  },
+  {
+    "id": 9,
+    "question": "Những chuyển biến về kinh tế ở Việt Nam vào đầu thế kỉ XX?",
+    "options": [
+      "Kinh tế VN phụ thuộc vào kinh tế Pháp",
+      "Kinh tế VN phát triển độc lập tự chủ",
+      "Kinh tế VN trở thành trung tâm khu vực",
+      "Kinh tế VN hòa nhập với kinh tế thế giới"
+    ],
+     
+    "answer": "Kinh tế VN phụ thuộc vào kinh tế Pháp"
+  },
+  {
+    "id": 10,
+    "question": "Chính sách thuộc địa của Pháp ở Việt Nam và cả Đông Dương là?",
+    "options": [
+      "Du nhập hạn chế phương thức sản xuất tư bản",
+      "Phát triển mạnh mẽ quan hệ sản xuất tư bản",
+      "Xóa bỏ hoàn toàn quan hệ phong kiến",
+      "Xây dựng nền kinh tế công nghiệp hiện đại"
+    ],
+     
+    "answer": "Du nhập hạn chế phương thức sản xuất tư bản"
+  },
+  {
+    "id": 11,
+    "question": "Chế độ chính trị thực dân Pháp thực thi ở Bắc, Trung Kỳ?",
+    "options": [
+      "Duy trì chế độ phong kiến làm tay sai",
+      "Thiết lập chính quyền cộng hòa",
+      "Áp dụng chế độ quân chủ lập hiến",
+      "Trao quyền tự trị cho địa phương"
+    ],
+     
+    "answer": "Duy trì chế độ phong kiến làm tay sai"
+  },
+  {
+    "id": 12,
+    "question": "Vào đầu thế kỷ XX xã hội VN có mấy mâu thuẫn cơ bản?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 1,
+    "answer": "2"
+  },
+  {
+    "id": 13,
+    "question": "Giai cấp công nhân VN ra đời vào thời điểm nào?",
+    "options": [
+      "Trong cuộc khai thác thuộc địa lần thứ nhất (1897 - 1913) hoặc đầu thế kỉ XX",
+      "Sau chiến tranh thế giới thứ nhất",
+      "Trong cuộc khai thác thuộc địa lần thứ hai (1919-1929)",
+      "Đầu những năm 1930"
+    ],
+     
+    "answer": "Trong cuộc khai thác thuộc địa lần thứ nhất (1897 - 1913) hoặc đầu thế kỉ XX"
+  },
+  {
+    "id": 14,
+    "question": "Mâu thuẫn cơ bản và chủ yếu ở VN đầu thế kỷ XX là những mâu thuẫn nào?",
+    "options": [
+      "Mâu thuẫn giữa dân tộc VN với đế quốc xâm lược và tay sai",
+      "Mâu thuẫn giữa nông dân và địa chủ",
+      "Mâu thuẫn giữa tư sản và công nhân",
+      "Mâu thuẫn giữa các giai cấp phong kiến"
+    ],
+     
+    "answer": "Mâu thuẫn giữa dân tộc VN với đế quốc xâm lược và tay sai"
+  },
+  {
+    "id": 15,
+    "question": "Câu hỏi bất hủ \"Bao giờ hết có nước Nam mới hết người Nam chống Tây\" là ai?",
+    "options": [
+      "Nguyễn Trung Trực",
+      "Trương Định",
+      "Nguyễn Tri Phương",
+      "Phan Bội Châu"
+    ],
+     
+    "answer": "Nguyễn Trung Trực"
+  },
+  {
+    "id": 16,
+    "question": "Phong trào yêu nước theo khuynh hướng tư tưởng phong kiến?",
+    "options": [
+      "Phong trào Cần Vương",
+      "Phong trào Đông Du",
+      "Phong trào Duy Tân",
+      "Phong trào VN Quốc dân Đảng"
+    ],
+     
+    "answer": "Phong trào Cần Vương"
+  },
+  {
+    "id": 17,
+    "question": "Phong trào yêu nước điển hình theo khuynh hướng phong kiến cuối thế kỉ XIX đầu thế kỉ XX?",
+    "options": [
+      "Phong trào khởi nghĩa nông dân Yên Thế",
+      "Khởi nghĩa Ba Đình",
+      "Khởi nghĩa Bãi Sậy",
+      "Phong trào Cần Vương"
+    ],
+     
+    "answer": "Phong trào khởi nghĩa nông dân Yên Thế"
+  },
+  {
+    "id": 18,
+    "question": "Ai là người đứng đầu phong trào yêu nước VN Quang phục hội?",
+    "options": [
+      "Phan Châu Trinh",
+      "Phan Bội Châu",
+      "Nguyễn Thái Học",
+      "Trần Quý Cáp"
+    ],
+    "answerIndex": 1,
+    "answer": "Phan Bội Châu"
+  },
+  {
+    "id": 19,
+    "question": "Ai là người đúng đầu cuộc khởi nghĩa Yên Bái?",
+    "options": [
+      "Phan Bội Châu",
+      "Nguyễn Thái Học",
+      "Trần Phú",
+      "Hà Huy Tập"
+    ],
+    "answerIndex": 1,
+    "answer": "Nguyễn Thái Học"
+  },
+  {
+    "id": 20,
+    "question": "Hạn chế của các cuộc khởi nghĩa chống thực dân Pháp cuối thế kỉ XIX ở VN là?",
+    "options": [
+      "Chưa được đông đảo quần chúng nhân dân ủng hộ",
+      "Không có vũ khí hiện đại",
+      "Thiếu sự lãnh đạo thống nhất",
+      "Không có căn cứ địa vững chắc"
+    ],
+     
+    "answer": "Chưa được đông đảo quần chúng nhân dân ủng hộ"
+  },
+  {
+    "id": 21,
+    "question": "Cuộc khởi nghĩa Yên Bái (2/1930) do tổ chức chính trị nào phát động?",
+    "options": [
+      "VN Quốc dân Đảng",
+      "Đảng Cộng sản VN",
+      "Việt Nam Cách mạng Thanh niên",
+      "Tâm Tâm Xã"
+    ],
+     
+    "answer": "VN Quốc dân Đảng"
+  },
+  {
+    "id": 22,
+    "question": "Nguyên nhân khách quan dẫn đến sự thất bại của các phong trào yêu nước theo khuynh hướng tư sản đầu thế kỉ XX ở VN?",
+    "options": [
+      "Địa vị kinh tế và chính trị yếu kém của giai cấp tư sản",
+      "Sự đàn áp mạnh mẽ của thực dân Pháp",
+      "Thiếu đường lối đấu tranh rõ ràng",
+      "Không được quần chúng ủng hộ"
+    ],
+     
+    "answer": "Địa vị kinh tế và chính trị yếu kém của giai cấp tư sản"
+  },
+  {
+    "id": 23,
+    "question": "Câu hỏi \"Tại sao người Pháp không \"khai hỏa\" đồng bào của họ trước khi đi \"khai hỏa\" chúng ta?\" là của ai?",
+    "options": [
+      "Phan Bội Châu",
+      "Nguyễn Ái Quốc",
+      "Phan Châu Trinh",
+      "Trương Định"
+    ],
+    "answerIndex": 1,
+    "answer": "Nguyễn Ái Quốc"
+  },
+  {
+    "id": 24,
+    "question": "Sau sự kiện gửi Bản yêu sách tới Hội nghị Vécxay. Nguyễn Ái Quốc đã rút ra được những nhận thức gì về các dân tộc bị áp bức muốn được trao trả độc lập thực sự?",
+    "options": [
+      "Phải tự mình giải phóng cho mình",
+      "Cần dựa vào sự giúp đỡ của các nước lớn",
+      "Phải kiên trì đấu tranh ôn hòa",
+      "Cần thương lượng với chính quyền thuộc địa"
+    ],
+     
+    "answer": "Phải tự mình giải phóng cho mình"
+  },
+  {
+    "id": 25,
+    "question": "Điểm đến đầu tiên trong hành trình tìm đường cứu nước của Nguyễn Tất Thành là quốc gia nào?",
+    "options": [
+      "Anh",
+      "Pháp",
+      "Mỹ",
+      "Trung Quốc"
+    ],
+    "answerIndex": 1,
+    "answer": "Pháp"
+  },
+  {
+    "id": 26,
+    "question": "Tên gọi Nguyễn Ái Quốc xuất hiện lần đầu tiên vào thời gian nào?",
+    "options": [
+      "Năm 1917",
+      "Năm 1919",
+      "Năm 1920",
+      "Năm 1921"
+    ],
+    "answerIndex": 1,
+    "answer": "Năm 1919"
+  },
+  {
+    "id": 27,
+    "question": "Nguyễn Ái Quốc đọc \"Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa\" của Lênin khi nào? Ở đâu?",
+    "options": [
+      "Năm 1920 ở Pháp",
+      "Năm 1921 ở Liên Xô",
+      "Năm 1919 ở Anh",
+      "Năm 1923 ở Trung Quốc"
+    ],
+     
+    "answer": "Năm 1920 ở Pháp"
+  },
+  {
+    "id": 28,
+    "question": "Nguyễn Ái Quốc đến với Chủ nghĩa Lênin khi nào?",
+    "options": [
+      "Tháng 7/1920",
+      "Tháng 6/1920",
+      "Tháng 8/1920",
+      "Tháng 5/1920"
+    ],
+     
+    "answer": "Tháng 7/1920"
+  },
+  {
+    "id": 29,
+    "question": "Trong quá trình tìm đường cứu nước, nguyễn ái quốc đã lựa chọn con đường?",
+    "options": [
+      "Cách mạng Vô sản",
+      "Cách mạng tư sản",
+      "Cải cách ôn hòa",
+      "Con đường dân chủ tư sản"
+    ],
+     
+    "answer": "Cách mạng Vô sản"
+  },
+  {
+    "id": 30,
+    "question": "Nguyễn Ái Quốc thành lập Hội Việt Nam Cách Mạng Thanh niên vào thời gian nào?",
+    "options": [
+      "Năm 1924",
+      "Năm 1925",
+      "Năm 1926",
+      "Năm 1927"
+    ],
+    "answerIndex": 1,
+    "answer": "Năm 1925"
+  },
+  {
+    "id": 31,
+    "question": "Khi về Quảng Châu (Trung Quốc), Nguyễn Ái Quốc đã thành lập tổ chức nào để trực tiếp xúc tiến các điều kiện thành lập Đảng?",
+    "options": [
+      "Hội VN CM Thanh niên",
+      "Tân Việt Cách mạng Đảng",
+      "Việt Nam Quốc dân Đảng",
+      "Cộng sản đoàn"
+    ],
+     
+    "answer": "Hội VN CM Thanh niên"
+  },
+  {
+    "id": 32,
+    "question": "Nguyễn Ái Quốc đã viết tác phẩm nổi tiếng xuất bản năm 1927 là?",
+    "options": [
+      "Bản án chế độ thực dân Pháp",
+      "Đường Kách Mệnh",
+      "Nhật ký trong tù",
+      "Tuyên ngôn Độc lập"
+    ],
+    "answerIndex": 1,
+    "answer": "Đường Kách Mệnh"
+  },
+  {
+    "id": 33,
+    "question": "Các bài giảng chính trị của Nguyễn Ái Quốc được tập hợp trong tác phẩm nổi tiếng xuất bản năm 1927 là?",
+    "options": [
+      "Đường Kách Mệnh",
+      "Bản án chế độ thực dân Pháp",
+      "Tuyên ngôn Độc lập",
+      "Nhật ký trong tù"
+    ],
+     
+    "answer": "Đường Kách Mệnh"
+  },
+  {
+    "id": 34,
+    "question": "Chuẩn bị tiền đề xúc tiến cho việc thành lập Đảng Cộng sản là tổ chức nào?",
+    "options": [
+      "Hội VN CM Thanh niên",
+      "Việt Nam Quốc dân Đảng",
+      "Tân Việt Cách mạng Đảng",
+      "Đông Dương Cộng sản Đảng"
+    ],
+     
+    "answer": "Hội VN CM Thanh niên"
+  },
+  {
+    "id": 35,
+    "question": "Chi bộ Cộng sản đầu tiên ở VN được thành lập vào thời gian nào?",
+    "options": [
+      "3/1929",
+      "2/1930",
+      "10/1930",
+      "6/1929"
+    ],
+     
+    "answer": "3/1929"
+  },
+  {
+    "id": 36,
+    "question": "Tổ chức cộng sản nào ra đời đầu tiên ở Việt Nam?",
+    "options": [
+      "Đông Dương Cộng sản Đảng năm 1929",
+      "An Nam Cộng sản Đảng năm 1929",
+      "Đông Dương Cộng sản Liên đoàn năm 1929",
+      "Đảng Cộng sản VN năm 1930"
+    ],
+     
+    "answer": "Đông Dương Cộng sản Đảng năm 1929"
+  },
+  {
+    "id": 37,
+    "question": "Ba tổ chức: Đông Dương cộng sản Đảng và An Nam Cộng sản Đảng được ra đời từ tổ chức tiền thân nào?",
+    "options": [
+      "Hội VN CM Thanh Niên",
+      "Việt Nam Quốc dân Đảng",
+      "Tân Việt Cách mạng Đảng",
+      "Tâm Tâm Xã"
+    ],
+     
+    "answer": "Hội VN CM Thanh Niên"
+  },
+  {
+    "id": 38,
+    "question": "Do đâu Nguyễn Ái Quốc đã triệu tập và chủ trì Hội nghị thành lập Đảng vào đầu năm 1930?",
+    "options": [
+      "Sự chủ động của NAQ",
+      "Yêu cầu của Quốc tế Cộng sản",
+      "Sự thống nhất của các tổ chức cộng sản",
+      "Áp lực từ phong trào công nhân"
+    ],
+     
+    "answer": "Sự chủ động của NAQ"
+  },
+  {
+    "id": 39,
+    "question": "Hội nghị hợp nhất các tổ chức Cộng sản thành 1 Đảng duy nhất do lãnh tụ Nguyễn Ái Quốc chủ trì đã nhất trí lấy tên Đảng?",
+    "options": [
+      "Đảng Cộng sản VN",
+      "Đảng Cộng sản Đông Dương",
+      "Đảng Lao động VN",
+      "Đảng Dân chủ VN"
+    ],
+     
+    "answer": "Đảng Cộng sản VN"
+  },
+  {
+    "id": 40,
+    "question": "Chính cương, Sách lược vắn tắt được thông qua tại hội nghị nào của Đảng?",
+    "options": [
+      "Hội nghị thành lập đảng (2/1930)",
+      "Hội nghị BCHTW Đảng (10/1930)",
+      "Hội nghị BCHTW Đảng (5/1941)",
+      "Hội nghị BCHTW Đảng (11/1939)"
+    ],
+     
+    "answer": "Hội nghị thành lập đảng (2/1930)"
+  },
+  {
+    "id": 41,
+    "question": "Hội nghị thành lập Đảng Cộng sản VN thông qua văn kiện nào sau đây?",
+    "options": [
+      "Chính cương vắn tắt, Sách lược vắn tắt",
+      "Luận cương chính trị",
+      "Đề cương văn hóa",
+      "Nghị quyết TW 8"
+    ],
+     
+    "answer": "Chính cương vắn tắt, Sách lược vắn tắt"
+  },
+  {
+    "id": 42,
+    "question": "Văn kiện nào của Đảng đặt nhiệm vụ giải phóng dân tộc lên hàng đầu trong những năm thập niên 30?",
+    "options": [
+      "Làm CM tư sản dân quyền và thổ địa CM để đi tới xã hội Cộng sản",
+      "Luận cương chính trị 10/1930",
+      "Chỉ thị Nhật-Pháp bắn nhau",
+      "Nghị quyết TW 6"
+    ],
+     
+    "answer": "Làm CM tư sản dân quyền và thổ địa CM để đi tới xã hội Cộng sản"
+  },
+  {
+    "id": 43,
+    "question": "Cương lĩnh đầu tiên của Đảng đã xác định mục tiêu chiến lược của cách mạng VN là gì?",
+    "options": [
+      "Làm CM tư sản dân quyền và thổ địa CM để đi tới xã hội Cộng sản",
+      "Giành độc lập dân tộc và ruộng đất cho nông dân",
+      "Xây dựng chủ nghĩa xã hội",
+      "Đánh đuổi đế quốc và phong kiến"
+    ],
+     
+    "answer": "Làm CM tư sản dân quyền và thổ địa CM để đi tới xã hội Cộng sản"
+  },
+  {
+    "id": 44,
+    "question": "Tính chất của CM VN được xác định trong Cương lĩnh chính trị đầu tiên của Đảng?",
+    "options": [
+      "Cách mạng tư sản dân quyền",
+      "Cách mạng xã hội chủ nghĩa",
+      "Cách mạng dân chủ nhân dân",
+      "Cách mạng giải phóng dân tộc"
+    ],
+     
+    "answer": "Cách mạng tư sản dân quyền"
+  },
+  {
+    "id": 45,
+    "question": "Sự kiện nào đánh dấu giai cấp công nhân VN đã trưởng thành và đủ sức lãnh đạo CMVN?",
+    "options": [
+      "Sự ra đời của Đảng cộng sản VN",
+      "Phong trào công nhân 1920-1929",
+      "Cuộc bãi công của công nhân Ba Son",
+      "Hội Việt Nam Cách mạng Thanh niên thành lập"
+    ],
+     
+    "answer": "Sự ra đời của Đảng cộng sản VN"
+  },
+  {
+    "id": 46,
+    "question": "Ai là tổng bí thư đầu tiên của Đảng?",
+    "options": [
+      "Nguyễn Ái Quốc",
+      "Trần Phú",
+      "Lê Hồng Phong",
+      "Hà Huy Tập"
+    ],
+    "answerIndex": 1,
+    "answer": "Trần Phú"
+  },
+  {
+    "id": 47,
+    "question": "Luận cương chính của Đảng Cộng sản Đông Dương do ai soạn thảo?",
+    "options": [
+      "Nguyễn Ái Quốc",
+      "Trần Phú",
+      "Lê Hồng Phong",
+      "Trường Chinh"
+    ],
+    "answerIndex": 1,
+    "answer": "Trần Phú"
+  },
+  {
+    "id": 48,
+    "question": "Luận cương chính trị được thông qua tại hội nghị nào của Đảng?",
+    "options": [
+      "Hội nghị BCHTW Đảng (10/1930)",
+      "Hội nghị thành lập Đảng (2/1930)",
+      "Hội nghị BCHTW Đảng (11/1939)",
+      "Hội nghị BCHTW Đảng (5/1941)"
+    ],
+     
+    "answer": "Hội nghị BCHTW Đảng (10/1930)"
+  },
+  {
+    "id": 49,
+    "question": "Ai là người soạn thảo luận cương chính trị và chủ trì Hội nghị Đảng lần thứ nhất?",
+    "options": [
+      "Trần Phú",
+      "Nguyễn Ái Quốc",
+      "Lê Hồng Phong",
+      "Hà Huy Tập"
+    ],
+     
+    "answer": "Trần Phú"
+  },
+  {
+    "id": 50,
+    "question": "Tại Hội nghị nào của Đảng lấy tên Đảng là \"Đảng Cộng sản Đông Dương\"?",
+    "options": [
+      "Hội nghị BCHTW Đảng (10/1930)",
+      "Hội nghị thành lập Đảng (2/1930)",
+      "Hội nghị BCHTW Đảng (11/1939)",
+      "Hội nghị BCHTW Đảng (5/1941)"
+    ],
+     
+    "answer": "Hội nghị BCHTW Đảng (10/1930)"
+  },
+  {
+    "id": 51,
+    "question": "Luận cương chính trị 10/1930 nói về phương hướng chiến lược cách mạng Việt Nam sau khi cách mạng tư sản dân quyền thắng lợi sẽ xây dựng?",
+    "options": [
+      "Tiến thẳng lên con đường XHCN",
+      "Xây dựng nền dân chủ tư sản",
+      "Thành lập chính phủ liên hiệp",
+      "Duy trì chế độ phong kiến"
+    ],
+     
+    "answer": "Tiến thẳng lên con đường XHCN"
+  },
+  {
+    "id": 52,
+    "question": "Xác định lực lượng cách mạng gồm: \"giai cấp công nhân, nông dân và một bộ phận lao khổ thành thị\" là Cương lĩnh cách mạng nào của Đảng?",
+    "options": [
+      "Luận cương chính trị",
+      "Chính cương vắn tắt",
+      "Sách lược vắn tắt",
+      "Cương lĩnh 1991"
+    ],
+     
+    "answer": "Luận cương chính trị"
+  },
+  {
+    "id": 53,
+    "question": "Trong các điểm sau, chỉ rõ điểm khác nhau cơ bản giữa Cương lĩnh chính trị đầu tiên của Đảng và Luận cương tháng 10/1930?",
+    "options": [
+      "Chủ trương tập hợp lực lượng cách mạng",
+      "Xác định kẻ thù chính",
+      "Vai trò của giai cấp công nhân",
+      "Mục tiêu chiến lược"
+    ],
+     
+    "answer": "Chủ trương tập hợp lực lượng cách mạng"
+  },
+  {
+    "id": 54,
+    "question": "Nguyên nhân trực tiếp dẫn đến cao trào 1930-1931 và Xô viết Nghệ Tĩnh?",
+    "options": [
+      "Cuộc khủng hoảng kinh tế 1929-1933, Pháp dồn gánh nặng khủng hoảng vào các nước thuộc địa",
+      "Sự đàn áp của thực dân Pháp sau khởi nghĩa Yên Bái",
+      "Ảnh hưởng của cách mạng Trung Quốc",
+      "Chủ trương của Quốc tế Cộng sản"
+    ],
+     
+    "answer": "Cuộc khủng hoảng kinh tế 1929-1933, Pháp dồn gánh nặng khủng hoảng vào các nước thuộc địa"
+  },
+  {
+    "id": 55,
+    "question": "Ngày đầu tiên nhân dân ta kỷ niệm ngày Quốc tế lao động?",
+    "options": [
+      "Ngày 1/5/1930",
+      "Ngày 1/5/1931",
+      "Ngày 1/5/1929",
+      "Ngày 1/5/1932"
+    ],
+     
+    "answer": "Ngày 1/5/1930"
+  },
+  {
+    "id": 56,
+    "question": "Đỉnh cao cao trào cách mạng 1930-1931?",
+    "options": [
+      "Thành lập được các chính quyền xô viết ở Hà Tĩnh",
+      "Cuộc biểu tình của nông dân Nghệ An",
+      "Phong trào đấu tranh của công nhân Vinh",
+      "Cuộc bãi công của công nhân đồn điền cao su"
+    ],
+     
+    "answer": "Thành lập được các chính quyền xô viết ở Hà Tĩnh"
+  },
+  {
+    "id": 57,
+    "question": "Đảng lãnh đạo đẩy mạnh cuộc đấu tranh công khai, hợp pháp trên báo chí và nghị trường trong giai đoạn cách mạng nào?",
+    "options": [
+      "1936-1939",
+      "1930-1931",
+      "1939-1945",
+      "1945-1946"
+    ],
+     
+    "answer": "1936-1939"
+  },
+  {
+    "id": 58,
+    "question": "Phong trào cách mạng nào có điều kiện và khả năng đấu tranh công khai hợp pháp?",
+    "options": [
+      "Cao trào dân chủ Đông Dương 1936-1939",
+      "Cao trào 1930-1931",
+      "Phong trào cách mạng 1939-1945",
+      "Phong trào Đồng Khởi"
+    ],
+     
+    "answer": "Cao trào dân chủ Đông Dương 1936-1939"
+  },
+  {
+    "id": 59,
+    "question": "Lực lượng tham gia Mặt trận nhân dân phản đế 1936-1939?",
+    "options": [
+      "Liên hiệp các giai cấp, tầng lớp yêu nước",
+      "Chỉ có công nhân và nông dân",
+      "Chỉ có tư sản và tiểu tư sản",
+      "Chỉ có trí thức và sinh viên"
+    ],
+     
+    "answer": "Liên hiệp các giai cấp, tầng lớp yêu nước"
+  },
+  {
+    "id": 60,
+    "question": "Điểm giông nhau giữa phong trào 1930-1931 và cao trào 1936-1939?",
+    "options": [
+      "Mục tiêu chiến lược",
+      "Hình thức đấu tranh",
+      "Lực lượng tham gia",
+      "Kẻ thù trực tiếp"
+    ],
+     
+    "answer": "Mục tiêu chiến lược"
+  },
+  {
+    "id": 61,
+    "question": "Nguyên nhân bùng nổ chiến tranh thế giới thứ 2?",
+    "options": [
+      "Sự cạnh tranh thuộc địa và thị trường",
+      "Mâu thuẫn giữa các nước đế quốc về lãnh thổ",
+      "Hậu quả của chiến tranh thế giới thứ nhất",
+      "Sự trỗi dậy của chủ nghĩa phát xít"
+    ],
+     
+    "answer": "Sự cạnh tranh thuộc địa và thị trường"
+  },
+  {
+    "id": 62,
+    "question": "Sau khi chiến tranh thế giới thứ 2 bùng nổ, cuộc CM ở Đông Dương mang tính chất là cuọc CM gì?",
+    "options": [
+      "CM giải phóng dân tộc",
+      "CM dân chủ tư sản",
+      "CM xã hội chủ nghĩa",
+      "CM dân chủ nhân dân"
+    ],
+     
+    "answer": "CM giải phóng dân tộc"
+  },
+  {
+    "id": 63,
+    "question": "Ai chủ trì Hội nghị Trung ương đảng lần thứ 6 (11/1939)?",
+    "options": [
+      "Nguyễn Văn Cừ",
+      "Trần Phú",
+      "Lê Hồng Phong",
+      "Hồ Chí Minh"
+    ],
+     
+    "answer": "Nguyễn Văn Cừ"
+  },
+  {
+    "id": 64,
+    "question": "Lá cờ đỏ sao vàng xuất hiện lần đầu ở nước ta trong thời gian nào?",
+    "options": [
+      "Khởi nghĩa Nam Kỳ (1940)",
+      "Khởi nghĩa Bắc Sơn (1940)",
+      "Tổng khởi nghĩa Tháng 8 (1945)",
+      "Cao trào kháng Nhật (1945)"
+    ],
+     
+    "answer": "Khởi nghĩa Nam Kỳ (1940)"
+  },
+  {
+    "id": 65,
+    "question": "Chủ trương điều chỉnh chiến lược CM \"đặt nhiệm vụ giải phóng dân tộc lên hàng đầu\" bắt đầu từ hội nghị trung ướng đảng nào?",
+    "options": [
+      "Hội nghị trung ương đảng 6(11/1939)",
+      "Hội nghị trung ương đảng 7(1940)",
+      "Hội nghị trung ương đảng 8(5/1941)",
+      "Hội nghị trung ương đảng 9(1943)"
+    ],
+     
+    "answer": "Hội nghị trung ương đảng 6(11/1939)"
+  },
+  {
+    "id": 66,
+    "question": "Hội nghị trung ương đảng nào hoàn chỉnh chuyển hướng chiến lược CM VN khi thế chiến II bùng nổ?",
+    "options": [
+      "Hội nghị trung ương đảng 8 (5/1941)",
+      "Hội nghị trung ương đảng 6 (11/1939)",
+      "Hội nghị trung ương đảng 7 (1940)",
+      "Hội nghị trung ương đảng 9 (1943)"
+    ],
+     
+    "answer": "Hội nghị trung ương đảng 8 (5/1941)"
+  },
+  {
+    "id": 67,
+    "question": "Ai chủ trì Hội nghị Trung ương Đảng lần thứ 8 (5/1941)?",
+    "options": [
+      "Hồ Chí Minh",
+      "Trường Chinh",
+      "Nguyễn Văn Cừ",
+      "Lê Hồng Phong"
+    ],
+     
+    "answer": "Hồ Chí Minh"
+  },
+  {
+    "id": 68,
+    "question": "Sau 30 năm bôn ba, NAQ đã trở về Tổ Quốc vào thời gian nào?",
+    "options": [
+      "28/1/1941",
+      "10/5/1941",
+      "2/9/1945",
+      "19/12/1946"
+    ],
+     
+    "answer": "28/1/1941"
+  },
+  {
+    "id": 69,
+    "question": "Địa danh khi Lãnh tụ NAQ về nước lãnh đạo CMVN sau 30 năm hoạt động ở nước ngoài?",
+    "options": [
+      "Cao Bằng",
+      "Tuyên Quang",
+      "Thái Nguyên",
+      "Hà Nội"
+    ],
+     
+    "answer": "Cao Bằng"
+  },
+  {
+    "id": 70,
+    "question": "Hội nghị Trung ương Đảng lần thử 8 (5/1941) xác định nhiệm vụ chính của CM Đông Dương là gì?",
+    "options": [
+      "Dân tộc Giải phóng",
+      "Chống phong kiến",
+      "Chống đế quốc và phong kiến",
+      "Xây dựng chính quyền công nông"
+    ],
+     
+    "answer": "Dân tộc Giải phóng"
+  },
+  {
+    "id": 71,
+    "question": "Quyết định xúc tiến chuẩn bị khởi nghĩa vũ trang được xác định là nhiệmvụ trung tâm của Đảng và nhân dân ta là chủ trương của Đảng trong giai đoạn CM nào?",
+    "options": [
+      "1939 -- 1945",
+      "1936-1939",
+      "1930-1931",
+      "1945-1946"
+    ],
+     
+    "answer": "1939 -- 1945"
+  },
+  {
+    "id": 72,
+    "question": "Chủ trương thành lập nước VN Dân chủ Cộng hòa được Đảng đề ra tại Hội nghị Ban chấp hành Trung ương Đảng lần thứ nhất?",
+    "options": [
+      "Hội nghị lần thứ 8 (5/1941)",
+      "Hội nghị lần thứ 6 (11/1939)",
+      "Hội nghị lần thứ 7 (1940)",
+      "Hội nghị lần thứ 9 (1943)"
+    ],
+     
+    "answer": "Hội nghị lần thứ 8 (5/1941)"
+  },
+  {
+    "id": 73,
+    "question": "Chủ trương thành lập Mặt trận VN độc lập đông minh tại Hội nghị Ban chấp hành Trung ương Đảng lần thứ mấy?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answerIndex": 2,
+    "answer": "8"
+  },
+  {
+    "id": 74,
+    "question": "Mặt trận VN độc lập đồng minh (Việt Minh) được thành lập năm nào?",
+    "options": [
+      "Năm 1940",
+      "Năm 1941",
+      "Năm 1942",
+      "Năm 1943"
+    ],
+    "answerIndex": 1,
+    "answer": "Năm 1941"
+  },
+  {
+    "id": 75,
+    "question": "Điểm giống nhau trong 3 Hội nghị TW Đảng 6, 7, 8?",
+    "options": [
+      "Đặt nhiệm vụ giải phóng dân tộc lên hàng đầu",
+      "Đều chủ trương khởi nghĩa vũ trang",
+      "Đều thành lập mặt trận dân tộc thống nhất",
+      "Đều đề ra kế hoạch tổng khởi nghĩa"
+    ],
+     
+    "answer": "Đặt nhiệm vụ giải phóng dân tộc lên hàng đầu"
+  },
+  {
+    "id": 76,
+    "question": "Chuyển hình thức đấu tranh từ công khai, hợp pháp, nửa hợp pháp sang bí mật, bất hợp pháp, chuẩn bị khởi nghĩa vũ trang giành chính quyền là chủ trương của Đảng trong giai đoạn CM?",
+    "options": [
+      "1939-1945",
+      "1936-1939",
+      "1930-1931",
+      "1945-1946"
+    ],
+     
+    "answer": "1939-1945"
+  },
+  {
+    "id": 77,
+    "question": "Hãy cho biết tên gọi của Tổ chức Quần chúng trong mặt trận Việt Minh?",
+    "options": [
+      "Cứu Quốc",
+      "Độc lập",
+      "Tự do",
+      "Giải phóng"
+    ],
+     
+    "answer": "Cứu Quốc"
+  },
+  {
+    "id": 78,
+    "question": "Các khu căn cứ CM đến năm 1945 bao gồm có mấy tỉnh? Đó là những tỉnh nào?",
+    "options": [
+      "6 tỉnh: Cao Bằng, Bắc Kạn, Lạng Sơn, Hà Giang, Tuyên Quang, Thái Nguyên",
+      "5 tỉnh: Cao Bằng, Lạng Sơn, Tuyên Quang, Thái Nguyên, Vĩnh Phúc",
+      "4 tỉnh: Cao Bằng, Bắc Kạn, Thái Nguyên, Tuyên Quang",
+      "7 tỉnh: Cao Bằng, Bắc Kạn, Lạng Sơn, Hà Giang, Tuyên Quang, Thái Nguyên, Lào Cai"
+    ],
+     
+    "answer": "6 tỉnh: Cao Bằng, Bắc Kạn, Lạng Sơn, Hà Giang, Tuyên Quang, Thái Nguyên"
+  },
+  {
+    "id": 79,
+    "question": "Ai là người được giao nhiệm vụ thành lập Đội VN tuyên truyền giải phóng quân 1944?",
+    "options": [
+      "Võ Nguyên Giáp",
+      "Trường Chinh",
+      "Phạm Văn Đồng",
+      "Hoàng Văn Thái"
+    ],
+     
+    "answer": "Võ Nguyên Giáp"
+  },
+  {
+    "id": 80,
+    "question": "Từ năm 1941 đến năm 1945 ai là Tổng Bí thư Đảng?",
+    "options": [
+      "Trường Chinh",
+      "Lê Duẩn",
+      "Hồ Chí Minh",
+      "Nguyễn Văn Cừ"
+    ],
+     
+    "answer": "Trường Chinh"
+  },
+  {
+    "id": 81,
+    "question": "Chỉ thị \"Nhật, Pháp bắn nhau và hành động của chúng ta\" ra đời khi nào?",
+    "options": [
+      "Tháng 8/1945",
+      "Tháng 3/1945",
+      "Tháng 5/1945",
+      "Tháng 7/1945"
+    ],
+     
+    "answer": "Tháng 8/1945"
+  },
+  {
+    "id": 82,
+    "question": "Kẻ thù chỉnh cụ thể trước mặt của nhân dân Đông Dương từ 12/3/1945 - 8/1945 là đế quốc nào?",
+    "options": [
+      "Phát xít Nhật",
+      "Thực dân Pháp",
+      "Phát xít Đức",
+      "Mỹ"
+    ],
+     
+    "answer": "Phát xít Nhật"
+  },
+  {
+    "id": 83,
+    "question": "Bản chỉ thị \"Nhật, Pháp bắn nhau và hành động của chúng ta\" xác định kẻ thù cụ thể trước mặt và duy nhất của nhân dân Đông Dương sau khi Nhật đảo chính Pháp là kẻ thù nào?",
+    "options": [
+      "Phát xít Nhật",
+      "Thực dân Pháp",
+      "Phát xít Đức",
+      "Mỹ"
+    ],
+     
+    "answer": "Phát xít Nhật"
+  },
+  {
+    "id": 84,
+    "question": "Trong cao trào kháng Nhật cứu nước, phong trào \"phá kho thóc Nhật giải quyết nạn đói\" diễn ra mạnh mẽ ở đâu?",
+    "options": [
+      "Đồng bằng Bắc Bộ và Bắc Trung Bộ",
+      "Nam Bộ",
+      "Trung Bộ",
+      "Tây Bắc Bộ"
+    ],
+     
+    "answer": "Đồng bằng Bắc Bộ và Bắc Trung Bộ"
+  },
+  {
+    "id": 85,
+    "question": "Làm tiền đề cho cuộc tổng khởi nghĩa Đảng đã phát động cao trào CM nào?",
+    "options": [
+      "Cao trào kháng Nhật cứu nước",
+      "Cao trào 1930-1931",
+      "Cao trào 1936-1939",
+      "Phong trào giải phóng dân tộc"
+    ],
+     
+    "answer": "Cao trào kháng Nhật cứu nước"
+  },
+  {
+    "id": 86,
+    "question": "Điều kiện quốc tế thuận lợi nào để ta phát động tổng khởi nghĩa tháng 8/1945?",
+    "options": [
+      "Phát xít Nhật đầu hàng Liên Xô và các nước đồng minh",
+      "Quân Đồng minh vào Đông Dương",
+      "Pháp thua trận ở châu Âu",
+      "Mỹ ném bom nguyên tử xuống Nhật"
+    ],
+     
+    "answer": "Phát xít Nhật đầu hàng Liên Xô và các nước đồng minh"
+  },
+  {
+    "id": 87,
+    "question": "Yếu tố quốc tế nào tác đọng để đảng quyết định triệu tập Hội nghị Toàn quốc tại Tân Trào?",
+    "options": [
+      "Phát xít Nhật đầu hàng Liên Xô và các nước đồng minh",
+      "Quân Đồng minh đổ bộ vào Đông Dương",
+      "Pháp yếu dần",
+      "Mỹ hỗ trợ"
+    ],
+     
+    "answer": "Phát xít Nhật đầu hàng Liên Xô và các nước đồng minh"
+  },
+  {
+    "id": 88,
+    "question": "Hội nghị Toàn quốc của Đảng phát động Tổng khởi nghĩa cách mạng tháng 8 diễn ra ở đâu?",
+    "options": [
+      "Tân Trào",
+      "Hà Nội",
+      "Sài Gòn",
+      "Vinh"
+    ],
+     
+    "answer": "Tân Trào"
+  },
+  {
+    "id": 89,
+    "question": "Khẩu hiệu: \"phản đối xâm lược\"; \"hoàn toàn độc lập\" được Đảng ta chỉ rõ trong?",
+    "options": [
+      "Hội nghị toàn quốc (8/1945)",
+      "Chỉ thị Nhật-Pháp bắn nhau",
+      "Hội nghị Tân Trào",
+      "Tuyên ngôn Độc lập"
+    ],
+     
+    "answer": "Hội nghị toàn quốc (8/1945)"
+  },
+  {
+    "id": 90,
+    "question": "Khẩu hiệu đấu tranh trong Tổng khởi nghĩa cách mạng Tháng 8 là gì?",
+    "options": [
+      "Phản đối xâm lược, hoàn toàn độc lập, chính quyền nhân dân",
+      "Độc lập, tự do, hạnh phúc",
+      "Đánh đuổi Nhật, thành lập chính phủ",
+      "Tự do, bình đẳng, bác ái"
+    ],
+     
+    "answer": "Phản đối xâm lược, hoàn toàn độc lập, chính quyền nhân dân"
+  },
+  {
+    "id": 91,
+    "question": "Nguyên tắc chỉ đạo của Đảng trong tổng khởi nghĩa cách mạng tháng 8?",
+    "options": [
+      "Tập trung, Thống nhất, Kịp thời",
+      "Bất ngờ, nhanh chóng, quyết liệt",
+      "Tổng lực, toàn dân, vũ trang",
+      "Phối hợp, linh hoạt, hiệu quả"
+    ],
+     
+    "answer": "Tập trung, Thống nhất, Kịp thời"
+  },
+  {
+    "id": 92,
+    "question": "Tổng khởi nghĩa cách mạng t8 giành thắng lợi đầu tiên ở địa phương nào?",
+    "options": [
+      "Hà Nội",
+      "Sài Gòn",
+      "Huế",
+      "Hải Phòng"
+    ],
+     
+    "answer": "Hà Nội"
+  },
+  {
+    "id": 93,
+    "question": "Tổng khởi nghĩa giành chính quyền trên cả nước 8/1945 diễn ra thành công trong bao nhiêu ngày?",
+    "options": [
+      "15 ngày",
+      "10 ngày",
+      "20 ngày",
+      "30 ngày"
+    ],
+     
+    "answer": "15 ngày"
+  },
+  {
+    "id": 94,
+    "question": "Tổng khởi nghĩa cách mạng 8/1945 đã giành quyền từ tay kẻ thù nào?",
+    "options": [
+      "Phát xít Nhật",
+      "Thực dân Pháp",
+      "Quân Tưởng",
+      "Cả Pháp và Nhật"
+    ],
+     
+    "answer": "Phát xít Nhật"
+  },
+  {
+    "id": 95,
+    "question": "Mốc thời gian đánh giấu CM t8/1945 hoàn toàn thắng lợi?",
+    "options": [
+      "2/9/1945",
+      "19/8/1945",
+      "30/8/1945",
+      "10/9/1945"
+    ],
+     
+    "answer": "2/9/1945"
+  },
+  {
+    "id": 96,
+    "question": "Ngày 30/8/1945 vua Bảo Đại tuyên bố thoái vị là sự kiện đánh dấu:",
+    "options": [
+      "Chế độ phong kiến Việt Nam sụp đổ",
+      "Nhật đầu hàng Đồng minh",
+      "Cách mạng Tháng Tám thành công",
+      "Việt Nam giành độc lập"
+    ],
+     
+    "answer": "Chế độ phong kiến Việt Nam sụp đổ"
+  },
+  {
+    "id": 97,
+    "question": "Bản tuyên ngôn độc lập của nước VN dân chủ Cộng hòa không kế thừa tư tưởng của văn bản không có tính pháp lý nào?",
+    "options": [
+      "Luận cương chính trị 1930",
+      "Tuyên ngôn Nhân quyền và Dân quyền của Pháp",
+      "Tuyên ngôn Độc lập của Mỹ (1776)",
+      "Hiến pháp 1946"
+    ],
+     
+    "answer": "Luận cương chính trị 1930"
+  },
+  {
+    "id": 98,
+    "question": "Những thắng lợi lịch sử có ý nghĩa trọng đại đối với dân tộc và mang tầm vóc thời đại của CM VN dưới sự lãnh đạo của Đảng?",
+    "options": [
+      "CM tháng 8 năm 1945",
+      "Kháng chiến chống Pháp (1945-1954)",
+      "Kháng chiến chống Mỹ (1954-1975)",
+      "Công cuộc đổi mới 1986"
+    ],
+     
+    "answer": "CM tháng 8 năm 1945"
+  },
+  {
+    "id": 99,
+    "question": "Nhằm khắc phục tình trạng trống rỗ về ngân sách của chính phủ sau CM tháng 8, nhân dân ta đã hưởng ứng phong trào nào?",
+    "options": [
+      "Tuần lễ vàng",
+      "Bình dân học vụ",
+      "Tăng gia sản xuất",
+      "Quỹ độc lập"
+    ],
+     
+    "answer": "Tuần lễ vàng"
+  },
+  {
+    "id": 100,
+    "question": "Phong trào bình dân học vụ trong kháng chiến chống Pháp?",
+    "options": [
+      "Cuộc vận động nhân dân tham gia các lớp học để xóa mù chữ",
+      "Phong trào đọc báo, sách cách mạng",
+      "Cuộc vận động học ngoại ngữ",
+      "Phong trào nâng cao dân trí"
+    ],
+     
+    "answer": "Cuộc vận động nhân dân tham gia các lớp học để xóa mù chữ"
+  },
+  {
+    "id": 101,
+    "question": "Đảng, Chính phủ và chủ tịch HCM kêu gọi đồng bào thực hiện \"Tuần lễ vàng\", \"Quỹ độc lập\" nhằm mục đích gì?",
+    "options": [
+      "Giải quyết khó khăn về tài chính của đất nước",
+      "Xây dựng quỹ kháng chiến",
+      "Hỗ trợ nạn đói",
+      "Mua vũ khí cho cách mạng"
+    ],
+     
+    "answer": "Giải quyết khó khăn về tài chính của đất nước"
+  },
+  {
+    "id": 102,
+    "question": "Kẻ thù nào dọn đường tiếp tay cho thực dân Pháp quay trở lại xâm lược nước ta?",
+    "options": [
+      "Quân Anh",
+      "Quân Mỹ",
+      "Quân Trung Hoa Dân Quốc",
+      "Quân Nhật"
+    ],
+     
+    "answer": "Quân Anh"
+  },
+  {
+    "id": 103,
+    "question": "Khi thực dân Pháp quay trở lại xâm lược Việt Nam lần thứ 2, mở đầu là cuộc chiếm đấu của quân và dân ta ở?",
+    "options": [
+      "Nam Bộ",
+      "Bắc Bộ",
+      "Trung Bộ",
+      "Hà Nội"
+    ],
+     
+    "answer": "Nam Bộ"
+  },
+  {
+    "id": 104,
+    "question": "Lí do nào là quan trọng nhất để Đảng ta chủ trương khi thì tạm thời hào hoãn với Tưởng để chống Pháp, khi thì hòa hoãn với Pháp để đuổi Tưởng?",
+    "options": [
+      "Chính quyền của ta còn non trẻ, không thể một lúc chống 2 kẻ thù mạnh",
+      "Ta cần thời gian củng cố lực lượng",
+      "Ta muốn tranh thủ sự ủng hộ quốc tế",
+      "Ta muốn tránh chiến tranh"
+    ],
+     
+    "answer": "Chính quyền của ta còn non trẻ, không thể một lúc chống 2 kẻ thù mạnh"
+  },
+  {
+    "id": 105,
+    "question": "Những lực lượng quân đội nước ngoài nào có mặt trên đất nước ta sau Cách Mạng tháng 8/1945?",
+    "options": [
+      "Anh, Pháp, Nhật, Tưởng",
+      "Anh, Pháp, Mỹ, Tưởng",
+      "Pháp, Nhật, Mỹ, Tưởng",
+      "Anh, Mỹ, Pháp, Nhật"
+    ],
+     
+    "answer": "Anh, Pháp, Nhật, Tưởng"
+  },
+  {
+    "id": 106,
+    "question": "Sau CM tháng 8/1945, bọn nội phản nổi bật là ai?",
+    "options": [
+      "Việt Nam Quốc Dân Đảng và Việt Nam cách mạng đồng minh hội",
+      "Đảng Dân chủ và Đảng Xã hội",
+      "Phong trào Quốc gia và phong trào Dân chủ",
+      "Mặt trận Quốc gia thống nhất"
+    ],
+     
+    "answer": "Việt Nam Quốc Dân Đảng và Việt Nam cách mạng đồng minh hội"
+  },
+  {
+    "id": 107,
+    "question": "Kẻ thù chính của CMVN sau tháng 8/1945?",
+    "options": [
+      "thực dân Pháp",
+      "Phát xít Nhật",
+      "Quân Tưởng",
+      "Mỹ"
+    ],
+     
+    "answer": "thực dân Pháp"
+  },
+  {
+    "id": 108,
+    "question": "Cuộc bầu cử Quốc hội đầu tiên ở nước ta diễn ra vào ngày tháng năm nào?",
+    "options": [
+      "Ngày 6/1/1946",
+      "Ngày 2/9/1945",
+      "Ngày 19/12/1946",
+      "Ngày 1/1/1946"
+    ],
+     
+    "answer": "Ngày 6/1/1946"
+  },
+  {
+    "id": 109,
+    "question": "Yếu tố nào KHÔNG phải là khó khăn, thách thức đối với VN sau CMT8 (1945)?",
+    "options": [
+      "Chế độ phong kiến kết cấu kết với đế quốc",
+      "Nạn đói trầm trọng",
+      "Ngân sách quốc gia trống rỗng",
+      "Chính quyền cách mạng non trẻ"
+    ],
+     
+    "answer": "Chế độ phong kiến kết cấu kết với đế quốc"
+  },
+  {
+    "id": 110,
+    "question": "Ban chấp hành TW Đảng đã ra bản chỉ thị \"Kháng chiến kiến quốc\" khi nào?",
+    "options": [
+      "Ngày 25/11/1945",
+      "Ngày 2/9/1945",
+      "Ngày 19/12/1946",
+      "Ngày 6/1/1946"
+    ],
+     
+    "answer": "Ngày 25/11/1945"
+  },
+  {
+    "id": 111,
+    "question": "Chủ trương và sách lược của Đảng trong việc đối phó với các thế lực đế quốc sau CMT8 nhằm mục đích gì?",
+    "options": [
+      "Tránh tình thế cùng 1 lúc đương đầu với nhiều kẻ thù, tranh thủ thời gian chuẩn bị cho cuộc kháng chiến",
+      "Nhanh chóng đánh đuổi tất cả các kẻ thù",
+      "Tập trung tiêu diệt thực dân Pháp",
+      "Đàm phán với các nước để công nhận nền độc lập"
+    ],
+     
+    "answer": "Tránh tình thế cùng 1 lúc đương đầu với nhiều kẻ thù, tranh thủ thời gian chuẩn bị cho cuộc kháng chiến"
+  },
+  {
+    "id": 112,
+    "question": "Phong trào mà Đảng ta đã vận động nhân dân thực hiện để xóa nạn đói sau CMT8 là gì?",
+    "options": [
+      "Tăng gia sản xuất, thực hành tiết kiệm",
+      "Bình dân học vụ",
+      "Tuần lễ vàng",
+      "Quỹ độc lập"
+    ],
+     
+    "answer": "Tăng gia sản xuất, thực hành tiết kiệm"
+  },
+  {
+    "id": 113,
+    "question": "Phong trào nào Đảng ta đã vận động nhân dân tham gia để chống nạn mù chữ sau CMT8 năm 1945?",
+    "options": [
+      "Bình dân học vụ",
+      "Tăng gia sản xuất",
+      "Tuần lễ vàng",
+      "Quỹ độc lập"
+    ],
+     
+    "answer": "Bình dân học vụ"
+  },
+  {
+    "id": 114,
+    "question": "Sau CMT8 (1945) trong tình thế cùng một lúc phải đối mặt với nhiều kẻ thù, Đảng ta đã chọn giải pháp hòa hoãn với kẻ thù nào đầu tiên?",
+    "options": [
+      "Tưởng và bọn tay sai",
+      "Thực dân Pháp",
+      "Quân Anh",
+      "Quân Nhật"
+    ],
+     
+    "answer": "Tưởng và bọn tay sai"
+  },
+  {
+    "id": 115,
+    "question": "Vấn đề nào KHÔNG PHẢI là những thành tựu căn bản của CNVN trong việc xây dựng và củng cố chính quyền CM sau 1945?",
+    "options": [
+      "Xóa bỏ hoàn toàn sở hữu ruộng đất phong kiến",
+      "Tổ chức bầu cử Quốc hội đầu tiên",
+      "Thành lập chính phủ liên hiệp",
+      "Ban hành Hiến pháp 1946"
+    ],
+     
+    "answer": "Xóa bỏ hoàn toàn sở hữu ruộng đất phong kiến"
+  },
+  {
+    "id": 116,
+    "question": "Sau tháng 8/1945, để gạt mũi nhọn tiến công của kẻ thù Đảng ta đã tuyên bố gì?",
+    "options": [
+      "Tự giải tán, lập Hội nghiên cứu chủ nghĩa Mác - Lênin ở Đông Dương",
+      "Rút vào hoạt động bí mật",
+      "Chuyển sang hoạt động hợp pháp",
+      "Công khai tuyên bố là Đảng duy nhất cầm quyền"
+    ],
+     
+    "answer": "Tự giải tán, lập Hội nghiên cứu chủ nghĩa Mác - Lênin ở Đông Dương"
+  },
+  {
+    "id": 117,
+    "question": "VN và Tưởng hòa hoãn với nhau vào thời điểm nào?",
+    "options": [
+      "9/1945 - 12/1946",
+      "3/1946 - 12/1946",
+      "9/1945 - 3/1946",
+      "12/1945 - 12/1946"
+    ],
+     
+    "answer": "9/1945 - 12/1946"
+  },
+  {
+    "id": 118,
+    "question": "Để hòa hoãn với Tưởng và bọn tay sai của chúng, VN đã nhân nhượng cho chúng những quyền lợi gì?",
+    "options": [
+      "Nhân nhượng 1 số quyền lợi kinh tế và chính trị",
+      "Nhân nhượng toàn bộ quyền lợi kinh tế",
+      "Nhân nhượng về lãnh thổ",
+      "Chấp nhận sự bảo hộ của Trung Hoa"
+    ],
+     
+    "answer": "Nhân nhượng 1 số quyền lợi kinh tế và chính trị"
+  },
+  {
+    "id": 119,
+    "question": "Sau khi Tưởng và Pháp ký bản Hiệp định Hoa - Pháp 2/1946 Đảng ta đã lựa chọn giải pháp gì trong mối quan hệ với kẻ thù chính?",
+    "options": [
+      "Thương lượng hòa hoãn với Pháp",
+      "Đối đầu với Pháp",
+      "Hòa hoãn với Tưởng để chống Pháp",
+      "Tấn công quân Tưởng"
+    ],
+     
+    "answer": "Thương lượng hòa hoãn với Pháp"
+  },
+  {
+    "id": 120,
+    "question": "Sự kiện nào mở đầu cho sự hòa hoãn giữa VN và Pháp?",
+    "options": [
+      "Pháp và VN ký hiệp định Sơ bộ ngày 6/3/1946",
+      "Hiệp định Giơnevơ 1954",
+      "Tạm ước 14/9/1946",
+      "Pháp công nhận nền độc lập của VN"
+    ],
+     
+    "answer": "Pháp và VN ký hiệp định Sơ bộ ngày 6/3/1946"
+  },
+  {
+    "id": 121,
+    "question": "Lí do nào là cơ bản nhất để ta chủ trương hòa hoãn, nhân nhượng với Tưởng một số quyền lợi về kinh tế và chính trị?",
+    "options": [
+      "Tránh tình trạng 1 lúc đối phó với nhiều kẻ thù",
+      "Để tập trung đánh Pháp",
+      "Để có thời gian xây dựng lực lượng",
+      "Do ta yếu về kinh tế"
+    ],
+     
+    "answer": "Tránh tình trạng 1 lúc đối phó với nhiều kẻ thù"
+  },
+  {
+    "id": 122,
+    "question": "Ta đã nhân nhượng với Tưởng như thế nào?",
+    "options": [
+      "Chấp nhận tiêu tiền Trung Quốc, cung cấp 1 phần lương thực, thực phẩm cho quân Tưởng",
+      "Nhường một số vùng đất cho Trung Quốc",
+      "Cho phép quân Tưởng chiếm đóng miền Bắc",
+      "Công nhận chủ quyền của Trung Quốc trên biển"
+    ],
+     
+    "answer": "Chấp nhận tiêu tiền Trung Quốc, cung cấp 1 phần lương thực, thực phẩm cho quân Tưởng"
+  },
+  {
+    "id": 123,
+    "question": "Nhận xét chúng về thái độ của CP VN Dân chủ Cộng hòa với quân đội Tưởng Giới Thạch?",
+    "options": [
+      "Ta nhân nhượng có nguyên tắc",
+      "Ta nhân nhượng vô điều kiện",
+      "Ta đối đầu với Tưởng",
+      "Ta hợp tác với Tưởng"
+    ],
+     
+    "answer": "Ta nhân nhượng có nguyên tắc"
+  },
+  {
+    "id": 124,
+    "question": "Vì sao từ tháng 2/1946, ta chủ trương hòa hoãn với Pháp?",
+    "options": [
+      "Hòa hoãn với Pháp để đẩy nhanh 20 vạn quân Tưởng về nước",
+      "Để Pháp công nhận nền độc lập",
+      "Để có thời gian chuẩn bị lực lượng",
+      "Để tránh chiến tranh với Pháp"
+    ],
+     
+    "answer": "Hòa hoãn với Pháp để đẩy nhanh 20 vạn quân Tưởng về nước"
+  },
+  {
+    "id": 125,
+    "question": "Hiệp định sơ bộ 6/3/1946 quy định điều nào sau đây?",
+    "options": [
+      "VN là 1 quốc gia tự do trong khối Liên hợp Pháp",
+      "VN hoàn toàn độc lập",
+      "Pháp công nhận VN là một quốc gia tự do",
+      "VN trở thành thuộc địa của Pháp"
+    ],
+     
+    "answer": "VN là 1 quốc gia tự do trong khối Liên hợp Pháp"
+  },
+  {
+    "id": 126,
+    "question": "Trưởng đoàn đại biểu VN tham dự cuộc đàm phán tại Phôngtenoblo năm 1946 là ai?",
+    "options": [
+      "Phạm Văn Đồng",
+      "Hồ Chí Minh",
+      "Võ Nguyên Giáp",
+      "Nguyễn Lương Bằng"
+    ],
+     
+    "answer": "Phạm Văn Đồng"
+  },
+  {
+    "id": 127,
+    "question": "Vì sao VN kí với Pháp Hiệp định sơ bộ 6/3/1946?",
+    "options": [
+      "Lực lượng ta còn yếu so với Pháp, tránh đụng độ nhiều kẻ thù 1 lúc",
+      "Ta muốn được Pháp công nhận độc lập",
+      "Ta không muốn chiến tranh",
+      "Ta muốn hợp tác với Pháp"
+    ],
+     
+    "answer": "Lực lượng ta còn yếu so với Pháp, tránh đụng độ nhiều kẻ thù 1 lúc"
+  },
+  {
+    "id": 128,
+    "question": "Nội dung đầu tiên của Hiệp định sơ bộ 6/3/1946 mà Chính phủ ta kí với Pháp?",
+    "options": [
+      "Pháp công nhận nước VN Dân chủ Cộng hòa là một quốc gia tự do, có chính phủ, nghị viên, quân đội và tài chính riêng nằm trong khối Liên hiệp Pháp",
+      "Pháp công nhận nền độc lập hoàn toàn của VN",
+      "Pháp và VN cùng ngừng bắn",
+      "Pháp rút quân khỏi VN"
+    ],
+     
+    "answer": "Pháp công nhận nước VN Dân chủ Cộng hòa là một quốc gia tự do, có chính phủ, nghị viên, quân đội và tài chính riêng nằm trong khối Liên hiệp Pháp"
+  },
+  {
+    "id": 129,
+    "question": "Việc kí hiệp định sơ bộ 6/3/1946 chứng tỏ?",
+    "options": [
+      "Đường lối chủ trương đúng đắn kịp thời của Đảng",
+      "Ta đã đầu hàng Pháp",
+      "Ta từ bỏ đấu tranh vũ trang",
+      "Ta công nhận sự cai trị của Pháp"
+    ],
+     
+    "answer": "Đường lối chủ trương đúng đắn kịp thời của Đảng"
+  },
+  {
+    "id": 130,
+    "question": "Vì sao đàm phán tại Hội nghị Phôngtennoblo thất bại?",
+    "options": [
+      "Vì Pháp muốn tái chiếm VN, không có thiện chí đàm phán",
+      "Vì VN không chấp nhận nhân nhượng",
+      "Vì các nước lớn can thiệp",
+      "Vì vấn đề kinh tế không thống nhất"
+    ],
+     
+    "answer": "Vì Pháp muốn tái chiếm VN, không có thiện chí đàm phán"
+  },
+  {
+    "id": 131,
+    "question": "Đối với kẻ thù là Tưởng và Pháp, Đảng và Bác đã thực hiện nhiều chủ trương biện pháp, Chủ trương biện pháp nào sau đây được xem là đau đớn nhất để cứu vãn tình thế?",
+    "options": [
+      "Đảng Cộng sản Đông Dương tuyên bố giải tán (11/1945) sự thật là rút vào bí mật",
+      "Nhân nhượng cho Tưởng một số quyền lợi",
+      "Ký hiệp định sơ bộ với Pháp",
+      "Tổ chức bầu cử Quốc hội"
+    ],
+     
+    "answer": "Đảng Cộng sản Đông Dương tuyên bố giải tán (11/1945) sự thật là rút vào bí mật"
+  },
+  {
+    "id": 132,
+    "question": "Tạm ước 14/9/1946 ta nhân nhượng cho Pháp 1 số vấn đề gì?",
+    "options": [
+      "Một số quyền lợi về kinh tế và văn hóa",
+      "Quyền lợi về chính trị",
+      "Quyền lợi về ngoại giao",
+      "Quyền lợi về quân sự"
+    ],
+     
+    "answer": "Một số quyền lợi về kinh tế và văn hóa"
+  },
+  {
+    "id": 133,
+    "question": "Ai là người đại diện Chính phủ ta ký với đại diện Chính phủ Pháp bản Hiệp định sơ bộ 6/3/1946?",
+    "options": [
+      "Hồ Chí Minh",
+      "Phạm Văn Đồng",
+      "Võ Nguyên Giáp",
+      "Trường Chinh"
+    ],
+     
+    "answer": "Hồ Chí Minh"
+  },
+  {
+    "id": 134,
+    "question": "Trong Hiệp định Sơ bộ VN đã thỏa thuận cho Pháp những quyền lợi gì?",
+    "options": [
+      "Chấp nhận cho Pháp đưa quân ra Bắc thay thế quân Tưởng đóng ở những nơi quy định trong 5 năm rút quân về nước",
+      "Nhượng bộ về kinh tế",
+      "Nhượng bộ về lãnh thổ",
+      "Nhượng bộ về ngoại giao"
+    ],
+     
+    "answer": "Chấp nhận cho Pháp đưa quân ra Bắc thay thế quân Tưởng đóng ở những nơi quy định trong 5 năm rút quân về nước"
+  },
+  {
+    "id": 135,
+    "question": "Ta và Pháp hòa hoãn với nhau trong khoảng thời gian nào?",
+    "options": [
+      "3/1946 - 12/1946",
+      "9/1945 - 12/1946",
+      "6/1946 - 12/1946",
+      "3/1946 - 6/1946"
+    ],
+     
+    "answer": "3/1946 - 12/1946"
+  },
+  {
+    "id": 136,
+    "question": "Cuộc họp nào, TW Đảng đã quyết định phát động toàn quốc kháng chiến chống thực dân Pháp xâm lược?",
+    "options": [
+      "Cuộc họp ban thường vụ trung ương Đảng mở rộng (18-19/12/1946)",
+      "Hội nghị toàn quốc 8/1945",
+      "Hội nghị BCHTW lần 6",
+      "Hội nghị BCHTW lần 8"
+    ],
+     
+    "answer": "Cuộc họp ban thường vụ trung ương Đảng mở rộng (18-19/12/1946)"
+  },
+  {
+    "id": 137,
+    "question": "Cuộc kháng chiến chống Pháp xâm lược bùng nổ trên toàn cầu khi nào?",
+    "options": [
+      "Ngày 19/12/1946",
+      "Ngày 6/3/1946",
+      "Ngày 14/9/1946",
+      "Ngày 2/9/1945"
+    ],
+     
+    "answer": "Ngày 19/12/1946"
+  },
+  {
+    "id": 138,
+    "question": "Văn kiện nào dưới đây không được coi như cương lĩnh kháng chiến của Đảng ta?",
+    "options": [
+      "Chỉ thị Nhật-Pháp bắn nhau và hành động Việt Nam",
+      "Lời kêu gọi Toàn quốc kháng chiến của Hồ Chí Minh",
+      "Tác phẩm Kháng chiến nhất định thắng lợi của Trường Chinh",
+      "Chỉ thị Toàn dân kháng chiến của BTVTW Đảng"
+    ],
+     
+    "answer": "Chỉ thị Nhật-Pháp bắn nhau và hành động Việt Nam"
+  },
+  {
+    "id": 139,
+    "question": "Nhiệm vụ hàng đầu của CMVN trong kháng chiến chống Pháp là gì?",
+    "options": [
+      "Chống đế quốc giành độc lập dân tộc",
+      "Chống phong kiến giành ruộng đất",
+      "Xây dựng chính quyền nhân dân",
+      "Phát triển kinh tế"
+    ],
+     
+    "answer": "Chống đế quốc giành độc lập dân tộc"
+  },
+  {
+    "id": 140,
+    "question": "Vấn đề nào không phải là phương châm chiến lược của cuộc kháng chiến chống thực dân Pháp?",
+    "options": [
+      "Bất ngờ và chắc thắng",
+      "Toàn dân, toàn diện, trường kỳ, tự lực cánh sinh",
+      "Đánh lâu dài",
+      "Vừa đánh vừa xây dựng lực lượng"
+    ],
+     
+    "answer": "Bất ngờ và chắc thắng"
+  },
+  {
+    "id": 141,
+    "question": "VN phát động cuộc kháng chiến chống pháp trên phạm vi toàn quốc trong hoàn cảnh nào?",
+    "options": [
+      "Cuộc chiến đấu của dân tộc ta hoàn toàn độc lập, Chính phủ VN dân chủ cộng hòa vẫn chưa có nước nào công nhận và đặt quan hệ",
+      "Pháp đã công nhận nền độc lập của VN",
+      "Ta đã có sự ủng hộ của Liên Xô và Trung Quốc",
+      "Mỹ ủng hộ VN"
+    ],
+     
+    "answer": "Cuộc chiến đấu của dân tộc ta hoàn toàn độc lập, Chính phủ VN dân chủ cộng hòa vẫn chưa có nước nào công nhận và đặt quan hệ"
+  },
+  {
+    "id": 142,
+    "question": "Trong kháng chiến chống Pháp vào tháng 6/1950, lần đầu tiên TW Đảng quyết định mở chiến dịch tiến công có quy mô lớn, đó là chiến dịch nào?",
+    "options": [
+      "Chiến dịch biên giới",
+      "Chiến dịch Việt Bắc",
+      "Chiến dịch Điện Biên Phủ",
+      "Chiến dịch Lào"
+    ],
+     
+    "answer": "Chiến dịch biên giới"
+  },
+  {
+    "id": 143,
+    "question": "VN đặt quan hệ ngoại giao chính thức với Trung Quốc, Liên Xô và một số nước khác vào thời điểm nào?",
+    "options": [
+      "Năm 1950",
+      "Năm 1949",
+      "Năm 1951",
+      "Năm 1954"
+    ],
+     
+    "answer": "Năm 1950"
+  },
+  {
+    "id": 144,
+    "question": "Sau 16 năm lãnh đạo cách mạng VN, lần đầu tiên Đảng tuyên bố ra công khai tiến hành đại hội. Đó là đại hội mấy?",
+    "options": [
+      "Đại hội lần thứ hai",
+      "Đại hội lần thứ nhất",
+      "Đại hội lần thứ ba",
+      "Đại hội lần thứ tư"
+    ],
+     
+    "answer": "Đại hội lần thứ hai"
+  },
+  {
+    "id": 145,
+    "question": "Mỹ bắt đầu can thiệp vào chiến tranh Đông Dương ở thời điểm nào?",
+    "options": [
+      "Từ năm 1950",
+      "Từ năm 1949",
+      "Từ năm 1951",
+      "Từ năm 1954"
+    ],
+     
+    "answer": "Từ năm 1950"
+  },
+  {
+    "id": 146,
+    "question": "Chính sách cải cách ruộng đất được thông qua vào thời điểm nào?",
+    "options": [
+      "Năm 1953",
+      "Năm 1950",
+      "Năm 1954",
+      "Năm 1952"
+    ],
+     
+    "answer": "Năm 1953"
+  },
+  {
+    "id": 147,
+    "question": "Bước sang năm 1953, thái độ của Pháp về cuộc chiến tranh ở Đông Dương có thay đổi gì?",
+    "options": [
+      "Muốn rút khỏi cuộc chiến tranh trong danh dự",
+      "Muốn tiếp tục chiến tranh xâm lược",
+      "Muốn mở rộng chiến tranh ra toàn Đông Dương",
+      "Muốn tăng cường quân số"
+    ],
+     
+    "answer": "Muốn rút khỏi cuộc chiến tranh trong danh dự"
+  },
+  {
+    "id": 148,
+    "question": "Nơi nào diễn ra chiến đấu giằng co và ác liệt nhất trong chiến dịch Điện Biên Phủ?",
+    "options": [
+      "Đồi A1",
+      "Hầm De Castries",
+      "Đồi D1",
+      "Cánh đồng Mường Thanh"
+    ],
+     
+    "answer": "Đồi A1"
+  },
+  {
+    "id": 149,
+    "question": "Bộ chính trị đã thông qua phương án mở chiến dịch Điện Biên Phủ vào thời gian nào?",
+    "options": [
+      "Ngày 6/12/1953",
+      "Ngày 1/12/1953",
+      "Ngày 6/11/1953",
+      "Ngày 6/1/1954"
+    ],
+     
+    "answer": "Ngày 6/12/1953"
+  },
+  {
+    "id": 150,
+    "question": "Chiến dịch Điện Biên Phủ thắng lợi làm phá sản kế hoạch nào của Pháp và Mỹ?",
+    "options": [
+      "Kế hoạch Nava",
+      "Kế hoạch Rơve",
+      "Kế hoạch Đờ Lát đờ Tátxinhi",
+      "Kế hoạch Mác-san"
+    ],
+     
+    "answer": "Kế hoạch Nava"
+  },
+  {
+    "id": 151,
+    "question": "Trên cơ sở theo dõi tình hình kháng chiến, Đảng đã quyết định thay đổi phương châm chỉ đạo chiến dịch Điện Biên Phủ như thế nào?",
+    "options": [
+      "Đánh chắc, tiến chắc, chủ động, linh hoạt",
+      "Đánh nhanh, thắng nhanh",
+      "Tấn công ồ ạt",
+      "Bao vây, chia cắt"
+    ],
+     
+    "answer": "Đánh chắc, tiến chắc, chủ động, linh hoạt"
+  },
+  {
+    "id": 152,
+    "question": "Thay đổi của đại tướng Võ Nguyên Giáp mang tính bước ngoặc lịch sử trong chiến dịch Điện Biên Phủ?",
+    "options": [
+      "Thay đổi phương châm đánh nhanh thắng nhanh sang đánh chắc, tiến chắc",
+      "Thay đổi chiến thuật từ vây hãm sang tấn công",
+      "Thay đổi hướng tấn công",
+      "Thay đổi thời gian tấn công"
+    ],
+     
+    "answer": "Thay đổi phương châm đánh nhanh thắng nhanh sang đánh chắc, tiến chắc"
+  },
+  {
+    "id": 153,
+    "question": "Một hình thức, vận tải độc đáo của dân công phục vụ chiến dịch Điện Biên Phủ?",
+    "options": [
+      "Vận chuyển bằng xe đạp thổ",
+      "Vận chuyển bằng thuyền",
+      "Vận chuyển bằng xe ô tô",
+      "Vận chuyển bằng ngựa thồ"
+    ],
+     
+    "answer": "Vận chuyển bằng xe đạp thổ"
+  },
+  {
+    "id": 154,
+    "question": "Kết quả lớn nhất của chiến thắng lịch sử Điện Biên Phủ 1954?",
+    "options": [
+      "Đập tan hoàn toàn kế hoạch Nava, làm xoay chuyển cục diện chiến tranh, tạo điều kiện thuận lợi cho cuộc đấu tranh ngoại giao",
+      "Giải phóng hoàn toàn miền Bắc",
+      "Buộc Pháp rút quân khỏi Đông Dương",
+      "Chấm dứt chiến tranh Đông Dương"
+    ],
+     
+    "answer": "Đập tan hoàn toàn kế hoạch Nava, làm xoay chuyển cục diện chiến tranh, tạo điều kiện thuận lợi cho cuộc đấu tranh ngoại giao"
+  },
+  {
+    "id": 155,
+    "question": "Ngay khi chiến dịch Điện Biên Phủ kết thúc, Hội nghị quốc tế về chấm dứt chiến tranh Đông Dương đã họp ở đâu?",
+    "options": [
+      "Giơnevơ",
+      "Paris",
+      "Potsdam",
+      "Viên"
+    ],
+     
+    "answer": "Giơnevơ"
+  },
+  {
+    "id": 156,
+    "question": "Hiệp định Giơnevơ KHÔNG quy định điều khoản nào dưới đây?",
+    "options": [
+      "Mỹ đưa quân vào miền Nam VN thay quân Pháp",
+      "Các bên ngừng bắn, lập lại hòa bình ở Đông Dương",
+      "Việt Nam tạm thời chia làm hai miền, lấy vĩ tuyến 17 làm giới tuyến",
+      "Tổng tuyển cử vào năm 1956"
+    ],
+     
+    "answer": "Mỹ đưa quân vào miền Nam VN thay quân Pháp"
+  },
+  {
+    "id": 157,
+    "question": "Ai làm Trưởng đoàn đại biểu VN đến dự Hội nghị Geneve?",
+    "options": [
+      "Phạm Văn Đồng",
+      "Hồ Chí Minh",
+      "Võ Nguyên Giáp",
+      "Trường Chinh"
+    ],
+     
+    "answer": "Phạm Văn Đồng"
+  },
+  {
+    "id": 158,
+    "question": "Theo Hiệp định Geneve năm 1954 về Đông Dương VN, quân đội nhân dân VN và quân đội viễn chinh Pháp tập kết ở hai miền Nam - Bắc, lấy giới tuyến quân sự tạm thời theo?",
+    "options": [
+      "Vĩ tuyến 17",
+      "Vĩ tuyến 16",
+      "Vĩ tuyến 18",
+      "Vĩ tuyến 20"
+    ],
+     
+    "answer": "Vĩ tuyến 17"
+  },
+  {
+    "id": 159,
+    "question": "Hiệp định geneve về chấm dứt chiến tranh, lập lại hòa bình ở Đông Dương được ký kết khi nào?",
+    "options": [
+      "Ngày 21/7/1954",
+      "Ngày 7/5/1954",
+      "Ngày 10/10/1954",
+      "Ngày 1/8/1954"
+    ],
+     
+    "answer": "Ngày 21/7/1954"
+  },
+  {
+    "id": 160,
+    "question": "Trong các nội dung sau, nội dung nào KHÔNG nằm trong Hiệp định Geneve?",
+    "options": [
+      "Hai bên ngừng bắn ở Nam Bộ giải quyết vấn đề Đông Dương bằng con đường hòa bình",
+      "Các nước tham dự hội nghị cam kết tôn trọng độc lập, chủ quyền của Việt Nam",
+      "Việt Nam thực hiện tổng tuyển cử vào tháng 7/1956",
+      "Quân đội hai bên tập kết, chờ tổng tuyển cử"
+    ],
+     
+    "answer": "Hai bên ngừng bắn ở Nam Bộ giải quyết vấn đề Đông Dương bằng con đường hòa bình"
+  },
+  {
+    "id": 161,
+    "question": "Hội nghị Geneve đánh dấu sự thắng lợi nào của nước ta?",
+    "options": [
+      "Kháng chiến chống Pháp",
+      "Kháng chiến chống Mỹ",
+      "Cách mạng Tháng Tám",
+      "Công cuộc đổi mới"
+    ],
+     
+    "answer": "Kháng chiến chống Pháp"
+  },
+  {
+    "id": 162,
+    "question": "Miền Bắc hàon toàn được giải phóng vào thời gian nào?",
+    "options": [
+      "5/1955",
+      "10/1954",
+      "7/1954",
+      "1/1955"
+    ],
+     
+    "answer": "5/1955"
+  },
+  {
+    "id": 163,
+    "question": "Nhiệm vụ cơ bản nhất của CM nước ta sau 1954 là gì?",
+    "options": [
+      "Miền Bắc xây dựng CNXH, chi viện cho miền Nam, miền Nam tiến hành CM Dân chủ nhân dân, bảo vệ miền Bắc thực hiện thống nhất nước nhà",
+      "Thống nhất đất nước bằng bầu cử",
+      "Xây dựng chủ nghĩa xã hội ở cả hai miền",
+      "Chuẩn bị kháng chiến chống Mỹ"
+    ],
+     
+    "answer": "Miền Bắc xây dựng CNXH, chi viện cho miền Nam, miền Nam tiến hành CM Dân chủ nhân dân, bảo vệ miền Bắc thực hiện thống nhất nước nhà"
+  },
+  {
+    "id": 164,
+    "question": "Đặc điểm cơ bản nào của đất nước ta sau tháng 7/1954 là gì?",
+    "options": [
+      "Bị chia cắt làm hai miền",
+      "Đất nước thống nhất",
+      "Còn bị Pháp chiếm đóng",
+      "Mỹ xâm lược"
+    ],
+     
+    "answer": "Bị chia cắt làm hai miền"
+  },
+  {
+    "id": 165,
+    "question": "Âm mưu của Mỹ đối với miền Nam là gì?",
+    "options": [
+      "Biến miền Nam thành thuộc địa kiểu mới",
+      "Sáp nhập miền Nam vào Mỹ",
+      "Chia cắt VN vĩnh viễn",
+      "Biến miền Nam thành căn cứ quân sự"
+    ],
+     
+    "answer": "Biến miền Nam thành thuộc địa kiểu mới"
+  },
+  {
+    "id": 166,
+    "question": "Khẩu hiệu chủ yếu trong các cuộc đấu tranh chính trị của nhân dân miền Nam sau 1954 là gì?",
+    "options": [
+      "Đòi thi hành hiệp định Geneve, đòi hiệp thương tổng tuyển cử",
+      "Độc lập, tự do",
+      "Đánh đuổi Mỹ - Diệm",
+      "Thống nhất đất nước"
+    ],
+     
+    "answer": "Đòi thi hành hiệp định Geneve, đòi hiệp thương tổng tuyển cử"
+  },
+  {
+    "id": 167,
+    "question": "Nhiệm vụ chính của CM Miên Bắc trong 3 năm 1958 - 1960?",
+    "options": [
+      "Cải tạo quan hệ sản xuất, bước đầu phát triển kinh tế xã hội",
+      "Xây dựng cơ sở vật chất kỹ thuật",
+      "Tiến hành công nghiệp hóa",
+      "Phát triển nông nghiệp"
+    ],
+     
+    "answer": "Cải tạo quan hệ sản xuất, bước đầu phát triển kinh tế xã hội"
+  },
+  {
+    "id": 168,
+    "question": "Nghị quyết nào của Đảng đã soi sáng cho phong trào Đồng Khởi ở miền Nam?",
+    "options": [
+      "Nghị quyết 15 (Khóa II)",
+      "Nghị quyết 13",
+      "Nghị quyết 14",
+      "Nghị quyết 16"
+    ],
+     
+    "answer": "Nghị quyết 15 (Khóa II)"
+  },
+  {
+    "id": 169,
+    "question": "Ý nghĩa của phong trào Đồng Khởi đối với CM miền Nam là gì?",
+    "options": [
+      "Chuyển CM miền Nam từ thế giữ gìn lực lượng sang thế chủ động tiến công địch",
+      "Giành chính quyền ở nhiều vùng nông thôn",
+      "Tiêu diệt nhiều quân địch",
+      "Mở rộng căn cứ địa"
+    ],
+     
+    "answer": "Chuyển CM miền Nam từ thế giữ gìn lực lượng sang thế chủ động tiến công địch"
+  },
+  {
+    "id": 170,
+    "question": "Chiến lược \"Chiến tranh đơn phương\" của đế quốc Mỹ ở miền Nam diễn ra trong thời gian nào?",
+    "options": [
+      "1954 -- 1960",
+      "1960 -- 1965",
+      "1965 -- 1968",
+      "1954 -- 1959"
+    ],
+     
+    "answer": "1954 -- 1960"
+  },
+  {
+    "id": 171,
+    "question": "Chủ trương của Đảng trong giai đoạn đầu chống chiến lược \"chiến tranh đơn phương\" của đế quốc Mỹ là gì?",
+    "options": [
+      "Đấu tranh chính trị là chủ yếu",
+      "Đấu tranh vũ trang là chủ yếu",
+      "Kết hợp đấu tranh chính trị và vũ trang",
+      "Đấu tranh ngoại giao"
+    ],
+     
+    "answer": "Đấu tranh chính trị là chủ yếu"
+  },
+  {
+    "id": 172,
+    "question": "Nhiệm vụ củaCM miền Nam năm 1954 là gì?",
+    "options": [
+      "Tiến hành cuộc CM dân tộc, dân chủ",
+      "Xây dựng CNXH",
+      "Thống nhất đất nước",
+      "Chống Mỹ xâm lược"
+    ],
+     
+    "answer": "Tiến hành cuộc CM dân tộc, dân chủ"
+  },
+  {
+    "id": 173,
+    "question": "CM miền Nam có vai trò như thế nào trong việc đánh đổ ách thống trị của đế quốc Mĩ và tay sai của chúng, giải phóng miền Nam thống nhất đất nước?",
+    "options": [
+      "Có vai trò quyết định trực tiếp",
+      "Có vai trò hậu phương",
+      "Có vai trò hỗ trợ",
+      "Không có vai trò"
+    ],
+     
+    "answer": "Có vai trò quyết định trực tiếp"
+  },
+  {
+    "id": 174,
+    "question": "Để hoàn thành nhiệm vụ chung của CMVN 1954-1975, vai trò của miền Bắc sẽ là gì?",
+    "options": [
+      "Miền Bắc là hậu phương, có vai trò quyết định nhất",
+      "Miền Bắc là tiền tuyến",
+      "Miền Bắc và miền Nam ngang nhau",
+      "Miền Bắc không có vai trò"
+    ],
+     
+    "answer": "Miền Bắc là hậu phương, có vai trò quyết định nhất"
+  },
+  {
+    "id": 175,
+    "question": "Thủ đô Hà Nội được giải phóng vào thời gian nào?",
+    "options": [
+      "10/10/1954",
+      "5/10/1954",
+      "1/10/1954",
+      "9/10/1954"
+    ],
+     
+    "answer": "10/10/1954"
+  },
+  {
+    "id": 176,
+    "question": "Nhiệm vụ nào của CM miền Bắc sau năm 1954 là gì?",
+    "options": [
+      "Chuyển sang tiến hành CM XHCN",
+      "Tiếp tục CM dân tộc dân chủ",
+      "Chuẩn bị kháng chiến chống Mỹ",
+      "Xây dựng nền kinh tế thị trường"
+    ],
+     
+    "answer": "Chuyển sang tiến hành CM XHCN"
+  },
+  {
+    "id": 177,
+    "question": "Đường lối thể hiện sự sáng tạo, độc đáo của Đảng trong thời chống Mỹ cứu nước?",
+    "options": [
+      "Tiến hành đồng thời CM dân tộc dân chủ ở miền Nam và CM XHCN ở miền Bắc",
+      "Tiến hành CM XHCN ở cả hai miền",
+      "Chỉ tập trung CM miền Nam",
+      "Chỉ tập trung xây dựng miền Bắc"
+    ],
+     
+    "answer": "Tiến hành đồng thời CM dân tộc dân chủ ở miền Nam và CM XHCN ở miền Bắc"
+  },
+  {
+    "id": 178,
+    "question": "Đại hội Đảng toàn quốc lần thứ III (9/1960) đã vạch ra đường lối chiến lược của CMVN trong giai đoạn mới. Đường mới đó là?",
+    "options": [
+      "Tiến hành đồng thời: CM XHCN ở miền Bắc và CM dân tộc dân chủ nhân dân miền Nam",
+      "CM XHCN ở cả nước",
+      "CM dân tộc dân chủ ở cả nước",
+      "Tạm thời chưa xác định"
+    ],
+     
+    "answer": "Tiến hành đồng thời: CM XHCN ở miền Bắc và CM dân tộc dân chủ nhân dân miền Nam"
+  },
+  {
+    "id": 179,
+    "question": "Đại hội nào của Đảng là \"Đại hội xây dựng XHCN ở miền Bắc và đấu tranh hòa bình thống nhất nước nhà\"?",
+    "options": [
+      "Đại hội III",
+      "Đại hội II",
+      "Đại hội IV",
+      "Đại hội V"
+    ],
+     
+    "answer": "Đại hội III"
+  },
+  {
+    "id": 180,
+    "question": "Thủ đoạn chủ yếu được Mỹ coi là xương sống của chiến lược chiến tranh đặc biệt ở miền Nam?",
+    "options": [
+      "Xây dựng ấp chiến lược",
+      "Dồn dân lập ấp tân",
+      "Tăng cường quân ngụy",
+      "Phong tỏa kinh tế"
+    ],
+     
+    "answer": "Xây dựng ấp chiến lược"
+  },
+  {
+    "id": 181,
+    "question": "Điền tiếp từ còn thiếu trong câu sau: \"Phong trào Đồng Khởi đã đánh dấu bước phát triển của CM miền Nam chuyển từ thế ... sang thế ...\"?",
+    "options": [
+      "Giữ gìn lực lượng, tiến công",
+      "Phòng thủ, tấn công",
+      "Bị động, chủ động",
+      "Yếu, mạnh"
+    ],
+     
+    "answer": "Giữ gìn lực lượng, tiến công"
+  },
+  {
+    "id": 182,
+    "question": "Mặt trận Dân tộc giải phóng miền Nam VN được thành lập khi nào? ở đâu?",
+    "options": [
+      "Ngày 20/12/1960, Tây Ninh",
+      "Ngày 20/12/1960, Bình Dương",
+      "Ngày 20/12/1960, Sài Gòn",
+      "Ngày 20/12/1960, Long An"
+    ],
+     
+    "answer": "Ngày 20/12/1960, Tây Ninh"
+  },
+  {
+    "id": 183,
+    "question": "Ý nghĩa lịch sử của phong trào \"Đồng Khởi\"?",
+    "options": [
+      "Đánh dấu bước phát triển của CM Miền Nam từ thế giữ gìn lực lượng sang Tổng tiến công Cách Mạng",
+      "Giành thắng lợi quân sự lớn",
+      "Mở rộng vùng giải phóng",
+      "Tạo tiền đề cho chiến dịch mùa xuân"
+    ],
+     
+    "answer": "Đánh dấu bước phát triển của CM Miền Nam từ thế giữ gìn lực lượng sang Tổng tiến công Cách Mạng"
+  },
+  {
+    "id": 184,
+    "question": "Vì sau hệ thống đường Trường Sươn được gọi là đường 559?",
+    "options": [
+      "Tên con đường được đặt bằng thời gian mà TW Đảng quyết định mở đường (5/1959)",
+      "Số hiệu của tuyến đường",
+      "Ngày sinh của người chỉ huy",
+      "Chiều dài của đường"
+    ],
+     
+    "answer": "Tên con đường được đặt bằng thời gian mà TW Đảng quyết định mở đường (5/1959)"
+  },
+  {
+    "id": 185,
+    "question": "Chỗ dựa \"Chiến tranh đặc biệt\" của Mỹ ở miền Nam?",
+    "options": [
+      "Áp chiến lược và lực lượng đội ngụy",
+      "Quân viễn chinh Mỹ",
+      "Quân đồng minh",
+      "Không quân Mỹ"
+    ],
+     
+    "answer": "Áp chiến lược và lực lượng đội ngụy"
+  },
+  {
+    "id": 186,
+    "question": "Biện pháp nào KHÔNG được Mỹ - Diệm áp dụng trong quá trình thực hiện chiến lược \"Chiến tranh đặt biệt\"?",
+    "options": [
+      "Tiến hành cuộc chiến tranh phá hoại bằng hải quân và không quân ra miền Bắc",
+      "Tăng cường viện trợ quân sự cho ngụy quyền",
+      "Xây dựng ấp chiến lược",
+      "Lập các khu trù mật"
+    ],
+     
+    "answer": "Tiến hành cuộc chiến tranh phá hoại bằng hải quân và không quân ra miền Bắc"
+  },
+  {
+    "id": 187,
+    "question": "Một phong trào thi đua ở miền Nam trong thời kỳ chống chiến lược \"Chiến tranh đặc biệt\"?",
+    "options": [
+      "Thi đua Áp Bắc, giết giặc lập công",
+      "Thi đua sản xuất",
+      "Thi đua học tập",
+      "Thi đua xây dựng"
+    ],
+     
+    "answer": "Thi đua Áp Bắc, giết giặc lập công"
+  },
+  {
+    "id": 188,
+    "question": "Một phong trào thanh niên được phát động trong năm 1965 ở miền Nam?",
+    "options": [
+      "Phong trào \"Năm xung phong\"",
+      "Phong trào \"Ba sẵn sàng\"",
+      "Phong trào \"Tiền tuyến gọi\"",
+      "Phong trào \"Thanh niên lập nghiệp\""
+    ],
+     
+    "answer": "Phong trào \"Năm xung phong\""
+  },
+  {
+    "id": 189,
+    "question": "Để lấy cớ gây chiến tranh phá hoại ra miền Bắc lần thứ nhất, Mỹ đã làm gì?",
+    "options": [
+      "Dựng lên \"sự kiện Vịnh Bắc Bộ\"",
+      "Đưa tối hậu thư",
+      "Bắn phá Hà Nội",
+      "Phong tỏa cảng Hải Phòng"
+    ],
+     
+    "answer": "Dựng lên \"sự kiện Vịnh Bắc Bộ\""
+  },
+  {
+    "id": 190,
+    "question": "Mỹ tiến hành chiến tranh phá hoại miền Bắc nhằm?",
+    "options": [
+      "Phá hoại tiềm lực kinh tế, quốc phòng, công cuộc xây dựng CNXH ở miền Bắc",
+      "Ngăn chặn chi viện từ nước ngoài",
+      "Gây áp lực đàm phán",
+      "Làm suy yếu tinh thần nhân dân"
+    ],
+     
+    "answer": "Phá hoại tiềm lực kinh tế, quốc phòng, công cuộc xây dựng CNXH ở miền Bắc"
+  },
+  {
+    "id": 191,
+    "question": "\"Chiến tranh cục bộ\" khác \"Chiến tranh đặc biệt\" ở điểm nào?",
+    "options": [
+      "\"Chiến tranh cục bộ\" được tiến hành bằng quân chủ lực Mỹ, quân chư hầu và quân ngụy",
+      "\"Chiến tranh cục bộ\" chỉ sử dụng không quân",
+      "\"Chiến tranh cục bộ\" không có quân đồng minh",
+      "\"Chiến tranh cục bộ\" kéo dài hơn"
+    ],
+     
+    "answer": "\"Chiến tranh cục bộ\" được tiến hành bằng quân chủ lực Mỹ, quân chư hầu và quân ngụy"
+  },
+  {
+    "id": 192,
+    "question": "Quân đội những nước nào từng tham gia vào cuộc chiến tranh xâm lược của Mỹ ở miền Nam VN?",
+    "options": [
+      "Úc, New Zealand, Hàn Quốc, Thái Lan và Philippines",
+      "Úc, Nhật, Hàn Quốc, Thái Lan",
+      "Anh, Pháp, Úc, New Zealand",
+      "Canada, Úc, New Zealand, Nhật"
+    ],
+     
+    "answer": "Úc, New Zealand, Hàn Quốc, Thái Lan và Philippines"
+  },
+  {
+    "id": 193,
+    "question": "Thực hiện chiến lược \"Chiến tranh cục bộ\", Mỹ đẩy mạnh chiến tranh xâm lược ở miền Nam và?",
+    "options": [
+      "Mở rộng chiến tranh phá hoại miền Bắc",
+      "Chỉ tập trung ở miền Nam",
+      "Đàm phán với VN",
+      "Rút quân dần"
+    ],
+     
+    "answer": "Mở rộng chiến tranh phá hoại miền Bắc"
+  },
+  {
+    "id": 194,
+    "question": "Trong chiến tranh VN, Mỹ đã sử dụng lực lượng nào để tiến công phá hoại miền Bắc?",
+    "options": [
+      "Hải quân và Không quân",
+      "Lục quân",
+      "Không quân và Lục quân",
+      "Hải quân và Lục quân"
+    ],
+     
+    "answer": "Hải quân và Không quân"
+  },
+  {
+    "id": 195,
+    "question": "Mỹ quyết định đưa quân viễn chinh Mỹ và các nước đồng minh vào miền Nam trong chiến lược chiến tranh nào?",
+    "options": [
+      "Chiến tranh cục bộ",
+      "Chiến tranh đặc biệt",
+      "Chiến tranh đơn phương",
+      "Chiến tranh phá hoại"
+    ],
+     
+    "answer": "Chiến tranh cục bộ"
+  },
+  {
+    "id": 196,
+    "question": "Thắng lợi to lớn của tổng tiến công và nổi dậy mùa xuân 1968 là gì?",
+    "options": [
+      "Làm phá sản hoàn toàn chiến lược \"chiến tranh cục bộ của Mỹ\", buộc Mỹ phải xuống thang chiến tranh và ngồi vào bàn đàm phán của ta",
+      "Giải phóng hoàn toàn miền Nam",
+      "Mỹ rút hết quân",
+      "Ký hiệp định Paris"
+    ],
+     
+    "answer": "Làm phá sản hoàn toàn chiến lược \"chiến tranh cục bộ của Mỹ\", buộc Mỹ phải xuống thang chiến tranh và ngồi vào bàn đàm phán của ta"
+  },
+  {
+    "id": 197,
+    "question": "Câu nói \"Không có gì quý hơn độc lập tự do\" được Hồ Chí Minh nói vào tháng năm nào?",
+    "options": [
+      "Năm 1966",
+      "Năm 1965",
+      "Năm 1967",
+      "Năm 1968"
+    ],
+     
+    "answer": "Năm 1966"
+  },
+  {
+    "id": 198,
+    "question": "\"Vì độc lập, vì tự do, đánh cho Mỹ cút, đánh cho ngụy nhào\" là những câu thơ chúc Tết của Chủ tịch Hồ Chí Minh vào năm nào?",
+    "options": [
+      "Năm 1969",
+      "Năm 1968",
+      "Năm 1970",
+      "Năm 1967"
+    ],
+     
+    "answer": "Năm 1969"
+  },
+  {
+    "id": 199,
+    "question": "Khi nào thì cuộc xâm lược của đế quốc Mỹ mở rộng phạm vi toàn Đông Dương?",
+    "options": [
+      "Năm 1970",
+      "Năm 1971",
+      "Năm 1969",
+      "Năm 1968"
+    ],
+     
+    "answer": "Năm 1970"
+  },
+  {
+    "id": 200,
+    "question": "Hai nhiệm vụ lớn của CM nước ta giai đoạn 1954-1975?",
+    "options": [
+      "Xây dựng thành công CM XHCN ở miền Bắc và tiến hành CM dân tộc dân chủ nhân dân ở miền Nam",
+      "Giải phóng miền Nam và thống nhất đất nước",
+      "Chống Mỹ và xây dựng CNXH",
+      "Thực hiện hai cuộc cách mạng độc lập"
+    ],
+     
+    "answer": "Xây dựng thành công CM XHCN ở miền Bắc và tiến hành CM dân tộc dân chủ nhân dân ở miền Nam"
+  },
+  {
+    "id": 201,
+    "question": "Miền Bắc XHCN đã mấy lần phải đương đầu với chiến tranh phá hoại kéo dài nhiều ngày bằng hàng hải và không quân của đế quốc Mỹ?",
+    "options": [
+      "2 lần",
+      "3 lần",
+      "1 lần",
+      "4 lần"
+    ],
+     
+    "answer": "2 lần"
+  },
+  {
+    "id": 202,
+    "question": "Chiến tranh \"Điện Biên Phủ trên không\" diễn ra ở đâu?",
+    "options": [
+      "Hà Nội",
+      "Hải Phòng",
+      "Nam Định",
+      "Điện Biên Phủ"
+    ],
+     
+    "answer": "Hà Nội"
+  },
+  {
+    "id": 203,
+    "question": "\"Điện Biên Phủ trên không\" là chiến thắng oanh liệt của quân dân miền Bắc diễn ra trong khoảng thời gian nào?",
+    "options": [
+      "12 ngày đêm cuối năm 1972",
+      "10 ngày đêm cuối 1972",
+      "15 ngày đêm cuối 1972",
+      "12 ngày đêm đầu 1973"
+    ],
+     
+    "answer": "12 ngày đêm cuối năm 1972"
+  },
+  {
+    "id": 204,
+    "question": "Thắng lợi lớn nhất của quân và dân miền Bắc trong trận \"Điện Biên Phủ trên không\" là?",
+    "options": [
+      "Buộc Mỹ phải tuyên bố ngừng hắn hoạt động chống phá miền Bắc và kí hiệp định Pari về chấm dứt chiến tranh, lập loại hòa bình ở VN",
+      "Bắn rơi nhiều máy bay B-52",
+      "Gây thiệt hại lớn cho Không quân Mỹ",
+      "Làm thất bại hoàn toàn chiến lược của Mỹ"
+    ],
+     
+    "answer": "Buộc Mỹ phải tuyên bố ngừng hắn hoạt động chống phá miền Bắc và kí hiệp định Pari về chấm dứt chiến tranh, lập loại hòa bình ở VN"
+  },
+  {
+    "id": 205,
+    "question": "Hiệp định nào sau đây buộc Mỹ phải rút hết quân về nước?",
+    "options": [
+      "Hiệp định Pari",
+      "Hiệp định Giơnevơ",
+      "Hiệp định Sơ bộ",
+      "Tạm ước 14/9"
+    ],
+     
+    "answer": "Hiệp định Pari"
+  },
+  {
+    "id": 206,
+    "question": "Nhiệm vụ trước mắt cấp bách của CMVN sau chiến thắng 30/4/1975?",
+    "options": [
+      "Hoàn thành thống nhất nước nhà",
+      "Xây dựng CNXH ở cả nước",
+      "Khôi phục kinh tế sau chiến tranh",
+      "Đấu tranh ngoại giao"
+    ],
+     
+    "answer": "Hoàn thành thống nhất nước nhà"
+  },
+  {
+    "id": 207,
+    "question": "Hội nghị hiệp thương chính trị của 2 đoàn đại biểu miền Bắc và miền Nam sau chiến thắng 30/4/1975 bàn về thống nhất nước nhà đã họp ở đâu? Vào thời gian nào?",
+    "options": [
+      "Tháng 11/1975, tại Sài Gòn",
+      "Tháng 10/1975, tại Hà Nội",
+      "Tháng 12/1975, tại Sài Gòn",
+      "Tháng 11/1975, tại Đà Nẵng"
+    ],
+     
+    "answer": "Tháng 11/1975, tại Sài Gòn"
+  },
+  {
+    "id": 208,
+    "question": "Quốc hội đầu tiên của nước CHXHCNVN được bầu vào thời gian nào?",
+    "options": [
+      "Năm 1976",
+      "Năm 1975",
+      "Năm 1977",
+      "Năm 1974"
+    ],
+     
+    "answer": "Năm 1976"
+  },
+  {
+    "id": 209,
+    "question": "Mặt trận thống nhất trên cả nước sau từ 1975 đến nay có tên gọi là gì?",
+    "options": [
+      "Mặt trận Tổ quốc Việt Nam",
+      "Mặt trận Dân tộc Giải phóng",
+      "Mặt trận Liên hiệp Quốc gia",
+      "Mặt trận Thống nhất Dân tộc"
+    ],
+     
+    "answer": "Mặt trận Tổ quốc Việt Nam"
+  },
+  {
+    "id": 210,
+    "question": "Đại hội IV của Đảng của tổ chức ở đâu, khi nào, trong hoàn cảnh nào?",
+    "options": [
+      "Tháng 12/1976, tại Hà Nội, khi đất nước hòa bình, thống nhất",
+      "Tháng 12/1975, tại Hà Nội, sau khi thống nhất",
+      "Tháng 12/1976, tại Sài Gòn, thống nhất",
+      "Tháng 1/1977, tại Hà Nội"
+    ],
+     
+    "answer": "Tháng 12/1976, tại Hà Nội, khi đất nước hòa bình, thống nhất"
+  },
+  {
+    "id": 211,
+    "question": "Tại Đại hội IV Đảng lao động VN?",
+    "options": [
+      "Đảng Cộng sản VN",
+      "Đảng Lao động VN",
+      "Đảng Dân chủ VN",
+      "Đảng Xã hội VN"
+    ],
+     
+    "answer": "Đảng Cộng sản VN"
+  },
+  {
+    "id": 212,
+    "question": "Đại hội IV của Đảng xác định đặc điểm lớn của nước ta sau năm 1975? (thứ nhất)",
+    "options": [
+      "Nước ta đang ở trong quá trình từ một xã hội mà nền kinh tế còn phổ biến là sản xuất nhỏ tiến lên CNXH bỏ qua giai đoạn phát triển tư bản chủ nghĩa",
+      "Tổ quốc hòa bình, thống nhất",
+      "Kinh tế kém phát triển",
+      "Đất nước nghèo nàn, lạc hậu"
+    ],
+     
+    "answer": "Nước ta đang ở trong quá trình từ một xã hội mà nền kinh tế còn phổ biến là sản xuất nhỏ tiến lên CNXH bỏ qua giai đoạn phát triển tư bản chủ nghĩa"
+  },
+  {
+    "id": 213,
+    "question": "Đại hội IV của Đảng xác định đặc điểm lớn của nước ta sau năm 1975? (thứ hai)",
+    "options": [
+      "Tổ quốc ta đã hòa bình độc lập, thống nhất, cả nước tiển lên CNXH",
+      "Cả nước xây dựng CNXH",
+      "Đất nước thống nhất",
+      "Độc lập, thống nhất, đi lên CNXH"
+    ],
+     
+    "answer": "Tổ quốc ta đã hòa bình độc lập, thống nhất, cả nước tiển lên CNXH"
+  },
+  {
+    "id": 214,
+    "question": "Đại hội IV của Đảng xác định xu thế chủ đạo trong quan hệ quốc tế sau 1975?",
+    "options": [
+      "Cuộc đấu tranh giữa thể lực cách mạng và thế lực phản cách mạng trên thế giới còn gay go, quyết liệt",
+      "Thế giới chuyển sang hòa bình hợp tác",
+      "Xu hướng toàn cầu hóa",
+      "Đối đầu Đông - Tây chấm dứt"
+    ],
+     
+    "answer": "Cuộc đấu tranh giữa thể lực cách mạng và thế lực phản cách mạng trên thế giới còn gay go, quyết liệt"
+  },
+  {
+    "id": 215,
+    "question": "Tại Đại hội IV, Đảng xác định muốn xây dựng chủ nghĩa xã hội thành công, cần tiến hành cuộc cách mạng trên những lĩnh vực nào?",
+    "options": [
+      "Tiến hành đồng thới 3 cuộc cách mạng: cách mạng về quan hệ sản xuất, cách mạng khoa học-kỹ thuật, cách mạng tư tưởng và văn hóa-tư tưởng",
+      "Cách mạng về lực lượng sản xuất và quan hệ sản xuất",
+      "Cách mạng về khoa học công nghệ",
+      "Cách mạng về văn hóa"
+    ],
+     
+    "answer": "Tiến hành đồng thới 3 cuộc cách mạng: cách mạng về quan hệ sản xuất, cách mạng khoa học-kỹ thuật, cách mạng tư tưởng và văn hóa-tư tưởng"
+  },
+  {
+    "id": 216,
+    "question": "Vấn đề nào không phải là nhận thức của Đảng về đặc trưng của chủ nghĩa xã hội tại Đại hội IV (1976)?",
+    "options": [
+      "Xây dựng nền kinh tế nhiều thành phần",
+      "Xóa bỏ chế độ người bóc lột người",
+      "Xây dựng nền sản xuất lớn hiện đại",
+      "Nâng cao đời sống nhân dân"
+    ],
+     
+    "answer": "Xây dựng nền kinh tế nhiều thành phần"
+  },
+  {
+    "id": 217,
+    "question": "Nhiệm vụ trung tâm trong đường lối phát triển kinh tế Đại hội IV đề ra là gì?",
+    "options": [
+      "Đẩy mạnh công nghiệp hóa xã hội chủ nghĩa bằng ưu tiên phát triển công nghiệp nặng một cách hợp lý trên cơ sở phát triển nông nghiệp và công nghiệp nhẹ",
+      "Phát triển nông nghiệp là chính",
+      "Phát triển công nghiệp nhẹ",
+      "Tập trung xuất khẩu"
+    ],
+     
+    "answer": "Đẩy mạnh công nghiệp hóa xã hội chủ nghĩa bằng ưu tiên phát triển công nghiệp nặng một cách hợp lý trên cơ sở phát triển nông nghiệp và công nghiệp nhẹ"
+  },
+  {
+    "id": 218,
+    "question": "Hạn chế của đường lối Đại hội IV trong lĩnh vực kinh tế là gì? (1)",
+    "options": [
+      "Đẩy mạnh CNHXCN theo hướng ưu tiên phát triển công nghiệp nặng",
+      "Chưa chú trọng nông nghiệp",
+      "Không phát triển công nghiệp nhẹ",
+      "Phụ thuộc vào nước ngoài"
+    ],
+     
+    "answer": "Đẩy mạnh CNHXCN theo hướng ưu tiên phát triển công nghiệp nặng"
+  },
+  {
+    "id": 219,
+    "question": "Hạn chế của đường lối Đại hội IV trong lĩnh vực kinh tế là gì? (2)",
+    "options": [
+      "Tiếp tục đẩy mạnh cải tạo xã hội chủ nghĩa ở miền Nam",
+      "Không cải tạo miền Nam",
+      "Cải tạo công thương nghiệp",
+      "Tập trung cải tạo miền Bắc"
+    ],
+     
+    "answer": "Tiếp tục đẩy mạnh cải tạo xã hội chủ nghĩa ở miền Nam"
+  },
+  {
+    "id": 220,
+    "question": "Hạn chế của đường lối Đại hội IV trong kinh tế là gì? (3)",
+    "options": [
+      "Duy trì quá lâu cơ chế kế hoạnh hóa, tập trung bao cấp",
+      "Chưa mở cửa kinh tế",
+      "Thiếu vốn đầu tư",
+      "Khoa học kỹ thuật lạc hậu"
+    ],
+     
+    "answer": "Duy trì quá lâu cơ chế kế hoạnh hóa, tập trung bao cấp"
+  },
+  {
+    "id": 221,
+    "question": "Hội nghị nào của Đảng trong nhiệm kỳ Đại hội IV đánh dấu \"bước đột phá đầu tiên\" trong đổi mới tư duy kinh tế của Đảng với chủ trương khắc phục khuyết điểm, sai lầm, phá bỏ những rào cản để cho \"sản xuất bung ra\"?",
+    "options": [
+      "Hội nghị Trung ương 6 (8/1979)",
+      "Hội nghị Trung ương 7 (8/1980)",
+      "Hội nghị Trung ương 5 (8/1978)",
+      "Hội nghị Trung ương 8 (6/1985)"
+    ],
+     
+    "answer": "Hội nghị Trung ương 6 (8/1979)"
+  },
+  {
+    "id": 222,
+    "question": "Đổi mới bước đầu trong chính sách của Đảng đối với cơ chế quản lý kinh tế trong nông nghiệp là gì?",
+    "options": [
+      "Chỉ thị số 100-CT/TW (1/1981) của Ban Bí thư TƯ Đảng về khoản sản phẩm đến nhóm và người lao động trong các hợp tác xã nông nghiệp",
+      "Nghị quyết 10 về khoán nông nghiệp",
+      "Chỉ thị 101 về cải cách quản lý",
+      "Quyết định 100 về phát triển nông thôn"
+    ],
+     
+    "answer": "Chỉ thị số 100-CT/TW (1/1981) của Ban Bí thư TƯ Đảng về khoản sản phẩm đến nhóm và người lao động trong các hợp tác xã nông nghiệp"
+  },
+  {
+    "id": 223,
+    "question": "Đóng góp nổi bật của Đại hội V (1982) đã bổ sung và phát triển đường lối xây dựng CNXH là gì?",
+    "options": [
+      "Lý luận về chặng đường đầu tiên của thời kỳ quá độ lên chủ nghĩa xã hội",
+      "Đường lối xây dựng CNXH trong thời kỳ mới",
+      "Mục tiêu phát triển kinh tế giai đoạn 1980-1990",
+      "Chính sách đối ngoại mới"
+    ],
+     
+    "answer": "Lý luận về chặng đường đầu tiên của thời kỳ quá độ lên chủ nghĩa xã hội"
+  },
+  {
+    "id": 224,
+    "question": "Đại hội V đề ra phương hướng, nội dung của công nghiệp hóa xã hội chủ nghĩa trong chặng đường đầu tiên của thời kỳ quá độ là gì?",
+    "options": [
+      "Coi nông nghiệp là mặt trận hàng đầu",
+      "Phát triển công nghiệp nặng",
+      "Phát triển công nghiệp nhẹ",
+      "Tập trung xuất khẩu"
+    ],
+     
+    "answer": "Coi nông nghiệp là mặt trận hàng đầu"
+  },
+  {
+    "id": 225,
+    "question": "Chủ trương của Đảng tại Hội nghị Trung ương 8 (6/1985) khóa V được coi là bước đột phá thứ hai trong quá trình tìm tòi, đổi mới tư duy kinh tế, bước đột phá đó là gì?",
+    "options": [
+      "Chủ trương xóa bỏ cơ chế kế hoạch hóa, tập trung, bao cấp để chuyển sang nền kinh tế hạch toán, kinh doanh xã hội chủ nghĩa",
+      "Thực hiện kinh tế thị trường",
+      "Mở cửa nền kinh tế",
+      "Tư nhân hóa doanh nghiệp nhà nước"
+    ],
+     
+    "answer": "Chủ trương xóa bỏ cơ chế kế hoạch hóa, tập trung, bao cấp để chuyển sang nền kinh tế hạch toán, kinh doanh xã hội chủ nghĩa"
+  },
+  {
+    "id": 226,
+    "question": "Hội nghị Bộ Chính trị khóa V (8/1986) đưa ra 1 số kết luận được coi là bước đột phả thứ ba về đổi mới tư duy kinh tế, đặt nền tảng cho sự hình thành đường lối đổi mới của Đảng tại Đại hội VI (1986), đó là những vẫn đề gì? (ý 1)",
+    "options": [
+      "Kết luận của Bộ Chính trị về hạn chế trong xác định cơ cấu sản xuất và sai lầm trong cải tạo xã hội chủ nghĩa kinh tế (1976-1986)",
+      "Kết luận về cần thiết phải đổi mới cơ chế quản lý",
+      "Kết luận về thực hiện cải cách tài chính",
+      "Kết luận về chính sách ngoại thương"
+    ],
+     
+    "answer": "Kết luận của Bộ Chính trị về hạn chế trong xác định cơ cấu sản xuất và sai lầm trong cải tạo xã hội chủ nghĩa kinh tế (1976-1986)"
+  },
+  {
+    "id": 227,
+    "question": "Hội nghị Bộ Chính trị khóa V (8/1986) đưa ra 1 số kết luận được coi là bước đột phá thứ ba về đổi mới tư duy kinh tế, đặt nền tảng cho sự hình thành đường lối đổi mới của Đảng tại Đại hội VI (1986), đó là những vấn đề gì? (ý 2)",
+    "options": [
+      "Kết luận của Bộ Chính trị về sự cần thiết phải đổi mới cơ chế quản lí kinh tế",
+      "Kết luận về cải cách giá cả",
+      "Kết luận về cải cách lương",
+      "Kết luận về chính sách đối ngoại"
+    ],
+     
+    "answer": "Kết luận của Bộ Chính trị về sự cần thiết phải đổi mới cơ chế quản lí kinh tế"
+  },
+  {
+    "id": 228,
+    "question": "Trên thực tế, trong cơ cấu đầu tư của nền kinh tế taioj Đại hội V tập trung cho lĩnh vực nào?",
+    "options": [
+      "Công nghiệp nặng và xây dựng cơ bản",
+      "Nông nghiệp",
+      "Công nghiệp nhẹ",
+      "Dịch vụ"
+    ],
+     
+    "answer": "Công nghiệp nặng và xây dựng cơ bản"
+  },
+  {
+    "id": 229,
+    "question": "Xu thế chủ đạo trong quan hệ quốc tế từ những năm 70 của thế kỷ XX là gì?",
+    "options": [
+      "Chuyển dần từ đối đầu sang đối thoại, hòa bình, mở rộng hợp tác cùng phát triển giữa các nước trong cộng đồng thế giới",
+      "Đối đầu gay gắt",
+      "Chiến tranh lạnh",
+      "Toàn cầu hóa"
+    ],
+     
+    "answer": "Chuyển dần từ đối đầu sang đối thoại, hòa bình, mở rộng hợp tác cùng phát triển giữa các nước trong cộng đồng thế giới"
+  },
+  {
+    "id": 230,
+    "question": "Hướng ưu tiên chiến lược trong chính sách đối ngoại của Đảng và Nhà nước VN (1975-1986)?",
+    "options": [
+      "B và C là đáp án đúng",
+      "Tăng cường quan hệ với các nước XHCN",
+      "Phát triển quan hệ với các nước không liên kết",
+      "Đối phó với các thế lực thù địch"
+    ],
+    "answerIndex": 1,
+    "answer": "B và C là đáp án đúng"
+  },
+  {
+    "id": 231,
+    "question": "Đại hội của Đảng đã nhấn mạnh tầm quan trọng của tăng cường tỉnh hữu nghị đặc biệt VN-Lào-Campuchia như thế nào?",
+    "options": [
+      "Quan hệ hữu nghị truyền thống đặc biệt giữa VN-Lào-Campuchia \"có ý nghĩa sống còn đối với vận mệnh của ba dân tộc\"",
+      "Quan hệ giữa ba nước là quan hệ đồng minh",
+      "Quan hệ đó là quan hệ láng giềng",
+      "Quan hệ đó là quan hệ đặc biệt"
+    ],
+     
+    "answer": "Quan hệ hữu nghị truyền thống đặc biệt giữa VN-Lào-Campuchia \"có ý nghĩa sống còn đối với vận mệnh của ba dân tộc\""
+  },
+  {
+    "id": 232,
+    "question": "VN gia nhập Liên hợp quốc năm nào?",
+    "options": [
+      "Tháng 9/1977",
+      "Tháng 9/1976",
+      "Tháng 9/1978",
+      "Tháng 9/1975"
+    ],
+     
+    "answer": "Tháng 9/1977"
+  },
+  {
+    "id": 233,
+    "question": "Sau 1975 VN phải đối mặt với các cuộc chiến tranh nào?",
+    "options": [
+      "A và B",
+      "Chiến tranh biên giới phía Bắc (1979)",
+      "Chiến tranh biên giới Tây Nam (1977-1979)",
+      "Chiến tranh với Mỹ"
+    ],
+     
+    "answer": "A và B"
+  },
+  {
+    "id": 234,
+    "question": "Vấn đề nào không phải là khó khăn trong lĩnh vực đối ngoại mà VN phải đối mặt những năm 80 của thế kỷ XX?",
+    "options": [
+      "Phải đối phó cùng 1 lúc với nhiều thể lực của các nước lớn có mặt tại VN",
+      "Bị bao vây cấm vận",
+      "Bị cô lập về ngoại giao",
+      "Không có quan hệ với các nước lớn"
+    ],
+     
+    "answer": "Phải đối phó cùng 1 lúc với nhiều thể lực của các nước lớn có mặt tại VN"
+  },
+  {
+    "id": 235,
+    "question": "Nguyên nhân hạn chế trong đường lối đối ngoại của Đảng (1975-1986) là gì?",
+    "options": [
+      "Tư duy đối ngoại của Đảng chưa kịp thời nắm bắt những xu thế mới trong quan hệ quốc tế, không kịp thời đổi mới các quan hệ đối ngoại cho phủ hợp",
+      "Thiếu nguồn lực để thực hiện đối ngoại",
+      "Do áp lực của các nước lớn",
+      "Do tình hình kinh tế khó khăn"
+    ],
+     
+    "answer": "Tư duy đối ngoại của Đảng chưa kịp thời nắm bắt những xu thế mới trong quan hệ quốc tế, không kịp thời đổi mới các quan hệ đối ngoại cho phủ hợp"
+  },
+  {
+    "id": 236,
+    "question": "Đặc điểm của hệ thống chính trị giai đoạn 1975-1986?",
+    "options": [
+      "Có biểu hiện quan liêu, xa rời thực tiễn",
+      "Hoạt động hiệu quả",
+      "Dân chủ, cởi mở",
+      "Mạnh mẽ, quyết đoán"
+    ],
+     
+    "answer": "Có biểu hiện quan liêu, xa rời thực tiễn"
+  },
+  {
+    "id": 237,
+    "question": "Đại hội VI của Đảng diễn ra ở đâu, khi nào?",
+    "options": [
+      "Tháng 12/1986, tại Hà Nội",
+      "Tháng 12/1986, tại TP.HCM",
+      "Tháng 1/1987, tại Hà Nội",
+      "Tháng 11/1986, tại Hà Nội"
+    ],
+     
+    "answer": "Tháng 12/1986, tại Hà Nội"
+  },
+  {
+    "id": 238,
+    "question": "Đại hội VI của đảng diễn ra trong hoàn cảnh nào?",
+    "options": [
+      "Đất nước đứng trước khủng hoảng kinh tế-xã hội nghiêm trọng",
+      "Đất nước đang phát triển mạnh",
+      "Đất nước đã thoát khỏi khủng hoảng",
+      "Đất nước bình thường"
+    ],
+     
+    "answer": "Đất nước đứng trước khủng hoảng kinh tế-xã hội nghiêm trọng"
+  },
+  {
+    "id": 239,
+    "question": "Ý nghĩa lịch sử trong đại hội VI đối với cách mạng VN? (1)",
+    "options": [
+      "Mở ra thời đại công nghiệp hóa đất nước",
+      "Mở ra thời kỳ đổi mới",
+      "Đưa đất nước ra khỏi khủng hoảng",
+      "Thiết lập nền kinh tế thị trường"
+    ],
+     
+    "answer": "Mở ra thời đại công nghiệp hóa đất nước"
+  },
+  {
+    "id": 240,
+    "question": "Ý nghĩa lịch sử trọng đại của đại hội VI đối với cách mạng VN? (2)",
+    "options": [
+      "Mở ra thời kỳ xây dựng CNXH theo đường lối mới",
+      "Mở ra thời kỳ công nghiệp hóa",
+      "Mở ra thời kỳ hội nhập",
+      "Mở ra thời kỳ phát triển"
+    ],
+     
+    "answer": "Mở ra thời kỳ xây dựng CNXH theo đường lối mới"
+  },
+  {
+    "id": 241,
+    "question": "Tổng bí thư đầu tiên của Đảng trong thời kỳ đổi mới?",
+    "options": [
+      "Nguyễn Văn Linh",
+      "Đỗ Mười",
+      "Lê Duẩn",
+      "Trường Chinh"
+    ],
+     
+    "answer": "Nguyễn Văn Linh"
+  },
+  {
+    "id": 242,
+    "question": "Trong nhiệm kỳ đại hội VI, đường lối đổi mới của Đảng tập trung cho lĩnh vực nào?",
+    "options": [
+      "Kinh tế",
+      "Chính trị",
+      "Văn hóa",
+      "Xã hội"
+    ],
+     
+    "answer": "Kinh tế"
+  },
+  {
+    "id": 243,
+    "question": "Tinh thần của đại hội VI là gì?",
+    "options": [
+      "Nhìn thằng sự thật, đánh giá đúng sự thật và nói rã sự thật",
+      "Đổi mới toàn diện",
+      "Cương quyết, kiên trì",
+      "Dân chủ, công khai"
+    ],
+     
+    "answer": "Nhìn thằng sự thật, đánh giá đúng sự thật và nói rã sự thật"
+  },
+  {
+    "id": 244,
+    "question": "Bài học kinh nghiệm được rút ra tại đại hội VI, đặt nền tảng cho đường lối đổi mới của Đảng về kinh tế?",
+    "options": [
+      "Tôn trọng và hành động theo quy luật khách quan",
+      "Kiên trì mục tiêu XHCN",
+      "Kết hợp sức mạnh dân tộc và thời đại",
+      "Phát huy dân chủ"
+    ],
+     
+    "answer": "Tôn trọng và hành động theo quy luật khách quan"
+  },
+  {
+    "id": 245,
+    "question": "Bài học kinh nghiệm được rút ra tại đại hội VI, đặt nền tảng cho đường lối đổi mới của Đảng về đối ngoại?",
+    "options": [
+      "Kết hợp sức mạng dân tộc với sức mạnh thời đại trong điều kiện mới",
+      "Độc lập tự chủ",
+      "Đa phương hóa quan hệ",
+      "Chủ động hội nhập"
+    ],
+     
+    "answer": "Kết hợp sức mạng dân tộc với sức mạnh thời đại trong điều kiện mới"
+  },
+  {
+    "id": 246,
+    "question": "Vấn đề nào không phải là mục tiêu chung về kinh tế-xã hội được đề ra tại đại hội VI?",
+    "options": [
+      "Bước đầu xây dựng cơ sở vật chất kỹ thuật cho XHCN",
+      "Ổn định đời sống nhân dân",
+      "Củng cố quốc phòng an ninh",
+      "Xây dựng cơ sở vật chất cho CNXH"
+    ],
+     
+    "answer": "Bước đầu xây dựng cơ sở vật chất kỹ thuật cho XHCN"
+  },
+  {
+    "id": 247,
+    "question": "Nhiệm vụ cụ thể về kinh tế -xã hội được đề ra tại đại hội VI là gì?",
+    "options": [
+      "Xây dựng và quyết tâm thực hiện 3 chương trình kinh tế lớn, sản xuất lương thực, thực phẩm, hàng tiêu dùng và hàng xuất khẩu",
+      "Phát triển công nghiệp nặng",
+      "Đẩy mạnh xuất khẩu",
+      "Tăng trưởng GDP cao"
+    ],
+     
+    "answer": "Xây dựng và quyết tâm thực hiện 3 chương trình kinh tế lớn, sản xuất lương thực, thực phẩm, hàng tiêu dùng và hàng xuất khẩu"
+  },
+  {
+    "id": 248,
+    "question": "Để hoàn thành mục tiêu và nhiệm vụ phát triển kinh tế-xã hội đại hội VI đã có chủ trương như thế nào?",
+    "options": [
+      "Thừa nhận sự tồn tại của kinh tế nhiều thành phần",
+      "Chỉ phát triển kinh tế nhà nước",
+      "Xóa bỏ kinh tế tư nhân",
+      "Tập trung vào kinh tế tập thể"
+    ],
+     
+    "answer": "Thừa nhận sự tồn tại của kinh tế nhiều thành phần"
+  },
+  {
+    "id": 249,
+    "question": "Chủ trương của Đảng tại đại hội Vì trong đổi mới cơ chế quản lý kinh tế là gì?",
+    "options": [
+      "Xây dựng nền kinh tế hàng hóa nhiều thành phần vận hành theo cơ chế thị trường có sự quản lý của nhà nước",
+      "Duy trì cơ chế kế hoạch hóa tập trung",
+      "Xây dựng nền kinh tế chỉ huy",
+      "Phát triển kinh tế nhà nước là chủ đạo"
+    ],
+     
+    "answer": "Xây dựng nền kinh tế hàng hóa nhiều thành phần vận hành theo cơ chế thị trường có sự quản lý của nhà nước"
+  },
+  {
+    "id": 250,
+    "question": "Luật đầu tư nước ngoài tại VN được ban hành năm nào?",
+    "options": [
+      "Năm 1987",
+      "Năm 1986",
+      "Năm 1988",
+      "Năm 1989"
+    ],
+     
+    "answer": "Năm 1987"
+  },
+  {
+    "id": 251,
+    "question": "Vấn đề nào không phải là chính sách điển hình nhằm xóa bỏ cơ chế kế hoạch hóa tập trung trong sản xuất, kinh doanh tại nhiệm kỳ đại hội VI?",
+    "options": [
+      "Phân phối bình quân chủ nghĩa",
+      "Xóa bỏ bao cấp",
+      "Thực hiện hạch toán kinh doanh",
+      "Chuyển sang kinh tế thị trường"
+    ],
+     
+    "answer": "Phân phối bình quân chủ nghĩa"
+  },
+  {
+    "id": 252,
+    "question": "Thành tựu nổi bật về kinh tế tại nhiệm kỳ địa hội VI là gì?",
+    "options": [
+      "Năm 1989, lần đầu tiên Việt Nam xuất khẩu gạo",
+      "Tăng trưởng GDP đạt 10%",
+      "Hoàn thành kế hoạch 5 năm",
+      "Xây dựng nhiều nhà máy lớn"
+    ],
+     
+    "answer": "Năm 1989, lần đầu tiên Việt Nam xuất khẩu gạo"
+  },
+  {
+    "id": 253,
+    "question": "Thành tựu nổi bật về đối ngoại tại đại hội VI là gì?",
+    "options": [
+      "B và C",
+      "Rút quân khỏi Campuchia",
+      "Bình thường hóa quan hệ với Trung Quốc",
+      "Gia nhập ASEAN"
+    ],
+     
+    "answer": "B và C"
+  },
+  {
+    "id": 254,
+    "question": "Đại hội VII của Đảng diễn ra năm nào, ở đâu, Tổng bí thư của Đảng tại nhiệm kỳ đại hội VII?",
+    "options": [
+      "Năm 1991, tại Hà Nội, Tổng bí thư Đỗ Mười",
+      "Năm 1991, tại TP.HCM, Tổng bí thư Đỗ Mười",
+      "Năm 1990, tại Hà Nội, Tổng bí thư Nguyễn Văn Linh",
+      "Năm 1991, tại Hà Nội, Tổng bí thư Lê Khả Phiêu"
+    ],
+     
+    "answer": "Năm 1991, tại Hà Nội, Tổng bí thư Đỗ Mười"
+  },
+  {
+    "id": 255,
+    "question": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH (cương lĩnh 1991) được thông qua tại đại hội nào của Đảng?",
+    "options": [
+      "Đại hội VII (1991)",
+      "Đại hội VI (1986)",
+      "Đại hội VIII (1996)",
+      "Đại hội V (1982)"
+    ],
+     
+    "answer": "Đại hội VII (1991)"
+  }
+]

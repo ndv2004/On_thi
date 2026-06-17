@@ -450,7 +450,7 @@
         <div style="display: flex; gap: 12px">
           <button class="random-btn" id="randomBtn">🎲 Random câu</button>
           <button class="nav-page-btn" id="switchPageBtn">
-            📄 Bản rút gọn câu hỏi
+            📄 Bản đầy đủ câu hỏi
           </button>
         </div>
         <div class="stats">
@@ -581,7 +581,7 @@
 
       async function loadQuestions() {
         try {
-          const response = await fetch("./lsd10.json");
+          const response = await fetch("./rutgon.json");
           if (response.ok) {
             const data = await response.json();
             if (Array.isArray(data) && data.length) {
@@ -1006,7 +1006,7 @@
         document
           .getElementById("switchPageBtn")
           .addEventListener("click", () => {
-            window.location.href = "./takhanhly.html";
+            window.location.href = "./index.html";
           });
         document
           .getElementById("submitBtn")
